@@ -17,9 +17,9 @@ This repository is meant for the participants of the [BioHackathon](https://bioh
 * [Project 12](12): Empowering the community with notebooks for bespoke microbiome analyses
 * [Project 13](13): Exploring the landscape of the genomic wastewater surveillance ecosystem: a roadmap towards standardisation
 * [Project 14](14): FAIR knowledge representation for user facing applications
-* [Project 15](15): Make your own or favourite software available on your cluster with EasyBuild/EESSI
-* [Project 16](16): Metadata schemas supporting Linked Open Science (with a focus on reproducibility)
-* [Project 17](17): Infrastructure for Synthetic Health Data
+* [Project 15](15): Infrastructure for Synthetic Health Data
+* [Project 16](16): Make your own or favourite software available on your cluster with EasyBuild/EESSI
+* [Project 17](17): Metadata schemas supporting Linked Open Science (with a focus on reproducibility)
 * [Project 18](18): MOWL: A library for Machine Learning with Ontologies
 * [Project 19](19): Nightingale 4.0 - Reusable web components for accelerating end-users access to tools platform metadata
 * [Project 20](20): Onboarding suite for Federated EGA nodes
