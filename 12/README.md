@@ -2,7 +2,7 @@
 
 ## Abstract
 
-MGnify is EMBL-EBI’s metagenomics resource, which is part of ELIXIR Metagenomics Community. The resource has had a notable track record of ensuring We recently launched a Notebook Server to provide an online, Jupyter Lab environment for users to explore programmatic access to MGnify’s datasets using Python or with R. This ready to use environment and example analysis notebooks bridge the gap between the ease but limitations of browsing the MGnify website, and the complexity but possibilities of installing a local environment to work with data stored in MGnify. Particular goals of the Notebook Server include reproducible downstream analyses, user empowerment through best-practice examples and fast workflows from datasets to publication-ready graphics, and code-as-documentation training materials for users of MGnify.
+MGnify is EMBL-EBI’s metagenomics resource, which is part of ELIXIR Metagenomics Community. We recently launched a Notebook Server to provide an online, Jupyter Lab environment for users to explore programmatic access to MGnify’s datasets using Python or with R. This ready to use environment and example analysis notebooks bridge the gap between the ease but limitations of browsing the MGnify website, and the complexity but possibilities of installing a local environment to work with data stored in MGnify. Particular goals of the Notebook Server include reproducible downstream analyses, user empowerment through best-practice examples and fast workflows from datasets to publication-ready graphics, and code-as-documentation training materials for users of MGnify.
 
 We have three objectives for the BioHackathon:
 
