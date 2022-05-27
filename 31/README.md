@@ -7,10 +7,7 @@ Where appropriate, we will also work on the content of the two resources in orde
 
 ## Topics
 
-Data Platform
-Interoperability Platform
-Tools Platform
-Training Platform
+Data Platform, Interoperability Platform, Tools Platform, Training Platform
 
 **Project Number:** 31
 
@@ -22,26 +19,22 @@ Danielle Welter - danielle.welter@uni.lu
 ## Expected outcomes
 
 At the end of the BioHackathon:
--A gap analysis of the connections of the two resources, including identification of content gaps where connections could be beneficial
--An improvement on the connections, with addition of mechanisms (technical and operational) to help editors identify and deal with:
---Broken links in content and connected resources
---Highlighting of content that might be going stale or getting outdated, and require review
---Flagging of content that has been heavily edited by a connected resource, thus potentially requiring addition or removal of links
+- A gap analysis of the connections of the two resources, including identification of content gaps where connections could be beneficial
+- An improvement on the connections, with addition of mechanisms (technical and operational) to help editors identify and deal with:
+  - Broken links in content and connected resources
+  - Highlighting of content that might be going stale or getting outdated, and require review
+  - Flagging of content that has been heavily edited by a connected resource, thus potentially requiring addition or removal of links
 
 After the BioHackathon (6 months):
--New content based on identified gaps and contributors
--Enhanced interoperability between RDMkit and FAIR Cookbook with more and better links
--Implementation of maintenance tasks in both resources triggering actions from the editorial teams in support of long term sustainability
+- New content based on identified gaps and contributors
+- Enhanced interoperability between RDMkit and FAIR Cookbook with more and better links
+- Implementation of maintenance tasks in both resources triggering actions from the editorial teams in support of long term sustainability
 
 ## Expected audience
 
-Members of the editorial teams of RDMkit and FAIR Cookbook
-People with knowledge on RDMkit and FAIR Cookbook
-People with general interest in research data management and FAIR practices
-
-The knowledge and technical skills of the following are critical to the project:
-- Bert Droesbeke - VIB-Ugent / ELIXIR-BE - bert.droesbeke@psb.vib-ugent.be
-- Philippe Rocca-Serra - University of Oxford - philippe.rocca-serra@oerc.ox.ac.uk
+ Members of the editorial teams of RDMkit and FAIR Cookbook  
+ People with knowledge on RDMkit and FAIR Cookbook  
+ People with general interest in research data management and FAIR practices  
 
 **Number of expected hacking days**: 4
 
