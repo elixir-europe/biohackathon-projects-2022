@@ -26,6 +26,12 @@ Tools Platform
 Tomas Pluskal: tomas.pluskal@uochb.cas.cz
 Denise Slenter: denise.slenter@maastrichtuniversity.nl
 
+### co-applicants(s)
+
+Evan Bolton: bolton@ncbi.nlm.nih.gov
+Emma Schymanski: emma.schymanski@uni.lu
+Egon Willighagen: egon.willighagen@maastrichtuniversity.nl
+
 ## Expected outcomes
 
 Improved handling of transformation product pairs and reactions (Rhea/PubChem/NORMAN-SLE/WikiPathways)
