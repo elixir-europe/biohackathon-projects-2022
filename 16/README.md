@@ -41,3 +41,15 @@ Elisabeth Ortega (elisabeth.ortega@hpcnow.com)
 - The EasyBuild and the EESSI communities.
 
 **Number of expected hacking days**: 4
+
+## Useful links
+
+- EasyBuild homepage: https://easybuild.io/
+- EasyBuild documentation: https://docs.easybuild.io
+- EasyBuild community: https://github.com/easybuilders
+- EasyBuild last presentations: https://www.youtube.com/c/easybuilders
+- EESSI homepage: https://www.eessi-hpc.org/
+- EESSI documentation: https://eessi.github.io/docs
+- EESSI at GitHub: https://github.com/EESSI
+- Introductory talk on EESSI: https://archive.fosdem.org/2021/schedule/event/eessi
+- EESSI paper: https://dx.doi.org/10.1002/spe.3075
