@@ -10,6 +10,7 @@ This project links work in the ELIXIR Compute and Tools platforms with requireme
 Federated Human Data and Rare Diseases communities to build, validate, and deploy data
 analysis workflows across federated secure computational facilities, driven by 1+MG use
 cases.
+
 The WfExS-backend (https://github.com/inab/WfExS-backend) is a high-level workflow
 execution software, fetching and materialising all elements needed to run a workflow: the
 workflow, engine, software containers and inputs. It creates and consumes RO-Crates,
@@ -23,13 +24,18 @@ between repeated executions. WfExS-backend stores all the gathered execution det
 output metadata and execution provenance in the output RO-Crate achieving reproducible
 executions. Execution results are encrypted with crypt4gh and safely moved outside the
 execution environments.
+
 Documentation and demonstration of these tools, utilising synthetic data, to the human data
 communities (HDCs), while bringing HDCs feedback to the compute and tools platform
 facilitates uptake of these standards supporting interoperability.
-Future developments focus on: secure data export procedures; supporting 1+MG use cases
-and genomics infrastructure; supporting other workflow engines, e.g. SnakeMake and Galaxy;
-supporting other containerisation technologies; supporting additional secure execution
-scenarios; supporting additional workflows and data providers.
+
+Future developments focus on:
+* Secure data export procedures.
+* Supporting 1+MG use cases and genomics infrastructure.
+* Supporting other workflow engines, e.g. SnakeMake and Galaxy.
+* Supporting other containerisation technologies, like `conda`.
+* Supporting additional secure execution scenarios.
+* Supporting additional workflows and data providers.
 
 ## Topics
 
@@ -55,15 +61,15 @@ additional workflow execution engines.
 
 ## Expected audience
 
-People with snakemake or planemo / Galaxy experience.
-People with interesting Nextflow, CWL, snakemake or other workflows, hopefully already
+* People with snakemake or planemo / Galaxy experience.
+* People with interesting Nextflow, CWL, snakemake or other workflows, hopefully already
 available in a git repository.
-People with interesting use cases, such as 1+MG use case experts or representatives from
-FHD or RD communities, with existing or developing workflows which can be described in a
+* People with interesting use cases, such as 1+MG use case experts or representatives from
+ELIXIR FHD or RD communities, with existing or developing workflows which can be described in a
 workflow language, where the inputs are available through permanent identifiers, and those
 inputs can be fetched, either openly or through authentication.
-Members or representatives of the compute and tools platforms, and federated human data
+* Members or representatives of the ELIXIR compute and tools platforms, and federated human data
 community.
 
-**Number of expected hacking days**: 4
+## **Number of expected hacking days**: 4
 
