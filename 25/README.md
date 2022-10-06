@@ -59,3 +59,6 @@ Within 3 months of the end of the Biohackathon:
 
 **Number of expected hacking days**: 4
 
+## Meetings infos 
+
+Meeting 06/10/2022: [link to minutes](https://hackmd.io/@iNyx6M9RSx-IU3dcVjoPZg/SJAsbv3Mi/edit)
