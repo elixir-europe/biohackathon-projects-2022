@@ -24,6 +24,7 @@ Marine Metagenomics
 ### Lead(s)
 
 Martin Beracochea - mbc@ebi.ac.uk
+Sandy Rogers - sandyr@ebi.ac.uk 
 
 ## Expected outcomes
 
