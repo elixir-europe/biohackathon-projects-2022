@@ -19,13 +19,21 @@ Tools Platform
 ### Lead(s)
 
 Núria Queralt Rosinach, n.queralt_rosinach@lumc.nl
+
 Soumyabrata Ghosh, soumyabrata.ghosh@uni.lu 
+
 Venkata Satagopam, venkata.satagopam@uni.lu
+
 Tim Beck, timbeck@leicester.ac.uk 
+
 Davide Cirillo, davide.cirillo@bsc.es	
+
 Wei Gu, wei.gu@uni.lu 
+
 Fotis Psomopoulos, fpsom@certh.gr 
+
 Dylan Spalding, dylan.spalding@csc.fi 
+
 Salvador Capella-Gutierrez, salvador.capella@bsc.es  
 
 ## Expected outcomes
