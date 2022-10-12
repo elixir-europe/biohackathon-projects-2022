@@ -54,6 +54,7 @@ Experts on statistics + ML
 Researcher(s) with experience in EHR and clinical data
 Researcher(s) with experience in various omics data-types
 
+<!---
 We would like to invite two specific people from Europe who are critical to the success of the project (name /institute/email):
 
 Prof. Mihaela van der Schaar 
@@ -67,6 +68,8 @@ patrick.ruch@hesge.ch
 https://orcid.org/0000-0002-3374-2962
 (http://bitem.hesge.ch/people/patrick-ruch)
 CINECA Synthetic Datasets
+
+--->
 
 **Number of expected hacking days**: 4 days
 
