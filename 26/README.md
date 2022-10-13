@@ -23,7 +23,6 @@ Tools Platform
 
 ### Lead(s)
 
-Tomas Pluskal: tomas.pluskal@uochb.cas.cz
 Denise Slenter: denise.slenter@maastrichtuniversity.nl
 
 ### co-applicants(s)
