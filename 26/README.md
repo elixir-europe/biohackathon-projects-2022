@@ -23,13 +23,13 @@ Tools Platform
 
 ### Lead(s)
 
-Denise Slenter: denise.slenter@maastrichtuniversity.nl
+Denise Slenter: [GitHub](https://github.com/DeniseSl22) [ORCID](https://orcid.org/0000-0001-8449-1318)
 
 ### co-applicants(s)
 
-Evan Bolton: bolton@ncbi.nlm.nih.gov
-Emma Schymanski: emma.schymanski@uni.lu
-Egon Willighagen: egon.willighagen@maastrichtuniversity.nl
+- Evan Bolton: [GitHub]() [ORCID](https://orcid.org/0000-0002-5959-6190)
+- Emma Schymanski: [GitHub](https://github.com/schymane) [ORCID](https://orcid.org/0000-0001-6868-8145)
+- Egon Willighagen: [GitHub](https://github.com/egonw) [ORCID](https://orcid.org/0000-0001-7542-0286)
 
 ## Expected outcomes
 
