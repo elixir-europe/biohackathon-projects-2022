@@ -19,11 +19,11 @@ Tools Platform
 
 ### Lead(s)
 
-Sébastien Moretti (sebastien.moretti@sib.swiss)
-Kenneth Hoste (kenneth.hoste@ugent.be)
-Alan O’Cais (alan.ocais@cecam.org)
-Jurij Pečar (jurij.pecar@embl.de)
-Elisabeth Ortega (elisabeth.ortega@hpcnow.com)
+Sébastien Moretti (sebastien.moretti@sib.swiss) [ORCID](https://orcid.org/0000-0003-3947-488X) |
+Kenneth Hoste (kenneth.hoste@ugent.be) [ORCID](https://orcid.org/0000-0001-8034-648X) |
+Alan O’Cais (alan.ocais@cecam.org) [ORCID](https://orcid.org/0000-0002-8254-8752) |
+Jurij Pečar (jurij.pecar@embl.de) |
+Elisabeth Ortega (elisabeth.ortega@hpcnow.com) [ORCID](https://orcid.org/0000-0001-5410-5375)
 
 ## Expected outcomes
 
