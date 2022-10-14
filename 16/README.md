@@ -44,6 +44,12 @@ Elisabeth Ortega (elisabeth.ortega@hpcnow.com)
 
 ## Useful links
 
+- Start with EasyBuild: https://docs.easybuild.io/
+- Start with EESSI: 
+- EasyBuild Slack channel: https://easybuild.io/join-slack
+
+## Other links
+
 - EasyBuild homepage: https://easybuild.io/
 - EasyBuild documentation: https://docs.easybuild.io
 - EasyBuild community: https://github.com/easybuilders
