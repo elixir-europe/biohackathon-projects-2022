@@ -56,5 +56,7 @@ Elisabeth Ortega (elisabeth.ortega@hpcnow.com) [ORCID](https://orcid.org/0000-00
 - EasyBuild last presentations: https://www.youtube.com/c/easybuilders
 - EESSI homepage: https://www.eessi-hpc.org/
 - EESSI at GitHub: https://github.com/EESSI
-- Introductory talk on EESSI: https://archive.fosdem.org/2021/schedule/event/eessi
+- Introductory talk on EESSI:
+  - https://archive.fosdem.org/2021/schedule/event/eessi
+  - https://eessi.github.io/docs/meetings/2022-09-amsterdam/EESSI-community-meeting-2022.09-001-introduction-to-EESSI.pdf
 - EESSI paper: https://dx.doi.org/10.1002/spe.3075
