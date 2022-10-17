@@ -1,5 +1,9 @@
 # Project 25: Scientific and technical enhancement of bioinformatics software metadata using the Tools Ecosystem open infrastructure
 
+## Contribution
+
+If you want to contribute to this project, see the contribution inscructions [here](https://github.com/elixir-europe/biohackathon-projects-2022/blob/main/25/Contributing.md).
+
 ## Abstract
 
 The Tools Ecosystem is a centralized repository for the open and transparent exchange of metadata about software tools and services in Bioinformatics and Life Sciences.
