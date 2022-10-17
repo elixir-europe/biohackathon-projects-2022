@@ -1,0 +1,4 @@
+rdflib
+SPARQLWrapper
+pandas
+numpy
