@@ -3,3 +3,5 @@ rdflib
 SPARQLWrapper
 pandas
 numpy
+matplotlib
+matplotlib-venn
