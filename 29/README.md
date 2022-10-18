@@ -46,9 +46,9 @@ Platform, SW Containers, Benchmarking
 
 ### Lead(s)
 
-Dylan Spalding dylan.spalding@csc.fi
-José Mª Fernández (jose.m.fernandez@bsc.es)
-Laura Rodríguez-Navas (laura.rodriguez@bsc.es)
+* Dylan Spalding (dylan.spalding@csc.fi)
+* José Mª Fernández (jose.m.fernandez@bsc.es)
+* Laura Rodríguez-Navas (laura.rodriguez@bsc.es)
 
 ## Expected outcomes
 
