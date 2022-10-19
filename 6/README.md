@@ -14,18 +14,21 @@ Tools Platform
 
 ### Lead(s)
 
-Nadège Guiglielmoni nguiglie@uni-koeln.de
+- Nadège Guiglielmoni (nguiglie@uni-koeln.de)
+- Linelle Abueg (labueg@rockefeller.edu)
 
 ## Expected outcomes
 
-– An improved pipeline for assembly of diverse eukaryotic genomes
-– A Galaxy workflow for genome annotation
-– A committed genome assembly community stemming from the interaction between ERGA, Galaxy and the VGP
-– Extended tutorials and guidelines for high-quality genome assembly using Galaxy workflows
+- An improved pipeline for assembly of diverse eukaryotic genomes
+- A Galaxy workflow for genome annotation
+- A committed genome assembly community stemming from the interaction between ERGA, Galaxy and the VGP
+- Extended tutorials and guidelines for high-quality genome assembly using Galaxy workflows
+- Wrapping tools relevant for genome assembly/annotation for the Galaxy platform
 
 ## Expected audience
 
-Researchers working on genome assembly and/or annotation
+- Researchers working on genome assembly, annotation, or quality control
+- Participants interested in creating Galaxy tool wrappers / bioconda packages
 
 **Number of expected hacking days**: 4
 
