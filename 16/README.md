@@ -42,7 +42,7 @@ Elisabeth Ortega (elisabeth.ortega@hpcnow.com) [ORCID](https://orcid.org/0000-00
 
 **Number of expected hacking days**: 4
 
-## Useful links
+## Getting started and Slack links
 
 - Getting started with EasyBuild: https://docs.easybuild.io/
 - Getting started with EESSI: https://eessi.github.io/docs/
