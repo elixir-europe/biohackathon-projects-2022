@@ -36,9 +36,10 @@ Tools Platform
 
 ### Lead(s)
 
-Hans Ienasescu (haiiu@dtu.dk)
 Lucie Lamothe (lucie.lamothe@france-bioinformatique.fr)
+Hervé Ménager (herve.menager@pasteur.fr)
 
+(Hans Ienasescu (haiiu@dtu.dk) )
 ## Expected outcomes
 
 By the end of the BioHackathon week:
