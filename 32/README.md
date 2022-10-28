@@ -1,5 +1,9 @@
 # Project 32: Training booster: developing FAIR training materials and Learning Paths
 
+## Master document  
+
+Link to the live document which contains any information needed during the week of the BH2022 - [Master doc](https://docs.google.com/document/d/1Ct3mb8au_tQ0rhsc7fe06zJgfY904dmX/edit).
+
 ## Abstract
 
 This Training booster project has two components: 1) applying and assessing the ELIXIR-GOBLET lesson on how to develop FAIR training materials, and 2) implementing and evaluating a step-by-step protocol to create learning paths via a case study approach. The BH2022 participants will have the choice to hack on any of the two components or even both.
@@ -22,20 +26,20 @@ Patricia Palagi (ELIXIR-CH) - patricia.palagi@sib.swiss & Mijke Jetten (ELIXIR-N
 
 ## Expected outcomes
 
-Feedback on the effectiveness of the FAIR training material lesson
-Sets of FAIRified training materials  from ELIXIR Communities
-A plan to improve  the FAIR training material lesson according to the feedback received
-Collection of feedback on the application of the Learning Path protocol (pitfalls and exceptions)
-Evaluated version 1.0 of the BH2021 Learning Path step-by-step protocol 
-MVP learning paths for 2-3 case studies
+* Feedback on the effectiveness of the FAIR training material lesson
+* Sets of FAIRified training materials  from ELIXIR Communities
+* A plan to improve  the FAIR training material lesson according to the feedback received
+* Collection of feedback on the application of the Learning Path protocol (pitfalls and exceptions)
+* Evaluated version 1.0 of the BH2021 Learning Path step-by-step protocol 
+* MVP learning paths for 2-3 case studies
 
 ## Expected audience
 
-Experience in providing training
-Experience in training material development and delivery
-Experience in FAIR data and/or FAIR training
-Have training materials that you wish to FAIRify 
-Data stewards
+* Experience in providing training
+* Experience in training material development and delivery
+* Experience in FAIR data and/or FAIR training
+* Have training materials that you wish to FAIRify 
+* Data stewards
 
 **Number of expected hacking days**: 4
 
