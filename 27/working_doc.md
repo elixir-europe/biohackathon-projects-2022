@@ -12,4 +12,4 @@ Please, follow the link and read carefully the material to acquire the necessary
 
 ## Introduction to the project
 
-![intro](https://user-images.githubusercontent.com/51486716/197958534-844e2fb4-3e3d-40de-8fe2-aa7970a1897e.png)
+![intro](https://user-images.githubusercontent.com/51486716/198538978-429d3640-10ad-4230-a769-f1b5ddf5dff1.png)
