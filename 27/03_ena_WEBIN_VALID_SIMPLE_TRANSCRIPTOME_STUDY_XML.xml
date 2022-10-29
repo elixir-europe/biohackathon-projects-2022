@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WEBIN>
+   <SUBMISSION>
+      <ACTIONS>
+         <ACTION>
+            <ADD />
+         </ACTION>
+      </ACTIONS>
+   </SUBMISSION>
+   <STUDY_SET>
+      <STUDY center_name="" alias="Test study 1" accession="">
+         <DESCRIPTOR>
+            <STUDY_TITLE>Whole transcriptome sequencing of human U937 cell line</STUDY_TITLE>
+            <STUDY_TYPE existing_study_type="Transcriptome Sequencing" />
+            <STUDY_ABSTRACT>RNA editing signature during myeloid leukemia cell differentiation.</STUDY_ABSTRACT>
+            <CENTER_PROJECT_NAME>Homo sapiens</CENTER_PROJECT_NAME>
+         </DESCRIPTOR>
+      </STUDY>
+   </STUDY_SET>
+</WEBIN>

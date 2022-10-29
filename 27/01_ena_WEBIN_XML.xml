@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WEBIN>
+   <SUBMISSION>
+      <ACTIONS>
+         <ACTION>
+            <ADD />
+         </ACTION>
+      </ACTIONS>
+   </SUBMISSION>
+   <PROJECT_SET>
+      <PROJECT center_name="EMBL-EBI" alias="project_1" accession="">
+         <NAME>Test_Project</NAME>
+         <TITLE>Test BioHackathon Project</TITLE>
+         <DESCRIPTION>Test BioHackathon Project</DESCRIPTION>
+         <SUBMISSION_PROJECT>
+            <SEQUENCING_PROJECT />
+         </SUBMISSION_PROJECT>
+      </PROJECT>
+   </PROJECT_SET>
+   <STUDY_SET>
+      <STUDY center_name="EMBL-EBI" alias="test-study-1">
+         <DESCRIPTOR>
+            <STUDY_TITLE>Test_Study</STUDY_TITLE>
+            <STUDY_DESCRIPTION>Test BioHackathon Study</STUDY_DESCRIPTION>
+            <STUDY_ABSTRACT>Test BioHackathon Project</STUDY_ABSTRACT>
+            <STUDY_TYPE existing_study_type="Other" />
+         </DESCRIPTOR>
+         <STUDY_ATTRIBUTES>
+            <STUDY_ATTRIBUTE>
+               <TAG>test_attribute</TAG>
+               <VALUE>test_value</VALUE>
+            </STUDY_ATTRIBUTE>
+            <STUDY_ATTRIBUTE>
+               <TAG>release_date</TAG>
+               <VALUE>2022-10-25</VALUE>
+            </STUDY_ATTRIBUTE>
+         </STUDY_ATTRIBUTES>
+      </STUDY>
+   </STUDY_SET>
+   <RUN_SET>
+      <RUN alias="run_experiment:1">
+         <TITLE>Test_Run</TITLE>
+         <EXPERIMENT_REF refname="run_experiment:1" />
+         <DATA_BLOCK>
+            <FILES>
+               <FILE filename="fake3.bam" filetype="bam" checksum_method="MD5" checksum="9840f585055afc37de353706fd31a377" />
+            </FILES>
+         </DATA_BLOCK>
+         <RUN_ATTRIBUTES>
+            <RUN_ATTRIBUTE>
+               <TAG>test_attribute</TAG>
+               <VALUE>test_value</VALUE>
+            </RUN_ATTRIBUTE>
+         </RUN_ATTRIBUTES>
+      </RUN>
+   </RUN_SET>
+   <EXPERIMENT_SET>
+      <EXPERIMENT alias="run_experiment:1">
+         <TITLE>Test_Experiment</TITLE>
+         <STUDY_REF refname="test-study-1" />
+         <DESIGN>
+            <DESIGN_DESCRIPTION>Test</DESIGN_DESCRIPTION>
+            <SAMPLE_DESCRIPTOR accession="SAMEA9288569" />
+            <LIBRARY_DESCRIPTOR>
+               <LIBRARY_STRATEGY>other</LIBRARY_STRATEGY>
+               <LIBRARY_SOURCE>OTHER</LIBRARY_SOURCE>
+               <LIBRARY_SELECTION>RT-PCR</LIBRARY_SELECTION>
+               <LIBRARY_LAYOUT>
+                  <SINGLE />
+               </LIBRARY_LAYOUT>
+            </LIBRARY_DESCRIPTOR>
+         </DESIGN>
+         <PLATFORM>
+            <OXFORD_NANOPORE>
+               <INSTRUMENT_MODEL>MinION</INSTRUMENT_MODEL>
+            </OXFORD_NANOPORE>
+         </PLATFORM>
+         <EXPERIMENT_ATTRIBUTES>
+            <EXPERIMENT_ATTRIBUTE>
+               <TAG>test_attribute</TAG>
+               <VALUE>test_value</VALUE>
+            </EXPERIMENT_ATTRIBUTE>
+         </EXPERIMENT_ATTRIBUTES>
+      </EXPERIMENT>
+   </EXPERIMENT_SET>
+</WEBIN>
