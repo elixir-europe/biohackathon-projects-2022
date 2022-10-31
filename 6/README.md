@@ -23,7 +23,7 @@ Tools Platform
 - A Galaxy workflow for genome annotation
 - A committed genome assembly community stemming from the interaction between ERGA, Galaxy and the VGP
 - Extended tutorials and guidelines for high-quality genome assembly using Galaxy workflows
-- Wrapping tools relevant for genome assembly/annotation for the Galaxy platform
+- Wrapping tools relevant for genome assembly/annotation for the Galaxy platform (IDEAS: fastK (planned replacement of meryl), instaGRAAL, BandageNG)
 
 ## Expected audience
 
