@@ -24,6 +24,10 @@ Training, FAIR principles, FAIR training materials, Bring your own training mate
 
 Patricia Palagi (ELIXIR-CH) - patricia.palagi@sib.swiss & Mijke Jetten (ELIXIR-NL) - mijke.jetten@dtls.nl
 
+### Co-lead(s)
+
+Allegra Via (ELIXIR-IT), Loredana Le Pera (ELIXIR-IT), Celia van Gelder (ELIXIR-NL), Fieke Schoots (ELIXIR-NL), Alexia Cardona (ELIXIR-UK), Melissa Burke (Australian BioCommons), Jessica Lindvall (ELIXIR-SE)
+
 ## Expected outcomes
 
 * Feedback on the effectiveness of the FAIR training material lesson
