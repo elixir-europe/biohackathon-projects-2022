@@ -1,5 +1,5 @@
 # Ontologies
-* Recommended ontology repositories
+* Recommended ontology repositories<br/>
 Open Biomedical Ontologies (OBO) Foundry (https://obofoundry.org/)<br/>
 EBI Ontology Lookup Service (OLS, https://www.ebi.ac.uk/ols/ontologies)<br/>
 NCBO BioPortal (https://bioportal.bioontology.org/)<br/>
