@@ -1,4 +1,4 @@
-# Project 5: Bioschemas - Enabling profile updates through the Data Discovery Engine (DE)
+# Project 5: Bioschemas - Enabling profile updates through the Data Discovery Engine (DDE)
 
 ## Abstract
 
