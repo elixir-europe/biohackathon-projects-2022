@@ -27,7 +27,7 @@ Nick Juty : nsjuty@gmail.com
 ## Expected audience
 
 We will target and invite representatives from a number of groups to a) update existing profiles, and b) to create new types that are ready to go. 
-This will be reps from existing resources and from identified communities (some of whim will already be craeting profiles or types)
+This will be reps from existing resources and from identified communities (some of whom will already be creating profiles or types)
 
 **Number of expected hacking days**: 4
 
