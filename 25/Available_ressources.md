@@ -4,3 +4,4 @@ Example of SPARQL query for bio.tools: [content](https://github.com/bio-tools/co
 
 Jupyter notebooks available is the repo biohackathon-projects-2022/25/notebooks
 
+last year biohackathon repo: https://github.com/bio-tools/biohackathon2021
