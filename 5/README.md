@@ -52,3 +52,6 @@ This will be reps from existing resources and from identified communities (some 
 * Quick fix issues: https://github.com/BioSchemas/specifications/issues/559
 * StudyLocation issue: https://github.com/BioSchemas/specifications/issues/556
 * And More: https://github.com/BioSchemas/specifications/issues
+
+### Hackathon progress and minutes
+* https://docs.google.com/document/d/1llxPHb4oFhmVYjyD_v3UCLUAXAI5RGF5QGNmrETVA2w/edit
