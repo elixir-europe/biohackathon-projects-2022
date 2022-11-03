@@ -32,13 +32,13 @@ This will be reps from existing resources and from identified communities (some 
 **Number of expected hacking days**: 4
 
 ## General Information
-Day #1 [slides](https://docs.google.com/presentation/d/1lJJUtIMR-mE8Zza4Luq-xJtf1fAlQNWVFiRMNvWCVUQ/edit#slide=id.p1)
-BioHackEU [slack](https://app.slack.com/client/T01ATRTHDSL/C01A475PUQ3)
-Venue [information](https://biohackathon-europe.org/venue.html)
+* Day #1 [slides](https://docs.google.com/presentation/d/1lJJUtIMR-mE8Zza4Luq-xJtf1fAlQNWVFiRMNvWCVUQ/edit#slide=id.p1)
+* BioHackEU [slack](https://app.slack.com/client/T01ATRTHDSL/C01A475PUQ3)
+* Venue [information](https://biohackathon-europe.org/venue.html)
 
 ### Useful links
-Bioschemas/DDE [link](https://github.com/elixir-europe/biohackathon-projects-2022/tree/main/5)
-Github [issues](https://github.com/BioSchemas/specifications/issues)
+* Bioschemas/DDE [link](https://github.com/elixir-europe/biohackathon-projects-2022/tree/main/5)
+* Github [issues](https://github.com/BioSchemas/specifications/issues)
 
 ### Bioschemas and DDE pages
 * https://bioschemas.org/profiles/
