@@ -78,5 +78,3 @@ colnames(studyData) = c("Value", "Subject", "SampleType", "SubjectGroup", "RelTi
 
 ```
 
-#methods
-```{r setup, include=FALSE}
