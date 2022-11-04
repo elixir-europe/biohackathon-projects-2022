@@ -1,0 +1,47 @@
+---
+title: "fetch data from metabolights"
+author: "ddedesener"
+output: html_document
+date: "2022-10-31"
+---
+
+#This script aims to get data from metabolights through API using metabolighteR package
+
+# setup 
+```{r setup}
+#install required package
+install.packages('metabolighteR')
+#Or the latest development version can be installed directly from GitHub using the remotes package
+remotes::install_github('aberHRML/metabolighteR')
+#to get all avaliable functions in a package
+lsf.str("package:metabolighteR")
+```
+
+## getting studies
+```{r get studies, include=FALSE}
+
+#Querying the repository
+all_study_ids <- get_studies()
+studies <- as.vector (all_study_ids$study)
+head(studies)
+
+#to get release date and status for a specific study
+metaData <- get_study_meta("MTBLS469")
+study_desc <- metabolighteR::get_study_desc("MTBLS469")
+
+#Further actions can be performed 
+#Generate a summary table containing : study ID, study title, and study technolgy for publicly avaliable ones.
+study_titles <- purrr::map(studies[1:5], get_study_title)
+names(study_titles) <- studies[1:5]
+
+study_titles <- tibble::as_tibble(study_titles) %>% tidyr::gather()
+names(study_titles) <- c('STUDY', 'Title')
+study_tech <- get_study_tech()
+study_tech_filter <- study_tech %>% dplyr::filter(STUDY %in% studies[1:5])
+StudyInfoTable <-
+  dplyr::left_join(study_titles, study_tech_filter, by = 'STUDY')
+StudyInfoTable
+
+```
+
+

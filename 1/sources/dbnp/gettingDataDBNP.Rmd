@@ -1,0 +1,80 @@
+---
+title: "fetch data from dbNP"
+author: "ddedesener"
+output: html_document
+date: "2022-10-31"
+---
+
+#This script aims to get data from dbNP through API using PhenotypeDatabase-RClient package
+#source: https://github.com/TNO/PhenotypeDatabase-RClient/blob/master/example.R
+
+## install and load libraries, authentication
+```{r setup, include=FALSE}
+library(devtools)
+install_github("TNO/PhenotypeDatabase-RClient")
+
+#load dependencies
+require(PhenotypeDatabaseRClient)
+require(reshape2)
+require(dplyr)
+#for authenticate function
+library(httr)
+
+#authentication procedure
+setPhenotypeDatabaseBaseUrl("https://dashin.eu/interventionstudies/api/")
+user = "duygu.dedesener"
+skey = "a45f18fe-a6e7-4b97-a108-193544836456"
+
+#authentication
+doPhenotypeDatabaseAuth(user, paste(readline()), skey)
+```
+
+## to get studies
+```{r setup, include=FALSE}
+studies = getStudies()
+#to get a specific study with the code "NASH"
+study = studies[[grep("AGER-MELO", sapply(studies, function(x) x$code))]]
+studyToken = study['token']
+
+## Get assays for the selected study
+assays = getAssaysForStudy(studyToken)
+#need access to get assasy 
+assayTokens = names(assays)
+assayNames = sapply(assays, function(x) x$name)
+
+#get subjects in study
+studySubjects = getSubjectsForStudy(studyToken)
+studySubjects = do.call(cbind, studySubjects)
+
+#get features in study and subjects in each assay
+studyFeatures = list()
+studySubjectsPerAssay = list()
+for (i in seq_along(assayTokens)){
+  assayToken = assayTokens[i]
+  studyFeatures[[i]] = getFeaturesForAssay(assayToken)
+  studySubjectsPerAssay[[i]] = getSubjectsForAssay(assayToken)
+}
+studyFeaturesWithData = sapply(studyFeatures, function(x) length(x) > 0)
+studyFeatures = rmNullObs(studyFeatures)
+studyFeaturesLong = melt(studyFeatures)
+colnames(studyFeaturesLong) = c("Value", "Property", "Feature", "Assay")
+studyFeaturesLong$Assay = assayNames[studyFeaturesWithData][studyFeaturesLong$Assay]
+studyFeaturesWide = dcast(data = studyFeaturesLong, formula = Assay + Feature ~ Property, value.var = "Value")
+
+names(studySubjectsPerAssay) = assayNames
+studySubjectsPerAssay = rmNullObs(studySubjectsPerAssay)
+
+#get all study data
+studyData = list()
+for (i in seq_along(assayTokens)){
+  assayToken = assayTokens[i]
+  studyData[[i]] = getMeasurementDataForAssay(assayToken)$measurements
+}
+names(studyData) = assayNames
+
+#studyData = melt(studyData[sapply(studyData, function(x) x$count > 0)])
+studyData = melt(studyData)
+colnames(studyData) = c("Value", "Subject", "SampleType", "SubjectGroup", "RelTime", "AbsTime", "EventGroup", "Variable", "Assay")
+
+```
+
