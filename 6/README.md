@@ -23,7 +23,15 @@ Tools Platform
 - A Galaxy workflow for genome annotation
 - A committed genome assembly community stemming from the interaction between ERGA, Galaxy and the VGP
 - Extended tutorials and guidelines for high-quality genome assembly using Galaxy workflows
-- Wrapping tools relevant for genome assembly/annotation for the Galaxy platform (IDEAS: fastK (planned replacement of meryl), instaGRAAL, BandageNG)
+  - [VGP longform tutorial (step-by-step, i.e., not using workflows, meant to be intro to genome assembly)](https://training.galaxyproject.org/training-material//topics/assembly/tutorials/vgp_genome_assembly/tutorial.html)
+  - [VGP short tutorial (workflow-focused)](https://training.galaxyproject.org/training-material/topics/assembly/tutorials/vgp_workflow_training/tutorial.html)
+  - in-development workflows housed on [Delphine's github](https://github.com/Delphine-L/iwc/tree/VGP/workflows/VGP-assembly-v2)
+- Wrapping tools relevant for genome assembly/annotation for the Galaxy platform
+  - [BandageNG](https://github.com/asl/BandageNG): no conda package
+  - [InstaGRAAL](https://github.com/koszullab/instaGRAAL): no conda package
+  - [FASTK](https://github.com/thegenemyers/FASTK/issues/10): not sure if conda package is up-to-date?
+  - [MultiQC](https://github.com/ewels/MultiQC) integrations: PRs open for [gfastats](https://github.com/ewels/MultiQC/pull/1699) and other [pipeline QC](https://github.com/ewels/MultiQC/pull/1641)
+  - open to ideas for other tools for assembly, assembly QC, and annotation! (e.g., https://github.com/nadegeguiglielmoni/genome_assembly_tools)
 
 ## Expected audience
 

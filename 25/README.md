@@ -1,8 +1,8 @@
 # Project 25: Scientific and technical enhancement of bioinformatics software metadata using the Tools Ecosystem open infrastructure
 
-## Contribution
+## Project home
 
-If you want to contribute to this project, see the contribution inscructions [here](https://github.com/elixir-europe/biohackathon-projects-2022/blob/main/25/Contributing.md).
+The project code has been moved to https://github.com/bio-tools/biohackathon2022, see you there for contributions!
 
 ## Abstract
 
