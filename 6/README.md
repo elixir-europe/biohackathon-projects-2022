@@ -33,6 +33,7 @@ Tools Platform
   - [MultiQC](https://github.com/ewels/MultiQC) integrations: PRs open for [gfastats](https://github.com/ewels/MultiQC/pull/1699) and other [pipeline QC](https://github.com/ewels/MultiQC/pull/1641)
   - [NextDenovo](https://github.com/Nextomics/NextDenovo): no conda package
   - [FCS](https://github.com/ncbi/fcs)
+  - [Ratatosk](https://github.com/DecodeGenetics/Ratatosk)
   - open to ideas for other tools for assembly, assembly QC, and annotation! (e.g., https://github.com/nadegeguiglielmoni/genome_assembly_tools)
 
 ## Expected audience
