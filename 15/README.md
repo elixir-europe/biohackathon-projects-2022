@@ -73,3 +73,46 @@ CINECA Synthetic Datasets
 
 **Number of expected hacking days**: 4 days
 
+## General information
+* [Collaborative working doc](https://docs.google.com/document/d/1h7__XPjPozKdUBsmCZ1r4jM4Kt_xjSG1ecKL23yo3ts/edit?usp=sharing) with essential information, resources, links, minutes, ...
+* Programme https://biohackathon-europe.org/programme.html
+
+
+## Reporting slides
+* [Presentation slide deck for day 1](https://docs.google.com/presentation/d/1lJJUtIMR-mE8Zza4Luq-xJtf1fAlQNWVFiRMNvWCVUQ/edit#slide=id.p1)
+* [Mid-way update]()
+* [Final]()
+
+## Communication
+* Communication via Slack: [#15_synthetichealthdata](https://biohackeu.slack.com/archives/C03GXH28EGP)
+* Daily meetings
+  * Two daily hybrid meetings:
+      * 09h CET
+      * 16h CET
+
+## Participants
+* Please put your affiliation details in the [participants doc](https://docs.google.com/document/d/1Wih12sebO10O4Zm0PAAUvmsQEN5GwZAXfPODsnhdhR8/edit?usp=sharing)
+
+## Game plan
+* Synthetic data generation workflow
+  * Design
+  * Development
+  * How to implement the evaluation of synthetic data produced
+  
+* Web interface
+  * Design
+  * Development
+  
+* Dockerization
+
+Related to the workflow:
+* Discussions on Evaluate repositories to publish the synthetic data
+* Discussions Metadata description
+  * DOME
+  * GA4GH
+* OpenEBench
+  * What evaluation metrics to use for synthetic data produced: start the discussion on this
+
+
+## BioHackrxiv paper
+* https://github.com/elixir-europe/biohackathon-projects-2022/tree/main/15/bhxiv
