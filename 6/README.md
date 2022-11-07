@@ -31,7 +31,7 @@ Tools Platform
   - [InstaGRAAL](https://github.com/koszullab/instaGRAAL): no conda package
   - [FASTK](https://github.com/thegenemyers/FASTK/issues/10): not sure if conda package is up-to-date?
   - [MultiQC](https://github.com/ewels/MultiQC) integrations: PRs open for [gfastats](https://github.com/ewels/MultiQC/pull/1699) and other [pipeline QC](https://github.com/ewels/MultiQC/pull/1641)
-  - open to ideas for other tools for assembly, assembly QC, and annotation! 
+  - open to ideas for other tools for assembly, assembly QC, and annotation! (e.g., https://github.com/nadegeguiglielmoni/genome_assembly_tools)
 
 ## Expected audience
 
