@@ -1,5 +1,9 @@
 # Project 27: Streamlining data brokering from RDM platforms to ELIXIR Repositories
 
+## Working Document
+
+Please ensure you read the working document [here](https://github.com/elixir-europe/biohackathon-projects-2022/blob/main/27/working_doc.md) where you can find helpful links to additional material, information on test data files and the Biohackathon project agenda. 
+
 ## Abstract
 
 Mobilizing data from data infrastructures to data deposition databases is an integral service that research data management (RDM) platforms could offer. However, brokering the heterogeneous mixture of scientific data requires systems that are compatible with the diverse (meta)data models of the different RDM platforms, and diverse submission routes of different target repositories.
