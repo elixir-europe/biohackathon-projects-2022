@@ -34,7 +34,6 @@ Tools Platform
   - [NextDenovo](https://github.com/Nextomics/NextDenovo): no conda package
   - [FCS](https://github.com/ncbi/fcs): Docker/Singularity
   - [Ratatosk](https://github.com/DecodeGenetics/Ratatosk): no conda package
-  - [RepeatMasker](http://www.repeatmasker.org/RepeatMasker/): [yes conda package](https://anaconda.org/bioconda/repeatmasker)
   - open to ideas for other tools for assembly, assembly QC, and annotation! (e.g., https://github.com/nadegeguiglielmoni/genome_assembly_tools)
 
 ## Expected audience
