@@ -21,10 +21,13 @@ println()
 for (i=1;i<=results.rowCount;i++) {
   compound = results.get(i, "compound")
   chebi = results.get(i, "chebi")
-  name = results.get(i, "name");
+  name = results.get(i, "name").replace("\"", "''")
   println "$compound a schema:MolecularEntity ; schema:name \"$name\" ;"
   formula = results.get(i, "formula"); if (formula != null) println "  schema:molecularFormula \"$formula\" ;"
-  smiles = results.get(i, "smiles"); if (smiles != null) println "  schema:smiles \"$smiles\" ;"
+  smiles = results.get(i, "smiles"); if (smiles != null) {
+    smiles = smiles.replace("\\", "\\\\")
+    println "  schema:smiles \"$smiles\" ;"
+  }
   inchikey = results.get(i, "inchikey"); if (inchikey != null) println "  schema:inChIKey \"$inchikey\" ;"
   println "  schema:sameAs <$chebi> ."
 }
