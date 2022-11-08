@@ -2,6 +2,7 @@
 library('httr')
 library('jsonlite')
 
+#adding links
 base <- "www.ebi.ac.uk/spot/zooma/v2/api"
 endpoint <- "/services/annotate"
 search_term <- '?propertyValue'
