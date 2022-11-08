@@ -11,6 +11,11 @@ FAIR Identifier Mapping, leading to PubChemLite (Project 27 BioHackathon 2019)
 Create metabolic and adverse outcome pathway models, which link better to other databases (Project 32 BioHackathon 2021)
 Extension and Continuous Integration of Cheminformatics Resources and Applications (Project 13, BioHackathon 2020)
 
+## Reporting
+
+- daily notes on HackMD.io, regular RO archive: https://gist.github.com/egonw/d10c0904387fcf8fab6ca5b0ce1c27f9
+- BioHackRxiv reporting, draft: https://github.com/egonw/biohackeu22-project26
+
 ## Topics
 
 Bioschemas
@@ -29,7 +34,9 @@ Denise Slenter: [GitHub](https://github.com/DeniseSl22) [ORCID](https://orcid.or
 
 - Evan Bolton: [GitHub]() [ORCID](https://orcid.org/0000-0002-5959-6190)
 - Emma Schymanski: [GitHub](https://github.com/schymane) [ORCID](https://orcid.org/0000-0001-6868-8145)
+- Anne Morgat
 - Egon Willighagen: [GitHub](https://github.com/egonw) [ORCID](https://orcid.org/0000-0001-7542-0286)
+- Anjana Elapavalore: [GitHub](https://github.com/anjuraj15)
 
 ## Expected outcomes
 
