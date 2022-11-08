@@ -1,0 +1,120 @@
+---
+title: "Nutrition Ontology - ZOOMA"
+author: "blacruz17"
+date: "08/11/2022"
+output: 
+  md_document:
+    variant: markdown_github
+always_allow_html: true
+---
+
+```{r setup, include=FALSE}
+library(ggplot2)
+library(jsonlite)
+library(httr)
+# library(MGnifyR)
+library(dplyr)
+library(tibble)
+```
+
+
+# Nutrition studies
+Here the user provides an input file. We will be using the example input from the DIME study. As of now, we will look into the food diaries.
+
+## User provides a path
+Here, we assume that the data is a CSV and that each food diary is found within the one folder. The user provides a path to the food diary where each individual dietary can be found within the folder.
+```{r}
+user_input_path = "DIME_nutrition_test/"
+```
+
+## Parse the data
+However, worth mentioning that as of now, Nutritics output a data that contains the food composition data on top of the individual food diaries based on the different
+
+### What the file normally look like
+The food diary can be found at the very bottom.
+```{r}
+read.csv("./1/DIME_nutrition_test/DIME_004_high_bioactive_11.11.21.csv")
+```
+
+### Read in the table
+```{r}
+individual_item = list()
+user_input_path <- "./1/DIME_nutrition_test/"
+for (i in list.files(user_input_path)){
+  name_i = gsub(".csv", "", i)
+  individual_item[[name_i]] = read.csv(file = paste0(user_input_path, i),
+                                          check.names = FALSE, 
+                                          na.strings = "")[c(grep("Diet L",read.csv(file = paste(user_input_path, i, sep = ""), check.names = FALSE)[,1]):dim(read.csv(file = paste(user_input_path, i, sep = ""), check.names = FALSE))[1]),1:3]
+}
+```
+
+Here is an example of what one of these table looks like.
+```{r}
+individual_item$DIME_004_Baseline_11.11.21
+```
+
+## User selects the column that contains the food data
+The shiny application will read in the data and the user will have to pick which is the one that works
+```{r}
+select_column = 1
+```
+
+
+## Copy all data into one long table
+Here we take all the data and combine them into one place.
+```{r}
+all_list = list()
+
+for (i in 1:length(individual_item)){
+  temp_file = na.exclude(individual_item[[i]])
+  
+  for (j in 1:(dim(temp_file)[1])){
+      all_list = append(all_list, temp_file[j,select_column])
+  }
+}
+```
+
+### Get a unique list
+```{r}
+unique_list = unique(all_list)
+```
+
+Convert into a data frame
+```{r}
+unique_list_df = data.frame(sapply(unique_list,c))
+names(unique_list_df) = "List"
+unique_list_df
+```
+
+# Sending the data to ZOOMA
+
+All the URLs need the same basic structure:
+```{r}
+base <- "www.ebi.ac.uk/spot/zooma/v2/api"
+endpoint <- "/services/annotate"
+common_url <- paste(base,endpoint,"?","propertyValue","=", sep="")
+
+inputTerm <- "Honey, raw" # rows from input dataframe
+food <- inputTerm %>% URLencode(reserved = TRUE)
+
+call1 <- paste(base,endpoint,"?","propertyValue","=", food, sep="")
+call1
+
+r <- GET(url = call1)
+
+food_text <- content(r, 'text')
+
+food_json <- fromJSON(food_text, flatten = TRUE)
+
+food_df <- as.data.frame(food_json)
+
+
+View(food_df)
+
+summary_result <- food_df[ , c('semanticTags',
+                               'confidence',
+                               'annotatedProperty.propertyValue')]
+
+summary_result$searchTerm <- inputTerm
+
+```
