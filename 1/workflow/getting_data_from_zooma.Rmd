@@ -1,6 +1,6 @@
 ---
 title: "Nutrition Ontology - ZOOMA"
-author: "blacruz17"
+author: "blacruz17, duygu"
 date: "08/11/2022"
 output: 
   md_document:
@@ -24,7 +24,13 @@ Here the user provides an input file. We will be using the example input from th
 ## User provides a path
 Here, we assume that the data is a CSV and that each food diary is found within the one folder. The user provides a path to the food diary where each individual dietary can be found within the folder.
 ```{r}
-user_input_path = "DIME_nutrition_test/"
+# set working environment to the location where current source file is saved into.
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))
+#setting working directory one higher level
+setwd('..')
+WORKDIR <- getwd()
+user_input_path = "DIME_nutrition_test"
+user_file = "DIME_004_Baseline_11.11.21.csv"
 ```
 
 ## Parse the data
@@ -33,13 +39,13 @@ However, worth mentioning that as of now, Nutritics output a data that contains 
 ### What the file normally look like
 The food diary can be found at the very bottom.
 ```{r}
-read.csv("./1/DIME_nutrition_test/DIME_004_high_bioactive_11.11.21.csv")
+#reading data from relevant directory
+data  <- read.csv(paste0(WORKDIR,"/",user_input_path,"/",user_file))
 ```
 
 ### Read in the table
 ```{r}
 individual_item = list()
-user_input_path <- "./1/DIME_nutrition_test/"
 for (i in list.files(user_input_path)){
   name_i = gsub(".csv", "", i)
   individual_item[[name_i]] = read.csv(file = paste0(user_input_path, i),
@@ -48,7 +54,7 @@ for (i in list.files(user_input_path)){
 }
 ```
 
-Here is an example of what one of these table looks like.
+## Here is an example of what one of these table looks like.
 ```{r}
 individual_item$DIME_004_Baseline_11.11.21
 ```
