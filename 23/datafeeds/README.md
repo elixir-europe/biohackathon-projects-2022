@@ -14,4 +14,4 @@ Two Well Known URLs can be used for site-wide discovery of feed URLs, at the dom
 
 ## Example responses
 
-Example responses for [`feeddata-general`](23/datafeeds/feeddata-general.jsonld) and [`feeddata-toc`](23/datafeeds/feeddata-toc.jsonld).
+Example responses for [`feeddata-general`](feeddata-general.jsonld) and [`feeddata-toc`](feeddata-toc.jsonld).
