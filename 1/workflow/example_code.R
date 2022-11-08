@@ -2,14 +2,15 @@
 library('httr')
 library('jsonlite')
 
+# Documentation:
+# https://www.ebi.ac.uk/spot/zooma/docs/api
+
 #adding links
 base <- "www.ebi.ac.uk/spot/zooma/v2/api"
 endpoint <- "/services/annotate"
-search_term <- '?propertyValue'
-ontology_filter <- 'propertyType'
 
-food <- "honey raw" # 'Honey, raw'
-
+inputTerm <- "Honey, raw" # rows from input dataframe
+food <- inputTerm %>% URLencode(reserved = TRUE)
 
 call1 <- paste(base,endpoint,"?","propertyValue","=", food, sep="")
 call1
@@ -29,7 +30,7 @@ summary_result <- food_df[ , c('semanticTags',
                                'confidence',
                                'annotatedProperty.propertyValue')]
 
-summary_result$searchTerm <- 'honey, raw'
+summary_result$searchTerm <- inputTerm
 
 # for each row we need to lowercase and then convert the ', ' into a '+' sign
 # i.e. from "Honey, raw" to "honey+raw"
