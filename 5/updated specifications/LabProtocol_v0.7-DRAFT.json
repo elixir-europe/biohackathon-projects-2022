@@ -12,7 +12,7 @@
         {
             "@id": "bioschemas:LabProtocol",
             "@type": "rdfs:Class",
-            "rdfs:comment": "Bioschemas profile describing a LabProtocol in Life Sciences. An experimental LabProtocol is a sequence of tasks and operations executed to perform experimental research in biological and biomedical areas. This LabProtocol profile specification presents the markup for describing a LabProtocol type according to Bioschemas. An experimental LabProtocol is a sequence of tasks and operations executed to perform experimental research in biological and biomedical areas.<h4>Summary of Changes</h4>    Changes since previous draft 0.5 of the LabProtocols profile:    <ul>      <li>Keywords range updated as per changes on schema.org</li>    </ul> Version: 0.6-DRAFT-2020_12_08",
+            "rdfs:comment": "Bioschemas profile describing a LabProtocol in Life Sciences. An experimental LabProtocol is a sequence of tasks and operations executed to perform experimental research in biological and biomedical areas. This LabProtocol profile specification presents the markup for describing a LabProtocol type according to Bioschemas. An experimental LabProtocol is a sequence of tasks and operations executed to perform experimental research in biological and biomedical areas.<h4>Summary of Changes</h4>    Changes since previous draft 0.5 of the LabProtocols profile:    <ul>       <li>added sameAs property as recommended</li>    </ul> Version: 0.7-DRAFT",
             "schema:schemaVersion": [
                 "https://bioschemas.org/profiles/LabProtocol/0.6-DRAFT-2020_12_08"
             ],
