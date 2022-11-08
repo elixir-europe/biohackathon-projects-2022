@@ -83,10 +83,12 @@ for (i in 1:length(individual_item)){
 unique_list = unique(all_list)
 ```
 
-Convert into a data frame
+Convert into a data frame and remove the sanitised encoding file.
 ```{r}
 unique_list_df = data.frame(sapply(unique_list,c))
 names(unique_list_df) = "List"
+unique_list_df$List = iconv(unique_list_df$List, to='ASCII//TRANSLIT')
 unique_list_df
 ```
+
 
