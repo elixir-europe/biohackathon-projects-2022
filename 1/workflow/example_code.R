@@ -88,3 +88,33 @@ results_df <- results_df %>% relocate(searchTerm)
 
 # done! we can take a look...
 View(results_df)
+
+# now we need to select 1 row per food item
+# - the user will do this. but for now, let's do a dummy
+#   "selected results" table  so we can keep on working
+# this only has 1 row per searchTerm:
+results_selection <- results_df %>% 
+  group_by(searchTerm) %>% 
+  slice(1) %>%
+  ungroup() %>%
+  rename(foodItem = searchTerm)
+
+# the user provides a file like:
+dime_file <- read_csv("1/DIME_nutrition_test/DIME_004_Baseline_11.11.21.csv")
+
+# food items are on the 1st column (called 'Item'):
+dime_file <- dime_file %>% rename(foodItem = Item)
+
+# now it would be nice to join and only keep the rows that matched:
+# this is nice bc it keeps NA's (i.e. foods that were not found on ZOOMA)
+# but it also removes all of the extra information we don't care about now
+final_output <- inner_join(dime_file, 
+                           results_selection, 
+                           by = "foodItem") %>%
+                select(where(~ !(all(is.na(.))))) # removes empty columns
+
+# an alternative - keeping all the information (we said we didn't want this):
+# final_output_b <- full_join(dime_file, 
+#                            results_selection, 
+#                            by = "foodItem") %>%
+#                   select(where(~ !(all(is.na(.)))))
