@@ -26,6 +26,12 @@ unique_list_df <- unique_list_df %>%
 required_sources <- c() 
 required_ontologies <- c('foodon')
 
+# to get the complete list of ontologies and databases:
+r <- GET(url = paste0(base, "/sources"))
+r_text <- content(r, 'text')
+r_json <- fromJSON(r_text, flatten = TRUE)
+sources_df <- as.data.frame(r_json)
+
 # we need this to be formatted in a specific way:
 if (length(required_sources) > 0){
   format_sources <- paste0('[', paste(required_sources, collapse = ','), ']')
