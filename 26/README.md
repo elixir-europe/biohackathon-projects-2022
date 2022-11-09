@@ -36,7 +36,7 @@ Denise Slenter: [GitHub](https://github.com/DeniseSl22) [ORCID](https://orcid.or
 - Emma Schymanski: [GitHub](https://github.com/schymane) [ORCID](https://orcid.org/0000-0001-6868-8145)
 - Anne Morgat: [GitHub](https://github.com/amorgat)
 - Egon Willighagen: [GitHub](https://github.com/egonw) [ORCID](https://orcid.org/0000-0001-7542-0286)
-- Anjana Elapavalore: [GitHub](https://github.com/anjuraj15) [ORCID](https://orcid.org/0000-0001-7542-0286)
+- Anjana Elapavalore: [GitHub](https://github.com/anjuraj15) [ORCID](https://orcid.org/0000-0002-0295-6618)
 - Dominik Martinát: [GitHub](https://github.com/DominikMartinat) [ORCID](https://orcid.org/0000-0001-6611-7883)
 
 ## Expected outcomes
