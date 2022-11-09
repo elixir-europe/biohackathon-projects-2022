@@ -1,0 +1,1541 @@
+ONTOLOGY SOURCE REFERENCE
+Term Source Name
+Term Source File
+Term Source Version
+Term Source Description
+INVESTIGATION
+Investigation Identifier	aHR0cHM6Ly9kb2kub3JnLzEwLjE1NDU0L0lBU1NUTg==
+Investigation Title	Drops Phenotyping Network
+Investigation Description	NA in endpoint
+Investigation Submission Date	NA in BrAPI
+Investigation Public Release Date	NA in BrAPI
+Comment[License]	NA in BrAPI
+Comment[MIAPPE version]	1.1
+INVESTIGATION PUBLICATIONS
+Investigation PubMed ID	
+Investigation Publication DOI	NA in endpoint
+Investigation Publication Author List	
+Investigation Publication Title	
+Investigation Publication Status	NA in endpoint
+Investigation Publication Status Term Accession Number	
+Investigation Publication Status Term Source REF	
+INVESTIGATION CONTACTS
+Investigation Person Last Name	WELCKER	MILLET	TARDIEU
+Investigation Person First Name	Claude	Emilie	François
+Investigation Person Mid Initials			
+Investigation Person Email	claude.welcker@inrae.fr	emilie.millet@wur.nl	francois.tardieu@inrae.fr
+Investigation Person Phone			
+Investigation Person Fax			
+Investigation Person Address	NA in BrAPI	NA in BrAPI	NA in BrAPI
+Investigation Person Affiliation	GCIE - UE Grandes Cultures, Innovation, Environnement	Wageningen University and Research	GCIE - UE Grandes Cultures, Innovation, Environnement
+Investigation Person Roles	Submitter	Submitter	Submitter
+Investigation Person Roles Term Accession Number			
+Investigation Person Roles Term Source REF			
+STUDY
+Study Identifier	dXJuOlVSR0kvc3R1ZHkvQm9sMTI=
+Study Title	University_of_Bologna Cadriano 2012
+Study Description	NA in endpoint
+Study Submission Date	
+Study Public Release Date	
+Study File Name	s_dXJuOlVSR0kvc3R1ZHkvQm9sMTI=.txt
+Comment[Description of Growth Facility]	NA in BrAPI
+Comment[Study Altitude]	5.0
+Comment[Study Contact Institution]	NA in BrAPI
+Comment[Study Country]	IT
+Comment[Study End Date]	2012-08-29
+Comment[Study Experimental Site]	Bologna
+Comment[Study Latitude]	44.9333333333333
+Comment[Study Longitude]	11.8833333333333
+Comment[Study Start Date]	2012-05-17
+Comment[Trait Definition File]	t_dXJuOlVSR0kvc3R1ZHkvQm9sMTI=.txt
+Comment[Type of Growth Facility]	NA in BrAPI
+STUDY DESIGN DESCRIPTORS
+Study Design Type	Phenotyping Study
+Study Design Type Term Accession Number	
+Study Design Type Term Source REF	
+Comment[Study Design Description]	NA in BrAPI
+Comment[Observation Unit Level Hierarchy]	NA in BrAPI
+Comment[Observation Unit Description]	NA in BrAPI
+Comment[Map of Experimental Design]	NA in BrAPI
+STUDY PUBLICATIONS
+Study PubMed ID
+Study Publication DOI
+Study Publication Author List
+Study Publication Title
+Study Publication Status
+Study Publication Status Term Accession Number
+Study Publication Status Term Source REF
+STUDY FACTORS
+Study Factor Name	water_regime
+Study Factor Type	water_regime
+Study Factor Type Term Accession Number	
+Study Factor Type Term Source REF	
+Comment[Study Factor Values]	watered;rainfed
+Comment[Study Factor Description]	NA in BrAPI
+STUDY ASSAYS
+Study Assay File Name	a_dXJuOlVSR0kvc3R1ZHkvQm9sMTI=_virtual_trial.txt	a_dXJuOlVSR0kvc3R1ZHkvQm9sMTI=_replicate>block>plot.txt	a_dXJuOlVSR0kvc3R1ZHkvQm9sMTI=_replicate>block>plot>plant.txt
+Study Assay Measurement Type	phenotyping	phenotyping	phenotyping
+Study Assay Measurement Type Term Accession Number			
+Study Assay Measurement Type Term Source REF			
+Study Assay Technology Type	virtual_trial level analysis	replicate>block>plot level analysis	replicate>block>plot>plant level analysis
+Study Assay Technology Type Term Accession Number			
+Study Assay Technology Type Term Source REF			
+Study Assay Technology Platform			
+STUDY PROTOCOLS
+Study Protocol Name	Phenotyping	Growth	Data Transformation
+Study Protocol Type	Phenotyping	Growth	Data Transformation
+Study Protocol Type Term Accession Number			
+Study Protocol Type Term Source REF			
+Study Protocol Description			
+Study Protocol URI			
+Study Protocol Version			
+Study Protocol Parameters Name			
+Study Protocol Parameters Name Term Accession Number			
+Study Protocol Parameters Name Term Source REF			
+Study Protocol Components Name			
+Study Protocol Components Type			
+Study Protocol Components Type Term Accession Number			
+Study Protocol Components Type Term Source REF			
+STUDY CONTACTS
+Study Person Last Name	WELCKER	MILLET	TARDIEU
+Study Person First Name	Claude	Emilie	François
+Study Person Mid Initials			
+Study Person Email	claude.welcker@inrae.fr	emilie.millet@wur.nl	francois.tardieu@inrae.fr
+Study Person Phone			
+Study Person Fax			
+Study Person Address	NA in BrAPI	NA in BrAPI	NA in BrAPI
+Study Person Affiliation	NA in endpoint	NA in endpoint	NA in endpoint
+Study Person Roles	Submitter	Submitter	Submitter
+Study Person Roles Term Accession Number			
+Study Person Roles Term Source REF			
+STUDY
+Study Identifier	dXJuOlVSR0kvc3R1ZHkvQ2FtMTE=
+Study Title	Syngenta Campagnola 2011
+Study Description	NA in endpoint
+Study Submission Date	
+Study Public Release Date	
+Study File Name	s_dXJuOlVSR0kvc3R1ZHkvQ2FtMTE=.txt
+Comment[Description of Growth Facility]	NA in BrAPI
+Comment[Study Altitude]	49.0
+Comment[Study Contact Institution]	NA in BrAPI
+Comment[Study Country]	IT
+Comment[Study Data File Description]	xlsx
+Comment[Study Data File Link]	https://urgi.versailles.inrae.fr/files/ephesis/Cam11/Campagnola_2011_WeatherSoil.xlsx
+Comment[Study Data File Version]	NA in BrAPI
+Comment[Study End Date]	2011-10-04
+Comment[Study Experimental Site]	Campagnola
+Comment[Study Latitude]	45.17102
+Comment[Study Longitude]	9.53224
+Comment[Study Start Date]	2011-05-10
+Comment[Trait Definition File]	t_dXJuOlVSR0kvc3R1ZHkvQ2FtMTE=.txt
+Comment[Type of Growth Facility]	NA in BrAPI
+STUDY DESIGN DESCRIPTORS
+Study Design Type	Phenotyping Study
+Study Design Type Term Accession Number	
+Study Design Type Term Source REF	
+Comment[Study Design Description]	NA in BrAPI
+Comment[Observation Unit Level Hierarchy]	NA in BrAPI
+Comment[Observation Unit Description]	NA in BrAPI
+Comment[Map of Experimental Design]	NA in BrAPI
+STUDY PUBLICATIONS
+Study PubMed ID
+Study Publication DOI
+Study Publication Author List
+Study Publication Title
+Study Publication Status
+Study Publication Status Term Accession Number
+Study Publication Status Term Source REF
+STUDY FACTORS
+Study Factor Name	water_regime
+Study Factor Type	water_regime
+Study Factor Type Term Accession Number	
+Study Factor Type Term Source REF	
+Comment[Study Factor Values]	rainfed;watered
+Comment[Study Factor Description]	NA in BrAPI
+STUDY ASSAYS
+Study Assay File Name	a_dXJuOlVSR0kvc3R1ZHkvQ2FtMTE=_replicate>block>plot.txt	a_dXJuOlVSR0kvc3R1ZHkvQ2FtMTE=_virtual_trial.txt
+Study Assay Measurement Type	phenotyping	phenotyping
+Study Assay Measurement Type Term Accession Number		
+Study Assay Measurement Type Term Source REF		
+Study Assay Technology Type	replicate>block>plot level analysis	virtual_trial level analysis
+Study Assay Technology Type Term Accession Number		
+Study Assay Technology Type Term Source REF		
+Study Assay Technology Platform		
+STUDY PROTOCOLS
+Study Protocol Name	Phenotyping	Growth	Data Transformation
+Study Protocol Type	Phenotyping	Growth	Data Transformation
+Study Protocol Type Term Accession Number			
+Study Protocol Type Term Source REF			
+Study Protocol Description			
+Study Protocol URI			
+Study Protocol Version			
+Study Protocol Parameters Name			
+Study Protocol Parameters Name Term Accession Number			
+Study Protocol Parameters Name Term Source REF			
+Study Protocol Components Name			
+Study Protocol Components Type			
+Study Protocol Components Type Term Accession Number			
+Study Protocol Components Type Term Source REF			
+STUDY CONTACTS
+Study Person Last Name	WELCKER	MILLET	TARDIEU
+Study Person First Name	Claude	Emilie	François
+Study Person Mid Initials			
+Study Person Email	claude.welcker@inrae.fr	emilie.millet@wur.nl	francois.tardieu@inrae.fr
+Study Person Phone			
+Study Person Fax			
+Study Person Address	NA in BrAPI	NA in BrAPI	NA in BrAPI
+Study Person Affiliation	NA in endpoint	NA in endpoint	NA in endpoint
+Study Person Roles	Submitter	Submitter	Submitter
+Study Person Roles Term Accession Number			
+Study Person Roles Term Source REF			
+STUDY
+Study Identifier	dXJuOlVSR0kvc3R1ZHkvQ2FtMTI=
+Study Title	Syngenta Campagnola 2012
+Study Description	NA in endpoint
+Study Submission Date	
+Study Public Release Date	
+Study File Name	s_dXJuOlVSR0kvc3R1ZHkvQ2FtMTI=.txt
+Comment[Description of Growth Facility]	NA in BrAPI
+Comment[Study Altitude]	49.0
+Comment[Study Contact Institution]	NA in BrAPI
+Comment[Study Country]	IT
+Comment[Study Data File Description]	xlsx
+Comment[Study Data File Link]	https://urgi.versailles.inrae.fr/files/ephesis/Cam12/campagnola_2012_WeatherSoil.xlsx
+Comment[Study Data File Version]	NA in BrAPI
+Comment[Study End Date]	2012-10-04
+Comment[Study Experimental Site]	Campagnola
+Comment[Study Latitude]	45.17102
+Comment[Study Longitude]	9.53224
+Comment[Study Start Date]	2012-05-17
+Comment[Trait Definition File]	t_dXJuOlVSR0kvc3R1ZHkvQ2FtMTI=.txt
+Comment[Type of Growth Facility]	NA in BrAPI
+STUDY DESIGN DESCRIPTORS
+Study Design Type	Phenotyping Study
+Study Design Type Term Accession Number	
+Study Design Type Term Source REF	
+Comment[Study Design Description]	NA in BrAPI
+Comment[Observation Unit Level Hierarchy]	NA in BrAPI
+Comment[Observation Unit Description]	NA in BrAPI
+Comment[Map of Experimental Design]	NA in BrAPI
+STUDY PUBLICATIONS
+Study PubMed ID
+Study Publication DOI
+Study Publication Author List
+Study Publication Title
+Study Publication Status
+Study Publication Status Term Accession Number
+Study Publication Status Term Source REF
+STUDY FACTORS
+Study Factor Name	water_regime
+Study Factor Type	water_regime
+Study Factor Type Term Accession Number	
+Study Factor Type Term Source REF	
+Comment[Study Factor Values]	rainfed;watered
+Comment[Study Factor Description]	NA in BrAPI
+STUDY ASSAYS
+Study Assay File Name	a_dXJuOlVSR0kvc3R1ZHkvQ2FtMTI=_virtual_trial.txt	a_dXJuOlVSR0kvc3R1ZHkvQ2FtMTI=_replicate>block>plot.txt	a_dXJuOlVSR0kvc3R1ZHkvQ2FtMTI=_replicate>block>plot>plant.txt
+Study Assay Measurement Type	phenotyping	phenotyping	phenotyping
+Study Assay Measurement Type Term Accession Number			
+Study Assay Measurement Type Term Source REF			
+Study Assay Technology Type	virtual_trial level analysis	replicate>block>plot level analysis	replicate>block>plot>plant level analysis
+Study Assay Technology Type Term Accession Number			
+Study Assay Technology Type Term Source REF			
+Study Assay Technology Platform			
+STUDY PROTOCOLS
+Study Protocol Name	Phenotyping	Growth	Data Transformation
+Study Protocol Type	Phenotyping	Growth	Data Transformation
+Study Protocol Type Term Accession Number			
+Study Protocol Type Term Source REF			
+Study Protocol Description			
+Study Protocol URI			
+Study Protocol Version			
+Study Protocol Parameters Name			
+Study Protocol Parameters Name Term Accession Number			
+Study Protocol Parameters Name Term Source REF			
+Study Protocol Components Name			
+Study Protocol Components Type			
+Study Protocol Components Type Term Accession Number			
+Study Protocol Components Type Term Source REF			
+STUDY CONTACTS
+Study Person Last Name	WELCKER	MILLET	TARDIEU
+Study Person First Name	Claude	Emilie	François
+Study Person Mid Initials			
+Study Person Email	claude.welcker@inrae.fr	emilie.millet@wur.nl	francois.tardieu@inrae.fr
+Study Person Phone			
+Study Person Fax			
+Study Person Address	NA in BrAPI	NA in BrAPI	NA in BrAPI
+Study Person Affiliation	NA in endpoint	NA in endpoint	NA in endpoint
+Study Person Roles	Submitter	Submitter	Submitter
+Study Person Roles Term Accession Number			
+Study Person Roles Term Source REF			
+STUDY
+Study Identifier	dXJuOlVSR0kvc3R1ZHkvQ2FtMTM=
+Study Title	Syngenta Campagnola 2013
+Study Description	NA in endpoint
+Study Submission Date	
+Study Public Release Date	
+Study File Name	s_dXJuOlVSR0kvc3R1ZHkvQ2FtMTM=.txt
+Comment[Description of Growth Facility]	NA in BrAPI
+Comment[Study Altitude]	49.0
+Comment[Study Contact Institution]	NA in BrAPI
+Comment[Study Country]	IT
+Comment[Study Data File Description]	xlsx
+Comment[Study Data File Link]	https://urgi.versailles.inrae.fr/files/ephesis/Cam13/campagnola_2013_WeatherSoil.xlsx
+Comment[Study Data File Version]	NA in BrAPI
+Comment[Study End Date]	2013-11-13
+Comment[Study Experimental Site]	Campagnola
+Comment[Study Latitude]	45.17102
+Comment[Study Longitude]	9.53224
+Comment[Study Start Date]	2013-06-14
+Comment[Trait Definition File]	t_dXJuOlVSR0kvc3R1ZHkvQ2FtMTM=.txt
+Comment[Type of Growth Facility]	NA in BrAPI
+STUDY DESIGN DESCRIPTORS
+Study Design Type	Phenotyping Study
+Study Design Type Term Accession Number	
+Study Design Type Term Source REF	
+Comment[Study Design Description]	NA in BrAPI
+Comment[Observation Unit Level Hierarchy]	NA in BrAPI
+Comment[Observation Unit Description]	NA in BrAPI
+Comment[Map of Experimental Design]	NA in BrAPI
+STUDY PUBLICATIONS
+Study PubMed ID
+Study Publication DOI
+Study Publication Author List
+Study Publication Title
+Study Publication Status
+Study Publication Status Term Accession Number
+Study Publication Status Term Source REF
+STUDY FACTORS
+Study Factor Name	water_regime
+Study Factor Type	water_regime
+Study Factor Type Term Accession Number	
+Study Factor Type Term Source REF	
+Comment[Study Factor Values]	watered;rainfed
+Comment[Study Factor Description]	NA in BrAPI
+STUDY ASSAYS
+Study Assay File Name	a_dXJuOlVSR0kvc3R1ZHkvQ2FtMTM=_virtual_trial.txt	a_dXJuOlVSR0kvc3R1ZHkvQ2FtMTM=_replicate>block>plot.txt	a_dXJuOlVSR0kvc3R1ZHkvQ2FtMTM=_replicate>block>plot>plant.txt
+Study Assay Measurement Type	phenotyping	phenotyping	phenotyping
+Study Assay Measurement Type Term Accession Number			
+Study Assay Measurement Type Term Source REF			
+Study Assay Technology Type	virtual_trial level analysis	replicate>block>plot level analysis	replicate>block>plot>plant level analysis
+Study Assay Technology Type Term Accession Number			
+Study Assay Technology Type Term Source REF			
+Study Assay Technology Platform			
+STUDY PROTOCOLS
+Study Protocol Name	Phenotyping	Growth	Data Transformation
+Study Protocol Type	Phenotyping	Growth	Data Transformation
+Study Protocol Type Term Accession Number			
+Study Protocol Type Term Source REF			
+Study Protocol Description			
+Study Protocol URI			
+Study Protocol Version			
+Study Protocol Parameters Name			
+Study Protocol Parameters Name Term Accession Number			
+Study Protocol Parameters Name Term Source REF			
+Study Protocol Components Name			
+Study Protocol Components Type			
+Study Protocol Components Type Term Accession Number			
+Study Protocol Components Type Term Source REF			
+STUDY CONTACTS
+Study Person Last Name	WELCKER	MILLET	TARDIEU
+Study Person First Name	Claude	Emilie	François
+Study Person Mid Initials			
+Study Person Email	claude.welcker@inrae.fr	emilie.millet@wur.nl	francois.tardieu@inrae.fr
+Study Person Phone			
+Study Person Fax			
+Study Person Address	NA in BrAPI	NA in BrAPI	NA in BrAPI
+Study Person Affiliation	NA in endpoint	NA in endpoint	NA in endpoint
+Study Person Roles	Submitter	Submitter	Submitter
+Study Person Roles Term Accession Number			
+Study Person Roles Term Source REF			
+STUDY
+Study Identifier	dXJuOlVSR0kvc3R1ZHkvQ3JhMTI=
+Study Title	KWS Caracal 2012
+Study Description	NA in endpoint
+Study Submission Date	
+Study Public Release Date	
+Study File Name	s_dXJuOlVSR0kvc3R1ZHkvQ3JhMTI=.txt
+Comment[Description of Growth Facility]	NA in BrAPI
+Comment[Study Altitude]	101.0
+Comment[Study Contact Institution]	NA in BrAPI
+Comment[Study Country]	RO
+Comment[Study Data File Description]	xlsx
+Comment[Study Data File Link]	https://urgi.versailles.inrae.fr/files/ephesis/Car12/caracal_2012_WeatherSoil.xlsx
+Comment[Study Data File Version]	NA in BrAPI
+Comment[Study End Date]	2012-09-18
+Comment[Study Experimental Site]	Craiova
+Comment[Study Latitude]	44.115568
+Comment[Study Longitude]	24.347763
+Comment[Study Start Date]	2012-05-21
+Comment[Trait Definition File]	t_dXJuOlVSR0kvc3R1ZHkvQ3JhMTI=.txt
+Comment[Type of Growth Facility]	NA in BrAPI
+STUDY DESIGN DESCRIPTORS
+Study Design Type	Phenotyping Study
+Study Design Type Term Accession Number	
+Study Design Type Term Source REF	
+Comment[Study Design Description]	NA in BrAPI
+Comment[Observation Unit Level Hierarchy]	NA in BrAPI
+Comment[Observation Unit Description]	NA in BrAPI
+Comment[Map of Experimental Design]	NA in BrAPI
+STUDY PUBLICATIONS
+Study PubMed ID
+Study Publication DOI
+Study Publication Author List
+Study Publication Title
+Study Publication Status
+Study Publication Status Term Accession Number
+Study Publication Status Term Source REF
+STUDY FACTORS
+Study Factor Name	water_regime
+Study Factor Type	water_regime
+Study Factor Type Term Accession Number	
+Study Factor Type Term Source REF	
+Comment[Study Factor Values]	rainfed;watered
+Comment[Study Factor Description]	NA in BrAPI
+STUDY ASSAYS
+Study Assay File Name	a_dXJuOlVSR0kvc3R1ZHkvQ3JhMTI=_virtual_trial.txt	a_dXJuOlVSR0kvc3R1ZHkvQ3JhMTI=_replicate>block>plot.txt	a_dXJuOlVSR0kvc3R1ZHkvQ3JhMTI=_replicate>block>plot>plant.txt
+Study Assay Measurement Type	phenotyping	phenotyping	phenotyping
+Study Assay Measurement Type Term Accession Number			
+Study Assay Measurement Type Term Source REF			
+Study Assay Technology Type	virtual_trial level analysis	replicate>block>plot level analysis	replicate>block>plot>plant level analysis
+Study Assay Technology Type Term Accession Number			
+Study Assay Technology Type Term Source REF			
+Study Assay Technology Platform			
+STUDY PROTOCOLS
+Study Protocol Name	Phenotyping	Growth	Data Transformation
+Study Protocol Type	Phenotyping	Growth	Data Transformation
+Study Protocol Type Term Accession Number			
+Study Protocol Type Term Source REF			
+Study Protocol Description			
+Study Protocol URI			
+Study Protocol Version			
+Study Protocol Parameters Name			
+Study Protocol Parameters Name Term Accession Number			
+Study Protocol Parameters Name Term Source REF			
+Study Protocol Components Name			
+Study Protocol Components Type			
+Study Protocol Components Type Term Accession Number			
+Study Protocol Components Type Term Source REF			
+STUDY CONTACTS
+Study Person Last Name	WELCKER	MILLET	TARDIEU
+Study Person First Name	Claude	Emilie	François
+Study Person Mid Initials			
+Study Person Email	claude.welcker@inrae.fr	emilie.millet@wur.nl	francois.tardieu@inrae.fr
+Study Person Phone			
+Study Person Fax			
+Study Person Address	NA in BrAPI	NA in BrAPI	NA in BrAPI
+Study Person Affiliation	NA in endpoint	NA in endpoint	NA in endpoint
+Study Person Roles	Submitter	Submitter	Submitter
+Study Person Roles Term Accession Number			
+Study Person Roles Term Source REF			
+STUDY
+Study Identifier	dXJuOlVSR0kvc3R1ZHkvRGViMTE=
+Study Title	Syngenta Debrecen 2011
+Study Description	NA in endpoint
+Study Submission Date	
+Study Public Release Date	
+Study File Name	s_dXJuOlVSR0kvc3R1ZHkvRGViMTE=.txt
+Comment[Description of Growth Facility]	NA in BrAPI
+Comment[Study Contact Institution]	NA in BrAPI
+Comment[Study Country]	HU
+Comment[Study Data File Description]	xlsx
+Comment[Study Data File Link]	https://urgi.versailles.inrae.fr/files/ephesis/Deb11/Debrecen_2011_WeatherSoil.xlsx
+Comment[Study Data File Version]	NA in BrAPI
+Comment[Study End Date]	2011-10-11
+Comment[Study Experimental Site]	Debrecen
+Comment[Study Latitude]	47.53
+Comment[Study Longitude]	21.55
+Comment[Study Start Date]	2011-05-13
+Comment[Trait Definition File]	t_dXJuOlVSR0kvc3R1ZHkvRGViMTE=.txt
+Comment[Type of Growth Facility]	NA in BrAPI
+STUDY DESIGN DESCRIPTORS
+Study Design Type	Phenotyping Study
+Study Design Type Term Accession Number	
+Study Design Type Term Source REF	
+Comment[Study Design Description]	NA in BrAPI
+Comment[Observation Unit Level Hierarchy]	NA in BrAPI
+Comment[Observation Unit Description]	NA in BrAPI
+Comment[Map of Experimental Design]	NA in BrAPI
+STUDY PUBLICATIONS
+Study PubMed ID
+Study Publication DOI
+Study Publication Author List
+Study Publication Title
+Study Publication Status
+Study Publication Status Term Accession Number
+Study Publication Status Term Source REF
+STUDY FACTORS
+Study Factor Name	water_regime
+Study Factor Type	water_regime
+Study Factor Type Term Accession Number	
+Study Factor Type Term Source REF	
+Comment[Study Factor Values]	watered;rainfed
+Comment[Study Factor Description]	NA in BrAPI
+STUDY ASSAYS
+Study Assay File Name	a_dXJuOlVSR0kvc3R1ZHkvRGViMTE=_replicate>block>plot.txt	a_dXJuOlVSR0kvc3R1ZHkvRGViMTE=_virtual_trial.txt
+Study Assay Measurement Type	phenotyping	phenotyping
+Study Assay Measurement Type Term Accession Number		
+Study Assay Measurement Type Term Source REF		
+Study Assay Technology Type	replicate>block>plot level analysis	virtual_trial level analysis
+Study Assay Technology Type Term Accession Number		
+Study Assay Technology Type Term Source REF		
+Study Assay Technology Platform		
+STUDY PROTOCOLS
+Study Protocol Name	Phenotyping	Growth	Data Transformation
+Study Protocol Type	Phenotyping	Growth	Data Transformation
+Study Protocol Type Term Accession Number			
+Study Protocol Type Term Source REF			
+Study Protocol Description			
+Study Protocol URI			
+Study Protocol Version			
+Study Protocol Parameters Name			
+Study Protocol Parameters Name Term Accession Number			
+Study Protocol Parameters Name Term Source REF			
+Study Protocol Components Name			
+Study Protocol Components Type			
+Study Protocol Components Type Term Accession Number			
+Study Protocol Components Type Term Source REF			
+STUDY CONTACTS
+Study Person Last Name	WELCKER	MILLET	TARDIEU
+Study Person First Name	Claude	Emilie	François
+Study Person Mid Initials			
+Study Person Email	claude.welcker@inrae.fr	emilie.millet@wur.nl	francois.tardieu@inrae.fr
+Study Person Phone			
+Study Person Fax			
+Study Person Address	NA in BrAPI	NA in BrAPI	NA in BrAPI
+Study Person Affiliation	NA in endpoint	NA in endpoint	NA in endpoint
+Study Person Roles	Submitter	Submitter	Submitter
+Study Person Roles Term Accession Number			
+Study Person Roles Term Source REF			
+STUDY
+Study Identifier	dXJuOlVSR0kvc3R1ZHkvRGViMTI=
+Study Title	Syngenta Debrecen 2012
+Study Description	NA in endpoint
+Study Submission Date	
+Study Public Release Date	
+Study File Name	s_dXJuOlVSR0kvc3R1ZHkvRGViMTI=.txt
+Comment[Description of Growth Facility]	NA in BrAPI
+Comment[Study Contact Institution]	NA in BrAPI
+Comment[Study Country]	HU
+Comment[Study Data File Description]	xlsx
+Comment[Study Data File Link]	https://urgi.versailles.inrae.fr/files/ephesis/Deb12/debrecen_2012_WeatherSoil.xlsx
+Comment[Study Data File Version]	NA in BrAPI
+Comment[Study End Date]	2012-10-05
+Comment[Study Experimental Site]	Debrecen
+Comment[Study Latitude]	47.53
+Comment[Study Longitude]	21.55
+Comment[Study Start Date]	2012-05-21
+Comment[Trait Definition File]	t_dXJuOlVSR0kvc3R1ZHkvRGViMTI=.txt
+Comment[Type of Growth Facility]	NA in BrAPI
+STUDY DESIGN DESCRIPTORS
+Study Design Type	Phenotyping Study
+Study Design Type Term Accession Number	
+Study Design Type Term Source REF	
+Comment[Study Design Description]	NA in BrAPI
+Comment[Observation Unit Level Hierarchy]	NA in BrAPI
+Comment[Observation Unit Description]	NA in BrAPI
+Comment[Map of Experimental Design]	NA in BrAPI
+STUDY PUBLICATIONS
+Study PubMed ID
+Study Publication DOI
+Study Publication Author List
+Study Publication Title
+Study Publication Status
+Study Publication Status Term Accession Number
+Study Publication Status Term Source REF
+STUDY FACTORS
+Study Factor Name	water_regime
+Study Factor Type	water_regime
+Study Factor Type Term Accession Number	
+Study Factor Type Term Source REF	
+Comment[Study Factor Values]	rainfed;watered
+Comment[Study Factor Description]	NA in BrAPI
+STUDY ASSAYS
+Study Assay File Name	a_dXJuOlVSR0kvc3R1ZHkvRGViMTI=_replicate>block>plot.txt	a_dXJuOlVSR0kvc3R1ZHkvRGViMTI=_virtual_trial.txt	a_dXJuOlVSR0kvc3R1ZHkvRGViMTI=_replicate>block>plot>plant.txt
+Study Assay Measurement Type	phenotyping	phenotyping	phenotyping
+Study Assay Measurement Type Term Accession Number			
+Study Assay Measurement Type Term Source REF			
+Study Assay Technology Type	replicate>block>plot level analysis	virtual_trial level analysis	replicate>block>plot>plant level analysis
+Study Assay Technology Type Term Accession Number			
+Study Assay Technology Type Term Source REF			
+Study Assay Technology Platform			
+STUDY PROTOCOLS
+Study Protocol Name	Phenotyping	Growth	Data Transformation
+Study Protocol Type	Phenotyping	Growth	Data Transformation
+Study Protocol Type Term Accession Number			
+Study Protocol Type Term Source REF			
+Study Protocol Description			
+Study Protocol URI			
+Study Protocol Version			
+Study Protocol Parameters Name			
+Study Protocol Parameters Name Term Accession Number			
+Study Protocol Parameters Name Term Source REF			
+Study Protocol Components Name			
+Study Protocol Components Type			
+Study Protocol Components Type Term Accession Number			
+Study Protocol Components Type Term Source REF			
+STUDY CONTACTS
+Study Person Last Name	WELCKER	MILLET	TARDIEU
+Study Person First Name	Claude	Emilie	François
+Study Person Mid Initials			
+Study Person Email	claude.welcker@inrae.fr	emilie.millet@wur.nl	francois.tardieu@inrae.fr
+Study Person Phone			
+Study Person Fax			
+Study Person Address	NA in BrAPI	NA in BrAPI	NA in BrAPI
+Study Person Affiliation	NA in endpoint	NA in endpoint	NA in endpoint
+Study Person Roles	Submitter	Submitter	Submitter
+Study Person Roles Term Accession Number			
+Study Person Roles Term Source REF			
+STUDY
+Study Identifier	dXJuOlVSR0kvc3R1ZHkvRGViMTM=
+Study Title	Syngenta Debrecen 2013
+Study Description	NA in endpoint
+Study Submission Date	
+Study Public Release Date	
+Study File Name	s_dXJuOlVSR0kvc3R1ZHkvRGViMTM=.txt
+Comment[Description of Growth Facility]	NA in BrAPI
+Comment[Study Contact Institution]	NA in BrAPI
+Comment[Study Country]	HU
+Comment[Study Data File Description]	xlsx
+Comment[Study Data File Link]	https://urgi.versailles.inrae.fr/files/ephesis/Deb13/debrecen_2013_WeatherSoil.xlsx
+Comment[Study Data File Version]	NA in BrAPI
+Comment[Study End Date]	2013-10-11
+Comment[Study Experimental Site]	Debrecen
+Comment[Study Latitude]	47.53
+Comment[Study Longitude]	21.55
+Comment[Study Start Date]	2013-05-23
+Comment[Trait Definition File]	t_dXJuOlVSR0kvc3R1ZHkvRGViMTM=.txt
+Comment[Type of Growth Facility]	NA in BrAPI
+STUDY DESIGN DESCRIPTORS
+Study Design Type	Phenotyping Study
+Study Design Type Term Accession Number	
+Study Design Type Term Source REF	
+Comment[Study Design Description]	NA in BrAPI
+Comment[Observation Unit Level Hierarchy]	NA in BrAPI
+Comment[Observation Unit Description]	NA in BrAPI
+Comment[Map of Experimental Design]	NA in BrAPI
+STUDY PUBLICATIONS
+Study PubMed ID
+Study Publication DOI
+Study Publication Author List
+Study Publication Title
+Study Publication Status
+Study Publication Status Term Accession Number
+Study Publication Status Term Source REF
+STUDY FACTORS
+Study Factor Name	water_regime
+Study Factor Type	water_regime
+Study Factor Type Term Accession Number	
+Study Factor Type Term Source REF	
+Comment[Study Factor Values]	rainfed;watered
+Comment[Study Factor Description]	NA in BrAPI
+STUDY ASSAYS
+Study Assay File Name	a_dXJuOlVSR0kvc3R1ZHkvRGViMTM=_replicate>block>plot.txt	a_dXJuOlVSR0kvc3R1ZHkvRGViMTM=_virtual_trial.txt	a_dXJuOlVSR0kvc3R1ZHkvRGViMTM=_replicate>block>plot>plant.txt
+Study Assay Measurement Type	phenotyping	phenotyping	phenotyping
+Study Assay Measurement Type Term Accession Number			
+Study Assay Measurement Type Term Source REF			
+Study Assay Technology Type	replicate>block>plot level analysis	virtual_trial level analysis	replicate>block>plot>plant level analysis
+Study Assay Technology Type Term Accession Number			
+Study Assay Technology Type Term Source REF			
+Study Assay Technology Platform			
+STUDY PROTOCOLS
+Study Protocol Name	Phenotyping	Growth	Data Transformation
+Study Protocol Type	Phenotyping	Growth	Data Transformation
+Study Protocol Type Term Accession Number			
+Study Protocol Type Term Source REF			
+Study Protocol Description			
+Study Protocol URI			
+Study Protocol Version			
+Study Protocol Parameters Name			
+Study Protocol Parameters Name Term Accession Number			
+Study Protocol Parameters Name Term Source REF			
+Study Protocol Components Name			
+Study Protocol Components Type			
+Study Protocol Components Type Term Accession Number			
+Study Protocol Components Type Term Source REF			
+STUDY CONTACTS
+Study Person Last Name	WELCKER	MILLET	TARDIEU
+Study Person First Name	Claude	Emilie	François
+Study Person Mid Initials			
+Study Person Email	claude.welcker@inrae.fr	emilie.millet@wur.nl	francois.tardieu@inrae.fr
+Study Person Phone			
+Study Person Fax			
+Study Person Address	NA in BrAPI	NA in BrAPI	NA in BrAPI
+Study Person Affiliation	NA in endpoint	NA in endpoint	NA in endpoint
+Study Person Roles	Submitter	Submitter	Submitter
+Study Person Roles Term Accession Number			
+Study Person Roles Term Source REF			
+STUDY
+Study Identifier	dXJuOlVSR0kvc3R1ZHkvR2FpMTI=
+Study Title	Biogemma Gaillac 2012
+Study Description	NA in endpoint
+Study Submission Date	
+Study Public Release Date	
+Study File Name	s_dXJuOlVSR0kvc3R1ZHkvR2FpMTI=.txt
+Comment[Description of Growth Facility]	NA in BrAPI
+Comment[Study Altitude]	49.0
+Comment[Study Contact Institution]	NA in BrAPI
+Comment[Study Country]	FR
+Comment[Study Data File Description]	xlsx
+Comment[Study Data File Link]	https://urgi.versailles.inrae.fr/files/ephesis/Gai12/gaillac_2012_WeatherSoil.xlsx
+Comment[Study Data File Version]	NA in BrAPI
+Comment[Study End Date]	2012-10-27
+Comment[Study Experimental Site]	Gaillac
+Comment[Study Latitude]	43.9
+Comment[Study Longitude]	1.89
+Comment[Study Start Date]	2012-05-14
+Comment[Trait Definition File]	t_dXJuOlVSR0kvc3R1ZHkvR2FpMTI=.txt
+Comment[Type of Growth Facility]	NA in BrAPI
+STUDY DESIGN DESCRIPTORS
+Study Design Type	Phenotyping Study
+Study Design Type Term Accession Number	
+Study Design Type Term Source REF	
+Comment[Study Design Description]	NA in BrAPI
+Comment[Observation Unit Level Hierarchy]	NA in BrAPI
+Comment[Observation Unit Description]	NA in BrAPI
+Comment[Map of Experimental Design]	NA in BrAPI
+STUDY PUBLICATIONS
+Study PubMed ID
+Study Publication DOI
+Study Publication Author List
+Study Publication Title
+Study Publication Status
+Study Publication Status Term Accession Number
+Study Publication Status Term Source REF
+STUDY FACTORS
+Study Factor Name	water_regime
+Study Factor Type	water_regime
+Study Factor Type Term Accession Number	
+Study Factor Type Term Source REF	
+Comment[Study Factor Values]	rainfed;watered
+Comment[Study Factor Description]	NA in BrAPI
+STUDY ASSAYS
+Study Assay File Name	a_dXJuOlVSR0kvc3R1ZHkvR2FpMTI=_replicate>block>plot.txt	a_dXJuOlVSR0kvc3R1ZHkvR2FpMTI=_virtual_trial.txt
+Study Assay Measurement Type	phenotyping	phenotyping
+Study Assay Measurement Type Term Accession Number		
+Study Assay Measurement Type Term Source REF		
+Study Assay Technology Type	replicate>block>plot level analysis	virtual_trial level analysis
+Study Assay Technology Type Term Accession Number		
+Study Assay Technology Type Term Source REF		
+Study Assay Technology Platform		
+STUDY PROTOCOLS
+Study Protocol Name	Phenotyping	Growth	Data Transformation
+Study Protocol Type	Phenotyping	Growth	Data Transformation
+Study Protocol Type Term Accession Number			
+Study Protocol Type Term Source REF			
+Study Protocol Description			
+Study Protocol URI			
+Study Protocol Version			
+Study Protocol Parameters Name			
+Study Protocol Parameters Name Term Accession Number			
+Study Protocol Parameters Name Term Source REF			
+Study Protocol Components Name			
+Study Protocol Components Type			
+Study Protocol Components Type Term Accession Number			
+Study Protocol Components Type Term Source REF			
+STUDY CONTACTS
+Study Person Last Name	WELCKER	MILLET	TARDIEU
+Study Person First Name	Claude	Emilie	François
+Study Person Mid Initials			
+Study Person Email	claude.welcker@inrae.fr	emilie.millet@wur.nl	francois.tardieu@inrae.fr
+Study Person Phone			
+Study Person Fax			
+Study Person Address	NA in BrAPI	NA in BrAPI	NA in BrAPI
+Study Person Affiliation	NA in endpoint	NA in endpoint	NA in endpoint
+Study Person Roles	Submitter	Submitter	Submitter
+Study Person Roles Term Accession Number			
+Study Person Roles Term Source REF			
+STUDY
+Study Identifier	dXJuOlVSR0kvc3R1ZHkvR2FpMTM=
+Study Title	Biogemma Gaillac 2013
+Study Description	NA in endpoint
+Study Submission Date	
+Study Public Release Date	
+Study File Name	s_dXJuOlVSR0kvc3R1ZHkvR2FpMTM=.txt
+Comment[Description of Growth Facility]	NA in BrAPI
+Comment[Study Altitude]	49.0
+Comment[Study Contact Institution]	NA in BrAPI
+Comment[Study Country]	FR
+Comment[Study Data File Description]	xlsx
+Comment[Study Data File Link]	https://urgi.versailles.inrae.fr/files/ephesis/Gai13/gaillac_2013_WeatherSoil.xlsx
+Comment[Study Data File Version]	NA in BrAPI
+Comment[Study End Date]	2013-10-25
+Comment[Study Experimental Site]	Gaillac
+Comment[Study Latitude]	43.9
+Comment[Study Longitude]	1.89
+Comment[Study Start Date]	2013-05-13
+Comment[Trait Definition File]	t_dXJuOlVSR0kvc3R1ZHkvR2FpMTM=.txt
+Comment[Type of Growth Facility]	NA in BrAPI
+STUDY DESIGN DESCRIPTORS
+Study Design Type	Phenotyping Study
+Study Design Type Term Accession Number	
+Study Design Type Term Source REF	
+Comment[Study Design Description]	NA in BrAPI
+Comment[Observation Unit Level Hierarchy]	NA in BrAPI
+Comment[Observation Unit Description]	NA in BrAPI
+Comment[Map of Experimental Design]	NA in BrAPI
+STUDY PUBLICATIONS
+Study PubMed ID
+Study Publication DOI
+Study Publication Author List
+Study Publication Title
+Study Publication Status
+Study Publication Status Term Accession Number
+Study Publication Status Term Source REF
+STUDY FACTORS
+Study Factor Name	water_regime
+Study Factor Type	water_regime
+Study Factor Type Term Accession Number	
+Study Factor Type Term Source REF	
+Comment[Study Factor Values]	rainfed;watered
+Comment[Study Factor Description]	NA in BrAPI
+STUDY ASSAYS
+Study Assay File Name	a_dXJuOlVSR0kvc3R1ZHkvR2FpMTM=_virtual_trial.txt	a_dXJuOlVSR0kvc3R1ZHkvR2FpMTM=_replicate>block>plot.txt	a_dXJuOlVSR0kvc3R1ZHkvR2FpMTM=_replicate>block>plot>plant.txt
+Study Assay Measurement Type	phenotyping	phenotyping	phenotyping
+Study Assay Measurement Type Term Accession Number			
+Study Assay Measurement Type Term Source REF			
+Study Assay Technology Type	virtual_trial level analysis	replicate>block>plot level analysis	replicate>block>plot>plant level analysis
+Study Assay Technology Type Term Accession Number			
+Study Assay Technology Type Term Source REF			
+Study Assay Technology Platform			
+STUDY PROTOCOLS
+Study Protocol Name	Phenotyping	Growth	Data Transformation
+Study Protocol Type	Phenotyping	Growth	Data Transformation
+Study Protocol Type Term Accession Number			
+Study Protocol Type Term Source REF			
+Study Protocol Description			
+Study Protocol URI			
+Study Protocol Version			
+Study Protocol Parameters Name			
+Study Protocol Parameters Name Term Accession Number			
+Study Protocol Parameters Name Term Source REF			
+Study Protocol Components Name			
+Study Protocol Components Type			
+Study Protocol Components Type Term Accession Number			
+Study Protocol Components Type Term Source REF			
+STUDY CONTACTS
+Study Person Last Name	WELCKER	MILLET	TARDIEU
+Study Person First Name	Claude	Emilie	François
+Study Person Mid Initials			
+Study Person Email	claude.welcker@inrae.fr	emilie.millet@wur.nl	francois.tardieu@inrae.fr
+Study Person Phone			
+Study Person Fax			
+Study Person Address	NA in BrAPI	NA in BrAPI	NA in BrAPI
+Study Person Affiliation	NA in endpoint	NA in endpoint	NA in endpoint
+Study Person Roles	Submitter	Submitter	Submitter
+Study Person Roles Term Accession Number			
+Study Person Roles Term Source REF			
+STUDY
+Study Identifier	dXJuOlVSR0kvc3R1ZHkvR3JhMTM=
+Study Title	Biogemma Graneros 2013
+Study Description	NA in endpoint
+Study Submission Date	
+Study Public Release Date	
+Study File Name	s_dXJuOlVSR0kvc3R1ZHkvR3JhMTM=.txt
+Comment[Description of Growth Facility]	NA in BrAPI
+Comment[Study Altitude]	841.0
+Comment[Study Contact Institution]	NA in BrAPI
+Comment[Study Country]	CL
+Comment[Study Data File Description]	xlsx
+Comment[Study Data File Link]	https://urgi.versailles.inrae.fr/files/ephesis/Gra13/graneros_2013_WeatherSoil.xlsx
+Comment[Study Data File Version]	NA in BrAPI
+Comment[Study End Date]	2014-04-03
+Comment[Study Experimental Site]	Graneros
+Comment[Study Latitude]	-34.06
+Comment[Study Longitude]	-70.73
+Comment[Study Start Date]	2013-11-13
+Comment[Trait Definition File]	t_dXJuOlVSR0kvc3R1ZHkvR3JhMTM=.txt
+Comment[Type of Growth Facility]	NA in BrAPI
+STUDY DESIGN DESCRIPTORS
+Study Design Type	Phenotyping Study
+Study Design Type Term Accession Number	
+Study Design Type Term Source REF	
+Comment[Study Design Description]	NA in BrAPI
+Comment[Observation Unit Level Hierarchy]	NA in BrAPI
+Comment[Observation Unit Description]	NA in BrAPI
+Comment[Map of Experimental Design]	NA in BrAPI
+STUDY PUBLICATIONS
+Study PubMed ID
+Study Publication DOI
+Study Publication Author List
+Study Publication Title
+Study Publication Status
+Study Publication Status Term Accession Number
+Study Publication Status Term Source REF
+STUDY FACTORS
+Study Factor Name	water_regime
+Study Factor Type	water_regime
+Study Factor Type Term Accession Number	
+Study Factor Type Term Source REF	
+Comment[Study Factor Values]	watered;rainfed
+Comment[Study Factor Description]	NA in BrAPI
+STUDY ASSAYS
+Study Assay File Name	a_dXJuOlVSR0kvc3R1ZHkvR3JhMTM=_replicate>block>plot.txt	a_dXJuOlVSR0kvc3R1ZHkvR3JhMTM=_virtual_trial.txt	a_dXJuOlVSR0kvc3R1ZHkvR3JhMTM=_replicate>block>plot>plant.txt
+Study Assay Measurement Type	phenotyping	phenotyping	phenotyping
+Study Assay Measurement Type Term Accession Number			
+Study Assay Measurement Type Term Source REF			
+Study Assay Technology Type	replicate>block>plot level analysis	virtual_trial level analysis	replicate>block>plot>plant level analysis
+Study Assay Technology Type Term Accession Number			
+Study Assay Technology Type Term Source REF			
+Study Assay Technology Platform			
+STUDY PROTOCOLS
+Study Protocol Name	Phenotyping	Growth	Data Transformation
+Study Protocol Type	Phenotyping	Growth	Data Transformation
+Study Protocol Type Term Accession Number			
+Study Protocol Type Term Source REF			
+Study Protocol Description			
+Study Protocol URI			
+Study Protocol Version			
+Study Protocol Parameters Name			
+Study Protocol Parameters Name Term Accession Number			
+Study Protocol Parameters Name Term Source REF			
+Study Protocol Components Name			
+Study Protocol Components Type			
+Study Protocol Components Type Term Accession Number			
+Study Protocol Components Type Term Source REF			
+STUDY CONTACTS
+Study Person Last Name	WELCKER	MILLET	TARDIEU
+Study Person First Name	Claude	Emilie	François
+Study Person Mid Initials			
+Study Person Email	claude.welcker@inrae.fr	emilie.millet@wur.nl	francois.tardieu@inrae.fr
+Study Person Phone			
+Study Person Fax			
+Study Person Address	NA in BrAPI	NA in BrAPI	NA in BrAPI
+Study Person Affiliation	NA in endpoint	NA in endpoint	NA in endpoint
+Study Person Roles	Submitter	Submitter	Submitter
+Study Person Roles Term Accession Number			
+Study Person Roles Term Source REF			
+STUDY
+Study Identifier	dXJuOlVSR0kvc3R1ZHkvS2FyMTE=
+Study Title	KWS Karlsruhe 2011
+Study Description	NA in endpoint
+Study Submission Date	
+Study Public Release Date	
+Study File Name	s_dXJuOlVSR0kvc3R1ZHkvS2FyMTE=.txt
+Comment[Description of Growth Facility]	NA in BrAPI
+Comment[Study Altitude]	100.0
+Comment[Study Contact Institution]	NA in BrAPI
+Comment[Study Country]	DE
+Comment[Study Data File Description]	xlsx
+Comment[Study Data File Link]	https://urgi.versailles.inrae.fr/files/ephesis/Kar11/Karlsruhe_2011_WeatherSoil.xlsx
+Comment[Study Data File Version]	NA in BrAPI
+Comment[Study End Date]	2011-10-18
+Comment[Study Experimental Site]	Karlsruhe
+Comment[Study Latitude]	49.1
+Comment[Study Longitude]	8.32
+Comment[Study Start Date]	2011-05-04
+Comment[Trait Definition File]	t_dXJuOlVSR0kvc3R1ZHkvS2FyMTE=.txt
+Comment[Type of Growth Facility]	NA in BrAPI
+STUDY DESIGN DESCRIPTORS
+Study Design Type	Phenotyping Study
+Study Design Type Term Accession Number	
+Study Design Type Term Source REF	
+Comment[Study Design Description]	NA in BrAPI
+Comment[Observation Unit Level Hierarchy]	NA in BrAPI
+Comment[Observation Unit Description]	NA in BrAPI
+Comment[Map of Experimental Design]	NA in BrAPI
+STUDY PUBLICATIONS
+Study PubMed ID
+Study Publication DOI
+Study Publication Author List
+Study Publication Title
+Study Publication Status
+Study Publication Status Term Accession Number
+Study Publication Status Term Source REF
+STUDY FACTORS
+Study Factor Name	water_regime
+Study Factor Type	water_regime
+Study Factor Type Term Accession Number	
+Study Factor Type Term Source REF	
+Comment[Study Factor Values]	watered;rainfed
+Comment[Study Factor Description]	NA in BrAPI
+STUDY ASSAYS
+Study Assay File Name	a_dXJuOlVSR0kvc3R1ZHkvS2FyMTE=_replicate>block>plot.txt	a_dXJuOlVSR0kvc3R1ZHkvS2FyMTE=_virtual_trial.txt
+Study Assay Measurement Type	phenotyping	phenotyping
+Study Assay Measurement Type Term Accession Number		
+Study Assay Measurement Type Term Source REF		
+Study Assay Technology Type	replicate>block>plot level analysis	virtual_trial level analysis
+Study Assay Technology Type Term Accession Number		
+Study Assay Technology Type Term Source REF		
+Study Assay Technology Platform		
+STUDY PROTOCOLS
+Study Protocol Name	Phenotyping	Growth	Data Transformation
+Study Protocol Type	Phenotyping	Growth	Data Transformation
+Study Protocol Type Term Accession Number			
+Study Protocol Type Term Source REF			
+Study Protocol Description			
+Study Protocol URI			
+Study Protocol Version			
+Study Protocol Parameters Name			
+Study Protocol Parameters Name Term Accession Number			
+Study Protocol Parameters Name Term Source REF			
+Study Protocol Components Name			
+Study Protocol Components Type			
+Study Protocol Components Type Term Accession Number			
+Study Protocol Components Type Term Source REF			
+STUDY CONTACTS
+Study Person Last Name	WELCKER	MILLET	TARDIEU
+Study Person First Name	Claude	Emilie	François
+Study Person Mid Initials			
+Study Person Email	claude.welcker@inrae.fr	emilie.millet@wur.nl	francois.tardieu@inrae.fr
+Study Person Phone			
+Study Person Fax			
+Study Person Address	NA in BrAPI	NA in BrAPI	NA in BrAPI
+Study Person Affiliation	NA in endpoint	NA in endpoint	NA in endpoint
+Study Person Roles	Submitter	Submitter	Submitter
+Study Person Roles Term Accession Number			
+Study Person Roles Term Source REF			
+STUDY
+Study Identifier	dXJuOlVSR0kvc3R1ZHkvS2FyMTI=
+Study Title	KWS Karlsruhe 2012
+Study Description	NA in endpoint
+Study Submission Date	
+Study Public Release Date	
+Study File Name	s_dXJuOlVSR0kvc3R1ZHkvS2FyMTI=.txt
+Comment[Description of Growth Facility]	NA in BrAPI
+Comment[Study Altitude]	100.0
+Comment[Study Contact Institution]	NA in BrAPI
+Comment[Study Country]	DE
+Comment[Study Data File Description]	xlsx
+Comment[Study Data File Link]	https://urgi.versailles.inrae.fr/files/ephesis/Kar12/karlsruhe_2012_WeatherSoil.xlsx
+Comment[Study Data File Version]	NA in BrAPI
+Comment[Study End Date]	2012-10-18
+Comment[Study Experimental Site]	Karlsruhe
+Comment[Study Latitude]	49.1
+Comment[Study Longitude]	8.32
+Comment[Study Start Date]	2012-05-10
+Comment[Trait Definition File]	t_dXJuOlVSR0kvc3R1ZHkvS2FyMTI=.txt
+Comment[Type of Growth Facility]	NA in BrAPI
+STUDY DESIGN DESCRIPTORS
+Study Design Type	Phenotyping Study
+Study Design Type Term Accession Number	
+Study Design Type Term Source REF	
+Comment[Study Design Description]	NA in BrAPI
+Comment[Observation Unit Level Hierarchy]	NA in BrAPI
+Comment[Observation Unit Description]	NA in BrAPI
+Comment[Map of Experimental Design]	NA in BrAPI
+STUDY PUBLICATIONS
+Study PubMed ID
+Study Publication DOI
+Study Publication Author List
+Study Publication Title
+Study Publication Status
+Study Publication Status Term Accession Number
+Study Publication Status Term Source REF
+STUDY FACTORS
+Study Factor Name	water_regime
+Study Factor Type	water_regime
+Study Factor Type Term Accession Number	
+Study Factor Type Term Source REF	
+Comment[Study Factor Values]	rainfed;watered
+Comment[Study Factor Description]	NA in BrAPI
+STUDY ASSAYS
+Study Assay File Name	a_dXJuOlVSR0kvc3R1ZHkvS2FyMTI=_replicate>block>plot.txt	a_dXJuOlVSR0kvc3R1ZHkvS2FyMTI=_virtual_trial.txt	a_dXJuOlVSR0kvc3R1ZHkvS2FyMTI=_replicate>block>plot>plant.txt
+Study Assay Measurement Type	phenotyping	phenotyping	phenotyping
+Study Assay Measurement Type Term Accession Number			
+Study Assay Measurement Type Term Source REF			
+Study Assay Technology Type	replicate>block>plot level analysis	virtual_trial level analysis	replicate>block>plot>plant level analysis
+Study Assay Technology Type Term Accession Number			
+Study Assay Technology Type Term Source REF			
+Study Assay Technology Platform			
+STUDY PROTOCOLS
+Study Protocol Name	Phenotyping	Growth	Data Transformation
+Study Protocol Type	Phenotyping	Growth	Data Transformation
+Study Protocol Type Term Accession Number			
+Study Protocol Type Term Source REF			
+Study Protocol Description			
+Study Protocol URI			
+Study Protocol Version			
+Study Protocol Parameters Name			
+Study Protocol Parameters Name Term Accession Number			
+Study Protocol Parameters Name Term Source REF			
+Study Protocol Components Name			
+Study Protocol Components Type			
+Study Protocol Components Type Term Accession Number			
+Study Protocol Components Type Term Source REF			
+STUDY CONTACTS
+Study Person Last Name	WELCKER	MILLET	TARDIEU
+Study Person First Name	Claude	Emilie	François
+Study Person Mid Initials			
+Study Person Email	claude.welcker@inrae.fr	emilie.millet@wur.nl	francois.tardieu@inrae.fr
+Study Person Phone			
+Study Person Fax			
+Study Person Address	NA in BrAPI	NA in BrAPI	NA in BrAPI
+Study Person Affiliation	NA in endpoint	NA in endpoint	NA in endpoint
+Study Person Roles	Submitter	Submitter	Submitter
+Study Person Roles Term Accession Number			
+Study Person Roles Term Source REF			
+STUDY
+Study Identifier	dXJuOlVSR0kvc3R1ZHkvS2FyMTM=
+Study Title	KWS Karlsruhe 2013
+Study Description	NA in endpoint
+Study Submission Date	
+Study Public Release Date	
+Study File Name	s_dXJuOlVSR0kvc3R1ZHkvS2FyMTM=.txt
+Comment[Description of Growth Facility]	NA in BrAPI
+Comment[Study Altitude]	100.0
+Comment[Study Contact Institution]	NA in BrAPI
+Comment[Study Country]	DE
+Comment[Study Data File Description]	xlsx
+Comment[Study Data File Link]	https://urgi.versailles.inrae.fr/files/ephesis/Kar13/karlsruhe_2013_WeatherSoil.xlsx
+Comment[Study Data File Version]	NA in BrAPI
+Comment[Study End Date]	2013-10-20
+Comment[Study Experimental Site]	Karlsruhe
+Comment[Study Latitude]	49.1
+Comment[Study Longitude]	8.32
+Comment[Study Start Date]	2013-04-17
+Comment[Trait Definition File]	t_dXJuOlVSR0kvc3R1ZHkvS2FyMTM=.txt
+Comment[Type of Growth Facility]	NA in BrAPI
+STUDY DESIGN DESCRIPTORS
+Study Design Type	Phenotyping Study
+Study Design Type Term Accession Number	
+Study Design Type Term Source REF	
+Comment[Study Design Description]	NA in BrAPI
+Comment[Observation Unit Level Hierarchy]	NA in BrAPI
+Comment[Observation Unit Description]	NA in BrAPI
+Comment[Map of Experimental Design]	NA in BrAPI
+STUDY PUBLICATIONS
+Study PubMed ID
+Study Publication DOI
+Study Publication Author List
+Study Publication Title
+Study Publication Status
+Study Publication Status Term Accession Number
+Study Publication Status Term Source REF
+STUDY FACTORS
+Study Factor Name	water_regime
+Study Factor Type	water_regime
+Study Factor Type Term Accession Number	
+Study Factor Type Term Source REF	
+Comment[Study Factor Values]	rainfed;watered
+Comment[Study Factor Description]	NA in BrAPI
+STUDY ASSAYS
+Study Assay File Name	a_dXJuOlVSR0kvc3R1ZHkvS2FyMTM=_replicate>block>plot.txt	a_dXJuOlVSR0kvc3R1ZHkvS2FyMTM=_virtual_trial.txt
+Study Assay Measurement Type	phenotyping	phenotyping
+Study Assay Measurement Type Term Accession Number		
+Study Assay Measurement Type Term Source REF		
+Study Assay Technology Type	replicate>block>plot level analysis	virtual_trial level analysis
+Study Assay Technology Type Term Accession Number		
+Study Assay Technology Type Term Source REF		
+Study Assay Technology Platform		
+STUDY PROTOCOLS
+Study Protocol Name	Phenotyping	Growth	Data Transformation
+Study Protocol Type	Phenotyping	Growth	Data Transformation
+Study Protocol Type Term Accession Number			
+Study Protocol Type Term Source REF			
+Study Protocol Description			
+Study Protocol URI			
+Study Protocol Version			
+Study Protocol Parameters Name			
+Study Protocol Parameters Name Term Accession Number			
+Study Protocol Parameters Name Term Source REF			
+Study Protocol Components Name			
+Study Protocol Components Type			
+Study Protocol Components Type Term Accession Number			
+Study Protocol Components Type Term Source REF			
+STUDY CONTACTS
+Study Person Last Name	WELCKER	MILLET	TARDIEU
+Study Person First Name	Claude	Emilie	François
+Study Person Mid Initials			
+Study Person Email	claude.welcker@inrae.fr	emilie.millet@wur.nl	francois.tardieu@inrae.fr
+Study Person Phone			
+Study Person Fax			
+Study Person Address	NA in BrAPI	NA in BrAPI	NA in BrAPI
+Study Person Affiliation	NA in endpoint	NA in endpoint	NA in endpoint
+Study Person Roles	Submitter	Submitter	Submitter
+Study Person Roles Term Accession Number			
+Study Person Roles Term Source REF			
+STUDY
+Study Identifier	dXJuOlVSR0kvc3R1ZHkvTWFyMTM=
+Study Title	MTA_ATK Martonvasar 2013
+Study Description	NA in endpoint
+Study Submission Date	
+Study Public Release Date	
+Study File Name	s_dXJuOlVSR0kvc3R1ZHkvTWFyMTM=.txt
+Comment[Description of Growth Facility]	NA in BrAPI
+Comment[Study Altitude]	110.0
+Comment[Study Contact Institution]	NA in BrAPI
+Comment[Study Country]	HU
+Comment[Study End Date]	2012-10-31
+Comment[Study Experimental Site]	Martonvasar
+Comment[Study Latitude]	47.31083
+Comment[Study Longitude]	18.77833
+Comment[Study Start Date]	2013-05-14
+Comment[Trait Definition File]	t_dXJuOlVSR0kvc3R1ZHkvTWFyMTM=.txt
+Comment[Type of Growth Facility]	NA in BrAPI
+STUDY DESIGN DESCRIPTORS
+Study Design Type	Phenotyping Study
+Study Design Type Term Accession Number	
+Study Design Type Term Source REF	
+Comment[Study Design Description]	NA in BrAPI
+Comment[Observation Unit Level Hierarchy]	NA in BrAPI
+Comment[Observation Unit Description]	NA in BrAPI
+Comment[Map of Experimental Design]	NA in BrAPI
+STUDY PUBLICATIONS
+Study PubMed ID
+Study Publication DOI
+Study Publication Author List
+Study Publication Title
+Study Publication Status
+Study Publication Status Term Accession Number
+Study Publication Status Term Source REF
+STUDY FACTORS
+Study Factor Name	water_regime
+Study Factor Type	water_regime
+Study Factor Type Term Accession Number	
+Study Factor Type Term Source REF	
+Comment[Study Factor Values]	rainfed;watered
+Comment[Study Factor Description]	NA in BrAPI
+STUDY ASSAYS
+Study Assay File Name	a_dXJuOlVSR0kvc3R1ZHkvTWFyMTM=_virtual_trial.txt	a_dXJuOlVSR0kvc3R1ZHkvTWFyMTM=_replicate>block>plot.txt	a_dXJuOlVSR0kvc3R1ZHkvTWFyMTM=_replicate>block>plot>plant.txt
+Study Assay Measurement Type	phenotyping	phenotyping	phenotyping
+Study Assay Measurement Type Term Accession Number			
+Study Assay Measurement Type Term Source REF			
+Study Assay Technology Type	virtual_trial level analysis	replicate>block>plot level analysis	replicate>block>plot>plant level analysis
+Study Assay Technology Type Term Accession Number			
+Study Assay Technology Type Term Source REF			
+Study Assay Technology Platform			
+STUDY PROTOCOLS
+Study Protocol Name	Phenotyping	Growth	Data Transformation
+Study Protocol Type	Phenotyping	Growth	Data Transformation
+Study Protocol Type Term Accession Number			
+Study Protocol Type Term Source REF			
+Study Protocol Description			
+Study Protocol URI			
+Study Protocol Version			
+Study Protocol Parameters Name			
+Study Protocol Parameters Name Term Accession Number			
+Study Protocol Parameters Name Term Source REF			
+Study Protocol Components Name			
+Study Protocol Components Type			
+Study Protocol Components Type Term Accession Number			
+Study Protocol Components Type Term Source REF			
+STUDY CONTACTS
+Study Person Last Name	WELCKER	MILLET	TARDIEU
+Study Person First Name	Claude	Emilie	François
+Study Person Mid Initials			
+Study Person Email	claude.welcker@inrae.fr	emilie.millet@wur.nl	francois.tardieu@inrae.fr
+Study Person Phone			
+Study Person Fax			
+Study Person Address	NA in BrAPI	NA in BrAPI	NA in BrAPI
+Study Person Affiliation	NA in endpoint	NA in endpoint	NA in endpoint
+Study Person Roles	Submitter	Submitter	Submitter
+Study Person Roles Term Accession Number			
+Study Person Roles Term Source REF			
+STUDY
+Study Identifier	dXJuOlVSR0kvc3R1ZHkvTXVyMTM=
+Study Title	KWS Murony 2013
+Study Description	NA in endpoint
+Study Submission Date	
+Study Public Release Date	
+Study File Name	s_dXJuOlVSR0kvc3R1ZHkvTXVyMTM=.txt
+Comment[Description of Growth Facility]	NA in BrAPI
+Comment[Study Altitude]	85.0
+Comment[Study Contact Institution]	NA in BrAPI
+Comment[Study Country]	HU
+Comment[Study End Date]	2013-10-05
+Comment[Study Experimental Site]	Murony
+Comment[Study Latitude]	46.78
+Comment[Study Longitude]	21.05
+Comment[Study Start Date]	2013-05-21
+Comment[Trait Definition File]	t_dXJuOlVSR0kvc3R1ZHkvTXVyMTM=.txt
+Comment[Type of Growth Facility]	NA in BrAPI
+STUDY DESIGN DESCRIPTORS
+Study Design Type	Phenotyping Study
+Study Design Type Term Accession Number	
+Study Design Type Term Source REF	
+Comment[Study Design Description]	NA in BrAPI
+Comment[Observation Unit Level Hierarchy]	NA in BrAPI
+Comment[Observation Unit Description]	NA in BrAPI
+Comment[Map of Experimental Design]	NA in BrAPI
+STUDY PUBLICATIONS
+Study PubMed ID
+Study Publication DOI
+Study Publication Author List
+Study Publication Title
+Study Publication Status
+Study Publication Status Term Accession Number
+Study Publication Status Term Source REF
+STUDY FACTORS
+Study Factor Name	water_regime
+Study Factor Type	water_regime
+Study Factor Type Term Accession Number	
+Study Factor Type Term Source REF	
+Comment[Study Factor Values]	watered;rainfed
+Comment[Study Factor Description]	NA in BrAPI
+STUDY ASSAYS
+Study Assay File Name	a_dXJuOlVSR0kvc3R1ZHkvTXVyMTM=_virtual_trial.txt	a_dXJuOlVSR0kvc3R1ZHkvTXVyMTM=_replicate>block>plot.txt	a_dXJuOlVSR0kvc3R1ZHkvTXVyMTM=_replicate>block>plot>plant.txt
+Study Assay Measurement Type	phenotyping	phenotyping	phenotyping
+Study Assay Measurement Type Term Accession Number			
+Study Assay Measurement Type Term Source REF			
+Study Assay Technology Type	virtual_trial level analysis	replicate>block>plot level analysis	replicate>block>plot>plant level analysis
+Study Assay Technology Type Term Accession Number			
+Study Assay Technology Type Term Source REF			
+Study Assay Technology Platform			
+STUDY PROTOCOLS
+Study Protocol Name	Phenotyping	Growth	Data Transformation
+Study Protocol Type	Phenotyping	Growth	Data Transformation
+Study Protocol Type Term Accession Number			
+Study Protocol Type Term Source REF			
+Study Protocol Description			
+Study Protocol URI			
+Study Protocol Version			
+Study Protocol Parameters Name			
+Study Protocol Parameters Name Term Accession Number			
+Study Protocol Parameters Name Term Source REF			
+Study Protocol Components Name			
+Study Protocol Components Type			
+Study Protocol Components Type Term Accession Number			
+Study Protocol Components Type Term Source REF			
+STUDY CONTACTS
+Study Person Last Name	WELCKER	MILLET	TARDIEU
+Study Person First Name	Claude	Emilie	François
+Study Person Mid Initials			
+Study Person Email	claude.welcker@inrae.fr	emilie.millet@wur.nl	francois.tardieu@inrae.fr
+Study Person Phone			
+Study Person Fax			
+Study Person Address	NA in BrAPI	NA in BrAPI	NA in BrAPI
+Study Person Affiliation	NA in endpoint	NA in endpoint	NA in endpoint
+Study Person Roles	Submitter	Submitter	Submitter
+Study Person Roles Term Accession Number			
+Study Person Roles Term Source REF			
+STUDY
+Study Identifier	dXJuOlVSR0kvc3R1ZHkvTmVyMTE=
+Study Title	Biogemma Nerac 2011
+Study Description	NA in endpoint
+Study Submission Date	
+Study Public Release Date	
+Study File Name	s_dXJuOlVSR0kvc3R1ZHkvTmVyMTE=.txt
+Comment[Description of Growth Facility]	NA in BrAPI
+Comment[Study Altitude]	40.0
+Comment[Study Contact Institution]	NA in BrAPI
+Comment[Study Country]	FR
+Comment[Study Data File Description]	xlsx
+Comment[Study Data File Link]	https://urgi.versailles.inrae.fr/files/ephesis/Ner11/Nerac_2011_WeatherSoil.xlsx
+Comment[Study Data File Version]	NA in BrAPI
+Comment[Study End Date]	2011-10-08
+Comment[Study Experimental Site]	Nerac
+Comment[Study Latitude]	44.17035
+Comment[Study Longitude]	0.30732
+Comment[Study Start Date]	2011-05-13
+Comment[Trait Definition File]	t_dXJuOlVSR0kvc3R1ZHkvTmVyMTE=.txt
+Comment[Type of Growth Facility]	NA in BrAPI
+STUDY DESIGN DESCRIPTORS
+Study Design Type	Phenotyping Study
+Study Design Type Term Accession Number	
+Study Design Type Term Source REF	
+Comment[Study Design Description]	NA in BrAPI
+Comment[Observation Unit Level Hierarchy]	NA in BrAPI
+Comment[Observation Unit Description]	NA in BrAPI
+Comment[Map of Experimental Design]	NA in BrAPI
+STUDY PUBLICATIONS
+Study PubMed ID
+Study Publication DOI
+Study Publication Author List
+Study Publication Title
+Study Publication Status
+Study Publication Status Term Accession Number
+Study Publication Status Term Source REF
+STUDY FACTORS
+Study Factor Name	water_regime
+Study Factor Type	water_regime
+Study Factor Type Term Accession Number	
+Study Factor Type Term Source REF	
+Comment[Study Factor Values]	rainfed;watered
+Comment[Study Factor Description]	NA in BrAPI
+STUDY ASSAYS
+Study Assay File Name	a_dXJuOlVSR0kvc3R1ZHkvTmVyMTE=_replicate>block>plot.txt	a_dXJuOlVSR0kvc3R1ZHkvTmVyMTE=_virtual_trial.txt
+Study Assay Measurement Type	phenotyping	phenotyping
+Study Assay Measurement Type Term Accession Number		
+Study Assay Measurement Type Term Source REF		
+Study Assay Technology Type	replicate>block>plot level analysis	virtual_trial level analysis
+Study Assay Technology Type Term Accession Number		
+Study Assay Technology Type Term Source REF		
+Study Assay Technology Platform		
+STUDY PROTOCOLS
+Study Protocol Name	Phenotyping	Growth	Data Transformation
+Study Protocol Type	Phenotyping	Growth	Data Transformation
+Study Protocol Type Term Accession Number			
+Study Protocol Type Term Source REF			
+Study Protocol Description			
+Study Protocol URI			
+Study Protocol Version			
+Study Protocol Parameters Name			
+Study Protocol Parameters Name Term Accession Number			
+Study Protocol Parameters Name Term Source REF			
+Study Protocol Components Name			
+Study Protocol Components Type			
+Study Protocol Components Type Term Accession Number			
+Study Protocol Components Type Term Source REF			
+STUDY CONTACTS
+Study Person Last Name	WELCKER	MILLET	TARDIEU
+Study Person First Name	Claude	Emilie	François
+Study Person Mid Initials			
+Study Person Email	claude.welcker@inrae.fr	emilie.millet@wur.nl	francois.tardieu@inrae.fr
+Study Person Phone			
+Study Person Fax			
+Study Person Address	NA in BrAPI	NA in BrAPI	NA in BrAPI
+Study Person Affiliation	NA in endpoint	NA in endpoint	NA in endpoint
+Study Person Roles	Submitter	Submitter	Submitter
+Study Person Roles Term Accession Number			
+Study Person Roles Term Source REF			
+STUDY
+Study Identifier	dXJuOlVSR0kvc3R1ZHkvTmVyMTI=
+Study Title	Biogemma Nerac 2012
+Study Description	NA in endpoint
+Study Submission Date	
+Study Public Release Date	
+Study File Name	s_dXJuOlVSR0kvc3R1ZHkvTmVyMTI=.txt
+Comment[Description of Growth Facility]	NA in BrAPI
+Comment[Study Altitude]	40.0
+Comment[Study Contact Institution]	NA in BrAPI
+Comment[Study Country]	FR
+Comment[Study Data File Description]	xlsx
+Comment[Study Data File Link]	https://urgi.versailles.inrae.fr/files/ephesis/Ner12/nerac_2012_WeatherSoil.xlsx
+Comment[Study Data File Version]	NA in BrAPI
+Comment[Study End Date]	2012-10-10
+Comment[Study Experimental Site]	Nerac
+Comment[Study Latitude]	44.17035
+Comment[Study Longitude]	0.30732
+Comment[Study Start Date]	2012-05-27
+Comment[Trait Definition File]	t_dXJuOlVSR0kvc3R1ZHkvTmVyMTI=.txt
+Comment[Type of Growth Facility]	NA in BrAPI
+STUDY DESIGN DESCRIPTORS
+Study Design Type	Phenotyping Study
+Study Design Type Term Accession Number	
+Study Design Type Term Source REF	
+Comment[Study Design Description]	NA in BrAPI
+Comment[Observation Unit Level Hierarchy]	NA in BrAPI
+Comment[Observation Unit Description]	NA in BrAPI
+Comment[Map of Experimental Design]	NA in BrAPI
+STUDY PUBLICATIONS
+Study PubMed ID
+Study Publication DOI
+Study Publication Author List
+Study Publication Title
+Study Publication Status
+Study Publication Status Term Accession Number
+Study Publication Status Term Source REF
+STUDY FACTORS
+Study Factor Name	water_regime
+Study Factor Type	water_regime
+Study Factor Type Term Accession Number	
+Study Factor Type Term Source REF	
+Comment[Study Factor Values]	watered;rainfed
+Comment[Study Factor Description]	NA in BrAPI
+STUDY ASSAYS
+Study Assay File Name	a_dXJuOlVSR0kvc3R1ZHkvTmVyMTI=_replicate>block>plot.txt	a_dXJuOlVSR0kvc3R1ZHkvTmVyMTI=_virtual_trial.txt	a_dXJuOlVSR0kvc3R1ZHkvTmVyMTI=_replicate>block>plot>plant.txt
+Study Assay Measurement Type	phenotyping	phenotyping	phenotyping
+Study Assay Measurement Type Term Accession Number			
+Study Assay Measurement Type Term Source REF			
+Study Assay Technology Type	replicate>block>plot level analysis	virtual_trial level analysis	replicate>block>plot>plant level analysis
+Study Assay Technology Type Term Accession Number			
+Study Assay Technology Type Term Source REF			
+Study Assay Technology Platform			
+STUDY PROTOCOLS
+Study Protocol Name	Phenotyping	Growth	Data Transformation
+Study Protocol Type	Phenotyping	Growth	Data Transformation
+Study Protocol Type Term Accession Number			
+Study Protocol Type Term Source REF			
+Study Protocol Description			
+Study Protocol URI			
+Study Protocol Version			
+Study Protocol Parameters Name			
+Study Protocol Parameters Name Term Accession Number			
+Study Protocol Parameters Name Term Source REF			
+Study Protocol Components Name			
+Study Protocol Components Type			
+Study Protocol Components Type Term Accession Number			
+Study Protocol Components Type Term Source REF			
+STUDY CONTACTS
+Study Person Last Name	WELCKER	MILLET	TARDIEU
+Study Person First Name	Claude	Emilie	François
+Study Person Mid Initials			
+Study Person Email	claude.welcker@inrae.fr	emilie.millet@wur.nl	francois.tardieu@inrae.fr
+Study Person Phone			
+Study Person Fax			
+Study Person Address	NA in BrAPI	NA in BrAPI	NA in BrAPI
+Study Person Affiliation	NA in endpoint	NA in endpoint	NA in endpoint
+Study Person Roles	Submitter	Submitter	Submitter
+Study Person Roles Term Accession Number			
+Study Person Roles Term Source REF			
+STUDY
+Study Identifier	dXJuOlVSR0kvc3R1ZHkvTmVyMTM=
+Study Title	Biogemma Nerac 2013
+Study Description	NA in endpoint
+Study Submission Date	
+Study Public Release Date	
+Study File Name	s_dXJuOlVSR0kvc3R1ZHkvTmVyMTM=.txt
+Comment[Description of Growth Facility]	NA in BrAPI
+Comment[Study Altitude]	40.0
+Comment[Study Contact Institution]	NA in BrAPI
+Comment[Study Country]	FR
+Comment[Study Data File Description]	xlsx
+Comment[Study Data File Link]	https://urgi.versailles.inrae.fr/files/ephesis/Ner13/nerac_2013_WeatherSoil.xlsx
+Comment[Study Data File Version]	NA in BrAPI
+Comment[Study End Date]	2013-10-11
+Comment[Study Experimental Site]	Nerac
+Comment[Study Latitude]	44.17035
+Comment[Study Longitude]	0.30732
+Comment[Study Start Date]	2013-05-15
+Comment[Trait Definition File]	t_dXJuOlVSR0kvc3R1ZHkvTmVyMTM=.txt
+Comment[Type of Growth Facility]	NA in BrAPI
+STUDY DESIGN DESCRIPTORS
+Study Design Type	Phenotyping Study
+Study Design Type Term Accession Number	
+Study Design Type Term Source REF	
+Comment[Study Design Description]	NA in BrAPI
+Comment[Observation Unit Level Hierarchy]	NA in BrAPI
+Comment[Observation Unit Description]	NA in BrAPI
+Comment[Map of Experimental Design]	NA in BrAPI
+STUDY PUBLICATIONS
+Study PubMed ID
+Study Publication DOI
+Study Publication Author List
+Study Publication Title
+Study Publication Status
+Study Publication Status Term Accession Number
+Study Publication Status Term Source REF
+STUDY FACTORS
+Study Factor Name	water_regime
+Study Factor Type	water_regime
+Study Factor Type Term Accession Number	
+Study Factor Type Term Source REF	
+Comment[Study Factor Values]	rainfed;watered
+Comment[Study Factor Description]	NA in BrAPI
+STUDY ASSAYS
+Study Assay File Name	a_dXJuOlVSR0kvc3R1ZHkvTmVyMTM=_virtual_trial.txt	a_dXJuOlVSR0kvc3R1ZHkvTmVyMTM=_replicate>block>plot.txt	a_dXJuOlVSR0kvc3R1ZHkvTmVyMTM=_replicate>block>plot>plant.txt
+Study Assay Measurement Type	phenotyping	phenotyping	phenotyping
+Study Assay Measurement Type Term Accession Number			
+Study Assay Measurement Type Term Source REF			
+Study Assay Technology Type	virtual_trial level analysis	replicate>block>plot level analysis	replicate>block>plot>plant level analysis
+Study Assay Technology Type Term Accession Number			
+Study Assay Technology Type Term Source REF			
+Study Assay Technology Platform			
+STUDY PROTOCOLS
+Study Protocol Name	Phenotyping	Growth	Data Transformation
+Study Protocol Type	Phenotyping	Growth	Data Transformation
+Study Protocol Type Term Accession Number			
+Study Protocol Type Term Source REF			
+Study Protocol Description			
+Study Protocol URI			
+Study Protocol Version			
+Study Protocol Parameters Name			
+Study Protocol Parameters Name Term Accession Number			
+Study Protocol Parameters Name Term Source REF			
+Study Protocol Components Name			
+Study Protocol Components Type			
+Study Protocol Components Type Term Accession Number			
+Study Protocol Components Type Term Source REF			
+STUDY CONTACTS
+Study Person Last Name	WELCKER	MILLET	TARDIEU
+Study Person First Name	Claude	Emilie	François
+Study Person Mid Initials			
+Study Person Email	claude.welcker@inrae.fr	emilie.millet@wur.nl	francois.tardieu@inrae.fr
+Study Person Phone			
+Study Person Fax			
+Study Person Address	NA in BrAPI	NA in BrAPI	NA in BrAPI
+Study Person Affiliation	NA in endpoint	NA in endpoint	NA in endpoint
+Study Person Roles	Submitter	Submitter	Submitter
+Study Person Roles Term Accession Number			
+Study Person Roles Term Source REF			

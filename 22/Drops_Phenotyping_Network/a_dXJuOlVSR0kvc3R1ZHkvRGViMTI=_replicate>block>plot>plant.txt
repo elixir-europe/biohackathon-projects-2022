@@ -1,0 +1,6 @@
+Sample Name	Protocol REF	Assay Name	Raw Data File	Protocol REF	Derived Data File
+3132water_regimerainfed	Phenotyping	replicate>block>plot>plant	NA in endpoint	Data Transformation	d_dXJuOlVSR0kvc3R1ZHkvRGViMTI=_replicate>block>plot>plant.txt
+NA	Phenotyping	replicate>block>plot>plant	NA in endpoint	Data Transformation	d_dXJuOlVSR0kvc3R1ZHkvRGViMTI=_replicate>block>plot>plant.txt
+WD2210	Phenotyping	replicate>block>plot>plant	NA in endpoint	Data Transformation	d_dXJuOlVSR0kvc3R1ZHkvRGViMTI=_replicate>block>plot>plant.txt
+WD3151	Phenotyping	replicate>block>plot>plant	NA in endpoint	Data Transformation	d_dXJuOlVSR0kvc3R1ZHkvRGViMTI=_replicate>block>plot>plant.txt
+WD3156	Phenotyping	replicate>block>plot>plant	NA in endpoint	Data Transformation	d_dXJuOlVSR0kvc3R1ZHkvRGViMTI=_replicate>block>plot>plant.txt

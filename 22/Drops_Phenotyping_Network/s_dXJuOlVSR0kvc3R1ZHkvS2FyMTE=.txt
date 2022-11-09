@@ -1,0 +1,313 @@
+Source Name	Characteristics[Organism]	Characteristics[Genus]	Characteristics[Species]	Characteristics[Infraspecific Name]	Characteristics[Material Source ID]	Characteristics[Material Source DOI]	Protocol REF	Sample Name	Characteristics[Observation Unit Type]	Characteristics[Spatial Distribution]	Factor Value[water_regime]
+A310_H	NCBITAXON:4577	Zea	mays	var. A310	A310_H	https://doi.org/10.15454/GAHOFA	Growth	3008water_regimewatered	virtual_trial		watered
+A310_H	NCBITAXON:4577	Zea	mays	var. A310	A310_H	https://doi.org/10.15454/GAHOFA	Growth	3008water_regimerainfed	virtual_trial		rainfed
+A310_H	NCBITAXON:4577	Zea	mays	var. A310	A310_H	https://doi.org/10.15454/GAHOFA	Growth	8	replicate>block>plot	X:2;Y:3;plot:8	watered
+A310_H	NCBITAXON:4577	Zea	mays	var. A310	A310_H	https://doi.org/10.15454/GAHOFA	Growth	188	replicate>block>plot	X:9;Y:13;plot:188	rainfed
+A310_H	NCBITAXON:4577	Zea	mays	var. A310	A310_H	https://doi.org/10.15454/GAHOFA	Growth	123	replicate>block>plot	X:3;Y:8;plot:123	rainfed
+A310_H	NCBITAXON:4577	Zea	mays	var. A310	A310_H	https://doi.org/10.15454/GAHOFA	Growth	211	replicate>block>plot	X:12;Y:15;plot:211	rainfed
+A310_H	NCBITAXON:4577	Zea	mays	var. A310	A310_H	https://doi.org/10.15454/GAHOFA	Growth	58	replicate>block>plot	X:12;Y:3;plot:58	watered
+A347_H	NCBITAXON:4577	Zea	mays	var. A347	A347_H	https://doi.org/10.15454/CNJTVT	Growth	73	replicate>block>plot	X:15;Y:3;plot:73	watered
+A347_H	NCBITAXON:4577	Zea	mays	var. A347	A347_H	https://doi.org/10.15454/CNJTVT	Growth	189	replicate>block>plot	X:9;Y:14;plot:189	rainfed
+A347_H	NCBITAXON:4577	Zea	mays	var. A347	A347_H	https://doi.org/10.15454/CNJTVT	Growth	45	replicate>block>plot	X:9;Y:5;plot:45	watered
+A347_H	NCBITAXON:4577	Zea	mays	var. A347	A347_H	https://doi.org/10.15454/CNJTVT	Growth	224	replicate>block>plot	X:13;Y:9;plot:224	rainfed
+A347_H	NCBITAXON:4577	Zea	mays	var. A347	A347_H	https://doi.org/10.15454/CNJTVT	Growth	3013water_regimerainfed	virtual_trial		rainfed
+A347_H	NCBITAXON:4577	Zea	mays	var. A347	A347_H	https://doi.org/10.15454/CNJTVT	Growth	150	replicate>block>plot	X:5;Y:15;plot:150	rainfed
+A347_H	NCBITAXON:4577	Zea	mays	var. A347	A347_H	https://doi.org/10.15454/CNJTVT	Growth	3013water_regimewatered	virtual_trial		watered
+A374_H	NCBITAXON:4577	Zea	mays	var. A374	A374_H	https://doi.org/10.15454/O8CNHP	Growth	3017water_regimerainfed	virtual_trial		rainfed
+A374_H	NCBITAXON:4577	Zea	mays	var. A374	A374_H	https://doi.org/10.15454/O8CNHP	Growth	144	replicate>block>plot	X:5;Y:9;plot:144	rainfed
+A374_H	NCBITAXON:4577	Zea	mays	var. A374	A374_H	https://doi.org/10.15454/O8CNHP	Growth	60	replicate>block>plot	X:12;Y:1;plot:60	watered
+A374_H	NCBITAXON:4577	Zea	mays	var. A374	A374_H	https://doi.org/10.15454/O8CNHP	Growth	183	replicate>block>plot	X:9;Y:8;plot:183	rainfed
+A374_H	NCBITAXON:4577	Zea	mays	var. A374	A374_H	https://doi.org/10.15454/O8CNHP	Growth	233	replicate>block>plot	X:14;Y:13;plot:233	rainfed
+A374_H	NCBITAXON:4577	Zea	mays	var. A374	A374_H	https://doi.org/10.15454/O8CNHP	Growth	3017water_regimewatered	virtual_trial		watered
+A374_H	NCBITAXON:4577	Zea	mays	var. A374	A374_H	https://doi.org/10.15454/O8CNHP	Growth	15	replicate>block>plot	X:3;Y:5;plot:15	watered
+B100_H	NCBITAXON:4577	Zea	mays	var. B100	B100_H	https://doi.org/10.15454/PJSPJG	Growth	38	replicate>block>plot	X:8;Y:3;plot:38	watered
+B100_H	NCBITAXON:4577	Zea	mays	var. B100	B100_H	https://doi.org/10.15454/PJSPJG	Growth	218	replicate>block>plot	X:12;Y:8;plot:218	rainfed
+B100_H	NCBITAXON:4577	Zea	mays	var. B100	B100_H	https://doi.org/10.15454/PJSPJG	Growth	106	replicate>block>plot	X:1;Y:11;plot:106	rainfed
+B100_H	NCBITAXON:4577	Zea	mays	var. B100	B100_H	https://doi.org/10.15454/PJSPJG	Growth	3019water_regimewatered	virtual_trial		watered
+B100_H	NCBITAXON:4577	Zea	mays	var. B100	B100_H	https://doi.org/10.15454/PJSPJG	Growth	77	replicate>block>plot	X:16;Y:4;plot:77	watered
+B100_H	NCBITAXON:4577	Zea	mays	var. B100	B100_H	https://doi.org/10.15454/PJSPJG	Growth	3019water_regimerainfed	virtual_trial		rainfed
+B100_H	NCBITAXON:4577	Zea	mays	var. B100	B100_H	https://doi.org/10.15454/PJSPJG	Growth	178	replicate>block>plot	X:8;Y:8;plot:178	rainfed
+B104_H	NCBITAXON:4577	Zea	mays	var. B104	B104_H	https://doi.org/10.15454/4W8MAU	Growth	3029water_regimewatered	virtual_trial		watered
+B104_H	NCBITAXON:4577	Zea	mays	var. B104	B104_H	https://doi.org/10.15454/4W8MAU	Growth	67	replicate>block>plot	X:14;Y:4;plot:67	watered
+B104_H	NCBITAXON:4577	Zea	mays	var. B104	B104_H	https://doi.org/10.15454/4W8MAU	Growth	221	replicate>block>plot	X:13;Y:6;plot:221	rainfed
+B104_H	NCBITAXON:4577	Zea	mays	var. B104	B104_H	https://doi.org/10.15454/4W8MAU	Growth	174	replicate>block>plot	X:8;Y:12;plot:174	rainfed
+B104_H	NCBITAXON:4577	Zea	mays	var. B104	B104_H	https://doi.org/10.15454/4W8MAU	Growth	3029water_regimerainfed	virtual_trial		rainfed
+B104_H	NCBITAXON:4577	Zea	mays	var. B104	B104_H	https://doi.org/10.15454/4W8MAU	Growth	40	replicate>block>plot	X:8;Y:1;plot:40	watered
+B104_H	NCBITAXON:4577	Zea	mays	var. B104	B104_H	https://doi.org/10.15454/4W8MAU	Growth	107	replicate>block>plot	X:1;Y:12;plot:107	rainfed
+B105_H	NCBITAXON:4577	Zea	mays	var. B105	B105_H	https://doi.org/10.15454/KIHXDG	Growth	169	replicate>block>plot	X:7;Y:14;plot:169	rainfed
+B105_H	NCBITAXON:4577	Zea	mays	var. B105	B105_H	https://doi.org/10.15454/KIHXDG	Growth	93	replicate>block>plot	X:19;Y:3;plot:93	watered
+B105_H	NCBITAXON:4577	Zea	mays	var. B105	B105_H	https://doi.org/10.15454/KIHXDG	Growth	245	replicate>block>plot	X:15;Y:10;plot:245	rainfed
+B105_H	NCBITAXON:4577	Zea	mays	var. B105	B105_H	https://doi.org/10.15454/KIHXDG	Growth	3012water_regimerainfed	virtual_trial		rainfed
+B105_H	NCBITAXON:4577	Zea	mays	var. B105	B105_H	https://doi.org/10.15454/KIHXDG	Growth	3	replicate>block>plot	X:1;Y:3;plot:3	watered
+B105_H	NCBITAXON:4577	Zea	mays	var. B105	B105_H	https://doi.org/10.15454/KIHXDG	Growth	3012water_regimewatered	virtual_trial		watered
+B105_H	NCBITAXON:4577	Zea	mays	var. B105	B105_H	https://doi.org/10.15454/KIHXDG	Growth	132	replicate>block>plot	X:4;Y:14;plot:132	rainfed
+B73_H	NCBITAXON:4577	Zea	mays	var. B73	B73_H	https://doi.org/10.15454/P5UIAJ	Growth	10	replicate>block>plot	X:2;Y:1;plot:10	watered
+B73_H	NCBITAXON:4577	Zea	mays	var. B73	B73_H	https://doi.org/10.15454/P5UIAJ	Growth	217	replicate>block>plot	X:12;Y:9;plot:217	rainfed
+B73_H	NCBITAXON:4577	Zea	mays	var. B73	B73_H	https://doi.org/10.15454/P5UIAJ	Growth	158	replicate>block>plot	X:6;Y:8;plot:158	rainfed
+B73_H	NCBITAXON:4577	Zea	mays	var. B73	B73_H	https://doi.org/10.15454/P5UIAJ	Growth	3001water_regimewatered	virtual_trial		watered
+B73_H	NCBITAXON:4577	Zea	mays	var. B73	B73_H	https://doi.org/10.15454/P5UIAJ	Growth	69	replicate>block>plot	X:14;Y:2;plot:69	watered
+B73_H	NCBITAXON:4577	Zea	mays	var. B73	B73_H	https://doi.org/10.15454/P5UIAJ	Growth	212	replicate>block>plot	X:12;Y:14;plot:212	rainfed
+B73_H	NCBITAXON:4577	Zea	mays	var. B73	B73_H	https://doi.org/10.15454/P5UIAJ	Growth	99	replicate>block>plot	X:20;Y:2;plot:99	watered
+B73_H	NCBITAXON:4577	Zea	mays	var. B73	B73_H	https://doi.org/10.15454/P5UIAJ	Growth	3001water_regimerainfed	virtual_trial		rainfed
+B73_H	NCBITAXON:4577	Zea	mays	var. B73	B73_H	https://doi.org/10.15454/P5UIAJ	Growth	154	replicate>block>plot	X:6;Y:12;plot:154	rainfed
+B73_H	NCBITAXON:4577	Zea	mays	var. B73	B73_H	https://doi.org/10.15454/P5UIAJ	Growth	121	replicate>block>plot	X:3;Y:6;plot:121	rainfed
+B73_H	NCBITAXON:4577	Zea	mays	var. B73	B73_H	https://doi.org/10.15454/P5UIAJ	Growth	113	replicate>block>plot	X:2;Y:13;plot:113	rainfed
+B73_H	NCBITAXON:4577	Zea	mays	var. B73	B73_H	https://doi.org/10.15454/P5UIAJ	Growth	48	replicate>block>plot	X:10;Y:3;plot:48	watered
+B84_H	NCBITAXON:4577	Zea	mays	var. B84	B84_H	https://doi.org/10.15454/MN1MDA	Growth	110	replicate>block>plot	X:1;Y:15;plot:110	rainfed
+B84_H	NCBITAXON:4577	Zea	mays	var. B84	B84_H	https://doi.org/10.15454/MN1MDA	Growth	36	replicate>block>plot	X:8;Y:5;plot:36	watered
+B84_H	NCBITAXON:4577	Zea	mays	var. B84	B84_H	https://doi.org/10.15454/MN1MDA	Growth	234	replicate>block>plot	X:14;Y:12;plot:234	rainfed
+B84_H	NCBITAXON:4577	Zea	mays	var. B84	B84_H	https://doi.org/10.15454/MN1MDA	Growth	89	replicate>block>plot	X:18;Y:2;plot:89	watered
+B84_H	NCBITAXON:4577	Zea	mays	var. B84	B84_H	https://doi.org/10.15454/MN1MDA	Growth	3009water_regimewatered	virtual_trial		watered
+B84_H	NCBITAXON:4577	Zea	mays	var. B84	B84_H	https://doi.org/10.15454/MN1MDA	Growth	191	replicate>block>plot	X:10;Y:15;plot:191	rainfed
+B84_H	NCBITAXON:4577	Zea	mays	var. B84	B84_H	https://doi.org/10.15454/MN1MDA	Growth	3009water_regimerainfed	virtual_trial		rainfed
+B89_H	NCBITAXON:4577	Zea	mays	var. B89	B89_H	https://doi.org/10.15454/LFK19C	Growth	3030water_regimewatered	virtual_trial		watered
+B89_H	NCBITAXON:4577	Zea	mays	var. B89	B89_H	https://doi.org/10.15454/LFK19C	Growth	127	replicate>block>plot	X:3;Y:12;plot:127	rainfed
+B89_H	NCBITAXON:4577	Zea	mays	var. B89	B89_H	https://doi.org/10.15454/LFK19C	Growth	3030water_regimerainfed	virtual_trial		rainfed
+B89_H	NCBITAXON:4577	Zea	mays	var. B89	B89_H	https://doi.org/10.15454/LFK19C	Growth	30	replicate>block>plot	X:6;Y:1;plot:30	watered
+B89_H	NCBITAXON:4577	Zea	mays	var. B89	B89_H	https://doi.org/10.15454/LFK19C	Growth	64	replicate>block>plot	X:13;Y:4;plot:64	watered
+B89_H	NCBITAXON:4577	Zea	mays	var. B89	B89_H	https://doi.org/10.15454/LFK19C	Growth	206	replicate>block>plot	X:11;Y:11;plot:206	rainfed
+B89_H	NCBITAXON:4577	Zea	mays	var. B89	B89_H	https://doi.org/10.15454/LFK19C	Growth	167	replicate>block>plot	X:7;Y:12;plot:167	rainfed
+B97_H	NCBITAXON:4577	Zea	mays	var. B97	B97_H	https://doi.org/10.15454/3UYP74	Growth	3027water_regimerainfed	virtual_trial		rainfed
+B97_H	NCBITAXON:4577	Zea	mays	var. B97	B97_H	https://doi.org/10.15454/3UYP74	Growth	3027water_regimewatered	virtual_trial		watered
+B97_H	NCBITAXON:4577	Zea	mays	var. B97	B97_H	https://doi.org/10.15454/3UYP74	Growth	177	replicate>block>plot	X:8;Y:9;plot:177	rainfed
+B97_H	NCBITAXON:4577	Zea	mays	var. B97	B97_H	https://doi.org/10.15454/3UYP74	Growth	14	replicate>block>plot	X:3;Y:4;plot:14	watered
+B97_H	NCBITAXON:4577	Zea	mays	var. B97	B97_H	https://doi.org/10.15454/3UYP74	Growth	145	replicate>block>plot	X:5;Y:10;plot:145	rainfed
+B97_H	NCBITAXON:4577	Zea	mays	var. B97	B97_H	https://doi.org/10.15454/3UYP74	Growth	237	replicate>block>plot	X:14;Y:9;plot:237	rainfed
+B97_H	NCBITAXON:4577	Zea	mays	var. B97	B97_H	https://doi.org/10.15454/3UYP74	Growth	71	replicate>block>plot	X:15;Y:1;plot:71	watered
+EC232_H	NCBITAXON:4577	Zea	mays	var. EC232	EC232_H	https://doi.org/10.15454/V2GUZ8	Growth	42	replicate>block>plot	X:9;Y:2;plot:42	watered
+EC232_H	NCBITAXON:4577	Zea	mays	var. EC232	EC232_H	https://doi.org/10.15454/V2GUZ8	Growth	56	replicate>block>plot	X:12;Y:5;plot:56	watered
+EC232_H	NCBITAXON:4577	Zea	mays	var. EC232	EC232_H	https://doi.org/10.15454/V2GUZ8	Growth	146	replicate>block>plot	X:5;Y:11;plot:146	rainfed
+EC232_H	NCBITAXON:4577	Zea	mays	var. EC232	EC232_H	https://doi.org/10.15454/V2GUZ8	Growth	203	replicate>block>plot	X:11;Y:8;plot:203	rainfed
+EC232_H	NCBITAXON:4577	Zea	mays	var. EC232	EC232_H	https://doi.org/10.15454/V2GUZ8	Growth	166	replicate>block>plot	X:7;Y:11;plot:166	rainfed
+EP2008-18_H	NCBITAXON:4577	Zea	mays	var. EP2008-18	EP2008-18_H	https://doi.org/10.15454/LLQDYK	Growth	102	replicate>block>plot	X:1;Y:7;plot:102	rainfed
+EP2008-18_H	NCBITAXON:4577	Zea	mays	var. EP2008-18	EP2008-18_H	https://doi.org/10.15454/LLQDYK	Growth	241	replicate>block>plot	X:15;Y:6;plot:241	rainfed
+EP2008-18_H	NCBITAXON:4577	Zea	mays	var. EP2008-18	EP2008-18_H	https://doi.org/10.15454/LLQDYK	Growth	76	replicate>block>plot	X:16;Y:5;plot:76	watered
+EP2008-18_H	NCBITAXON:4577	Zea	mays	var. EP2008-18	EP2008-18_H	https://doi.org/10.15454/LLQDYK	Growth	33	replicate>block>plot	X:7;Y:3;plot:33	watered
+EP2008-18_H	NCBITAXON:4577	Zea	mays	var. EP2008-18	EP2008-18_H	https://doi.org/10.15454/LLQDYK	Growth	195	replicate>block>plot	X:10;Y:11;plot:195	rainfed
+EP52_H	NCBITAXON:4577	Zea	mays	var. EP52	EP52_H	https://doi.org/10.15454/JBBAWF	Growth	118	replicate>block>plot	X:2;Y:8;plot:118	rainfed
+EP52_H	NCBITAXON:4577	Zea	mays	var. EP52	EP52_H	https://doi.org/10.15454/JBBAWF	Growth	24	replicate>block>plot	X:5;Y:4;plot:24	watered
+EP52_H	NCBITAXON:4577	Zea	mays	var. EP52	EP52_H	https://doi.org/10.15454/JBBAWF	Growth	210	replicate>block>plot	X:11;Y:15;plot:210	rainfed
+EP52_H	NCBITAXON:4577	Zea	mays	var. EP52	EP52_H	https://doi.org/10.15454/JBBAWF	Growth	3014water_regimewatered	virtual_trial		watered
+EP52_H	NCBITAXON:4577	Zea	mays	var. EP52	EP52_H	https://doi.org/10.15454/JBBAWF	Growth	3014water_regimerainfed	virtual_trial		rainfed
+EP52_H	NCBITAXON:4577	Zea	mays	var. EP52	EP52_H	https://doi.org/10.15454/JBBAWF	Growth	81	replicate>block>plot	X:17;Y:1;plot:81	watered
+EP52_H	NCBITAXON:4577	Zea	mays	var. EP52	EP52_H	https://doi.org/10.15454/JBBAWF	Growth	192	replicate>block>plot	X:10;Y:14;plot:192	rainfed
+EZ11A_H	NCBITAXON:4577	Zea	mays	var. EZ11A	EZ11A_H	https://doi.org/10.15454/F8P1TS	Growth	3020water_regimewatered	virtual_trial		watered
+EZ11A_H	NCBITAXON:4577	Zea	mays	var. EZ11A	EZ11A_H	https://doi.org/10.15454/F8P1TS	Growth	155	replicate>block>plot	X:6;Y:11;plot:155	rainfed
+EZ11A_H	NCBITAXON:4577	Zea	mays	var. EZ11A	EZ11A_H	https://doi.org/10.15454/F8P1TS	Growth	201	replicate>block>plot	X:11;Y:6;plot:201	rainfed
+EZ11A_H	NCBITAXON:4577	Zea	mays	var. EZ11A	EZ11A_H	https://doi.org/10.15454/F8P1TS	Growth	129	replicate>block>plot	X:3;Y:14;plot:129	rainfed
+EZ11A_H	NCBITAXON:4577	Zea	mays	var. EZ11A	EZ11A_H	https://doi.org/10.15454/F8P1TS	Growth	97	replicate>block>plot	X:20;Y:4;plot:97	watered
+EZ11A_H	NCBITAXON:4577	Zea	mays	var. EZ11A	EZ11A_H	https://doi.org/10.15454/F8P1TS	Growth	3020water_regimerainfed	virtual_trial		rainfed
+EZ11A_H	NCBITAXON:4577	Zea	mays	var. EZ11A	EZ11A_H	https://doi.org/10.15454/F8P1TS	Growth	28	replicate>block>plot	X:6;Y:3;plot:28	watered
+EZ37_H	NCBITAXON:4577	Zea	mays	var. EZ37	EZ37_H	https://doi.org/10.15454/GD6TZS	Growth	111	replicate>block>plot	X:2;Y:15;plot:111	rainfed
+EZ37_H	NCBITAXON:4577	Zea	mays	var. EZ37	EZ37_H	https://doi.org/10.15454/GD6TZS	Growth	3021water_regimerainfed	virtual_trial		rainfed
+EZ37_H	NCBITAXON:4577	Zea	mays	var. EZ37	EZ37_H	https://doi.org/10.15454/GD6TZS	Growth	3021water_regimewatered	virtual_trial		watered
+EZ37_H	NCBITAXON:4577	Zea	mays	var. EZ37	EZ37_H	https://doi.org/10.15454/GD6TZS	Growth	57	replicate>block>plot	X:12;Y:4;plot:57	watered
+EZ37_H	NCBITAXON:4577	Zea	mays	var. EZ37	EZ37_H	https://doi.org/10.15454/GD6TZS	Growth	47	replicate>block>plot	X:10;Y:4;plot:47	watered
+EZ37_H	NCBITAXON:4577	Zea	mays	var. EZ37	EZ37_H	https://doi.org/10.15454/GD6TZS	Growth	229	replicate>block>plot	X:13;Y:14;plot:229	rainfed
+EZ37_H	NCBITAXON:4577	Zea	mays	var. EZ37	EZ37_H	https://doi.org/10.15454/GD6TZS	Growth	190	replicate>block>plot	X:9;Y:15;plot:190	rainfed
+EZ40_H	NCBITAXON:4577	Zea	mays	var. EZ40	EZ40_H	https://doi.org/10.15454/BNROZU	Growth	21	replicate>block>plot	X:5;Y:1;plot:21	watered
+EZ40_H	NCBITAXON:4577	Zea	mays	var. EZ40	EZ40_H	https://doi.org/10.15454/BNROZU	Growth	181	replicate>block>plot	X:9;Y:6;plot:181	rainfed
+EZ40_H	NCBITAXON:4577	Zea	mays	var. EZ40	EZ40_H	https://doi.org/10.15454/BNROZU	Growth	223	replicate>block>plot	X:13;Y:8;plot:223	rainfed
+EZ40_H	NCBITAXON:4577	Zea	mays	var. EZ40	EZ40_H	https://doi.org/10.15454/BNROZU	Growth	52	replicate>block>plot	X:11;Y:2;plot:52	watered
+EZ40_H	NCBITAXON:4577	Zea	mays	var. EZ40	EZ40_H	https://doi.org/10.15454/BNROZU	Growth	119	replicate>block>plot	X:2;Y:7;plot:119	rainfed
+EZ47_H	NCBITAXON:4577	Zea	mays	var. EZ47	EZ47_H	https://doi.org/10.15454/FLE1RA	Growth	3006water_regimerainfed	virtual_trial		rainfed
+EZ47_H	NCBITAXON:4577	Zea	mays	var. EZ47	EZ47_H	https://doi.org/10.15454/FLE1RA	Growth	172	replicate>block>plot	X:8;Y:14;plot:172	rainfed
+EZ47_H	NCBITAXON:4577	Zea	mays	var. EZ47	EZ47_H	https://doi.org/10.15454/FLE1RA	Growth	207	replicate>block>plot	X:11;Y:12;plot:207	rainfed
+EZ47_H	NCBITAXON:4577	Zea	mays	var. EZ47	EZ47_H	https://doi.org/10.15454/FLE1RA	Growth	16	replicate>block>plot	X:4;Y:5;plot:16	watered
+EZ47_H	NCBITAXON:4577	Zea	mays	var. EZ47	EZ47_H	https://doi.org/10.15454/FLE1RA	Growth	68	replicate>block>plot	X:14;Y:3;plot:68	watered
+EZ47_H	NCBITAXON:4577	Zea	mays	var. EZ47	EZ47_H	https://doi.org/10.15454/FLE1RA	Growth	137	replicate>block>plot	X:4;Y:9;plot:137	rainfed
+EZ47_H	NCBITAXON:4577	Zea	mays	var. EZ47	EZ47_H	https://doi.org/10.15454/FLE1RA	Growth	3006water_regimewatered	virtual_trial		watered
+F1808_H	NCBITAXON:4577	Zea	mays	var. F1808	F1808_H	https://doi.org/10.15454/RFTVJ3	Growth	194	replicate>block>plot	X:10;Y:12;plot:194	rainfed
+F1808_H	NCBITAXON:4577	Zea	mays	var. F1808	F1808_H	https://doi.org/10.15454/RFTVJ3	Growth	215	replicate>block>plot	X:12;Y:11;plot:215	rainfed
+F1808_H	NCBITAXON:4577	Zea	mays	var. F1808	F1808_H	https://doi.org/10.15454/RFTVJ3	Growth	1	replicate>block>plot	X:1;Y:1;plot:1	watered
+F1808_H	NCBITAXON:4577	Zea	mays	var. F1808	F1808_H	https://doi.org/10.15454/RFTVJ3	Growth	3022water_regimewatered	virtual_trial		watered
+F1808_H	NCBITAXON:4577	Zea	mays	var. F1808	F1808_H	https://doi.org/10.15454/RFTVJ3	Growth	135	replicate>block>plot	X:4;Y:11;plot:135	rainfed
+F1808_H	NCBITAXON:4577	Zea	mays	var. F1808	F1808_H	https://doi.org/10.15454/RFTVJ3	Growth	3022water_regimerainfed	virtual_trial		rainfed
+F1808_H	NCBITAXON:4577	Zea	mays	var. F1808	F1808_H	https://doi.org/10.15454/RFTVJ3	Growth	90	replicate>block>plot	X:18;Y:1;plot:90	watered
+F1890_H	NCBITAXON:4577	Zea	mays	var. F1890	F1890_H	https://doi.org/10.15454/DPMMOI	Growth	213	replicate>block>plot	X:12;Y:13;plot:213	rainfed
+F1890_H	NCBITAXON:4577	Zea	mays	var. F1890	F1890_H	https://doi.org/10.15454/DPMMOI	Growth	20	replicate>block>plot	X:4;Y:1;plot:20	watered
+F1890_H	NCBITAXON:4577	Zea	mays	var. F1890	F1890_H	https://doi.org/10.15454/DPMMOI	Growth	3016water_regimerainfed	virtual_trial		rainfed
+F1890_H	NCBITAXON:4577	Zea	mays	var. F1890	F1890_H	https://doi.org/10.15454/DPMMOI	Growth	138	replicate>block>plot	X:4;Y:8;plot:138	rainfed
+F1890_H	NCBITAXON:4577	Zea	mays	var. F1890	F1890_H	https://doi.org/10.15454/DPMMOI	Growth	160	replicate>block>plot	X:6;Y:6;plot:160	rainfed
+F1890_H	NCBITAXON:4577	Zea	mays	var. F1890	F1890_H	https://doi.org/10.15454/DPMMOI	Growth	63	replicate>block>plot	X:13;Y:3;plot:63	watered
+F1890_H	NCBITAXON:4577	Zea	mays	var. F1890	F1890_H	https://doi.org/10.15454/DPMMOI	Growth	3016water_regimewatered	virtual_trial		watered
+F7001_H	NCBITAXON:4577	Zea	mays	var. F7001	F7001_H	https://doi.org/10.15454/J1WKMB	Growth	130	replicate>block>plot	X:3;Y:15;plot:130	rainfed
+F7001_H	NCBITAXON:4577	Zea	mays	var. F7001	F7001_H	https://doi.org/10.15454/J1WKMB	Growth	180	replicate>block>plot	X:8;Y:6;plot:180	rainfed
+F7001_H	NCBITAXON:4577	Zea	mays	var. F7001	F7001_H	https://doi.org/10.15454/J1WKMB	Growth	29	replicate>block>plot	X:6;Y:2;plot:29	watered
+F7001_H	NCBITAXON:4577	Zea	mays	var. F7001	F7001_H	https://doi.org/10.15454/J1WKMB	Growth	235	replicate>block>plot	X:14;Y:11;plot:235	rainfed
+F7001_H	NCBITAXON:4577	Zea	mays	var. F7001	F7001_H	https://doi.org/10.15454/J1WKMB	Growth	85	replicate>block>plot	X:17;Y:5;plot:85	watered
+F7028_H	NCBITAXON:4577	Zea	mays	var. F7028	F7028_H	https://doi.org/10.15454/X2ENCA	Growth	3015water_regimerainfed	virtual_trial		rainfed
+F7028_H	NCBITAXON:4577	Zea	mays	var. F7028	F7028_H	https://doi.org/10.15454/X2ENCA	Growth	105	replicate>block>plot	X:1;Y:10;plot:105	rainfed
+F7028_H	NCBITAXON:4577	Zea	mays	var. F7028	F7028_H	https://doi.org/10.15454/X2ENCA	Growth	163	replicate>block>plot	X:7;Y:8;plot:163	rainfed
+F7028_H	NCBITAXON:4577	Zea	mays	var. F7028	F7028_H	https://doi.org/10.15454/X2ENCA	Growth	34	replicate>block>plot	X:7;Y:4;plot:34	watered
+F7028_H	NCBITAXON:4577	Zea	mays	var. F7028	F7028_H	https://doi.org/10.15454/X2ENCA	Growth	70	replicate>block>plot	X:14;Y:1;plot:70	watered
+F7028_H	NCBITAXON:4577	Zea	mays	var. F7028	F7028_H	https://doi.org/10.15454/X2ENCA	Growth	3015water_regimewatered	virtual_trial		watered
+F7081_H	NCBITAXON:4577	Zea	mays	var. F7081	F7081_H	https://doi.org/10.15454/OVKBUY	Growth	19	replicate>block>plot	X:4;Y:2;plot:19	watered
+F7081_H	NCBITAXON:4577	Zea	mays	var. F7081	F7081_H	https://doi.org/10.15454/OVKBUY	Growth	96	replicate>block>plot	X:20;Y:5;plot:96	watered
+F7081_H	NCBITAXON:4577	Zea	mays	var. F7081	F7081_H	https://doi.org/10.15454/OVKBUY	Growth	225	replicate>block>plot	X:13;Y:10;plot:225	rainfed
+F7081_H	NCBITAXON:4577	Zea	mays	var. F7081	F7081_H	https://doi.org/10.15454/OVKBUY	Growth	165	replicate>block>plot	X:7;Y:10;plot:165	rainfed
+F7081_H	NCBITAXON:4577	Zea	mays	var. F7081	F7081_H	https://doi.org/10.15454/OVKBUY	Growth	139	replicate>block>plot	X:4;Y:7;plot:139	rainfed
+F838_H	NCBITAXON:4577	Zea	mays	var. F838	F838_H	https://doi.org/10.15454/KSZLK9	Growth	122	replicate>block>plot	X:3;Y:7;plot:122	rainfed
+F838_H	NCBITAXON:4577	Zea	mays	var. F838	F838_H	https://doi.org/10.15454/KSZLK9	Growth	7	replicate>block>plot	X:2;Y:4;plot:7	watered
+F838_H	NCBITAXON:4577	Zea	mays	var. F838	F838_H	https://doi.org/10.15454/KSZLK9	Growth	3028water_regimerainfed	virtual_trial		rainfed
+F838_H	NCBITAXON:4577	Zea	mays	var. F838	F838_H	https://doi.org/10.15454/KSZLK9	Growth	242	replicate>block>plot	X:15;Y:7;plot:242	rainfed
+F838_H	NCBITAXON:4577	Zea	mays	var. F838	F838_H	https://doi.org/10.15454/KSZLK9	Growth	3028water_regimewatered	virtual_trial		watered
+F838_H	NCBITAXON:4577	Zea	mays	var. F838	F838_H	https://doi.org/10.15454/KSZLK9	Growth	84	replicate>block>plot	X:17;Y:4;plot:84	watered
+F838_H	NCBITAXON:4577	Zea	mays	var. F838	F838_H	https://doi.org/10.15454/KSZLK9	Growth	151	replicate>block>plot	X:6;Y:15;plot:151	rainfed
+F894_H	NCBITAXON:4577	Zea	mays	var. F894	F894_H	https://doi.org/10.15454/WBSYN7	Growth	3010water_regimerainfed	virtual_trial		rainfed
+F894_H	NCBITAXON:4577	Zea	mays	var. F894	F894_H	https://doi.org/10.15454/WBSYN7	Growth	26	replicate>block>plot	X:6;Y:5;plot:26	watered
+F894_H	NCBITAXON:4577	Zea	mays	var. F894	F894_H	https://doi.org/10.15454/WBSYN7	Growth	164	replicate>block>plot	X:7;Y:9;plot:164	rainfed
+F894_H	NCBITAXON:4577	Zea	mays	var. F894	F894_H	https://doi.org/10.15454/WBSYN7	Growth	3010water_regimewatered	virtual_trial		watered
+F894_H	NCBITAXON:4577	Zea	mays	var. F894	F894_H	https://doi.org/10.15454/WBSYN7	Growth	249	replicate>block>plot	X:15;Y:14;plot:249	rainfed
+F894_H	NCBITAXON:4577	Zea	mays	var. F894	F894_H	https://doi.org/10.15454/WBSYN7	Growth	128	replicate>block>plot	X:3;Y:13;plot:128	rainfed
+F894_H	NCBITAXON:4577	Zea	mays	var. F894	F894_H	https://doi.org/10.15454/WBSYN7	Growth	79	replicate>block>plot	X:16;Y:2;plot:79	watered
+F912_H	NCBITAXON:4577	Zea	mays	var. F912	F912_H	https://doi.org/10.15454/ZJPT9Q	Growth	51	replicate>block>plot	X:11;Y:1;plot:51	watered
+F912_H	NCBITAXON:4577	Zea	mays	var. F912	F912_H	https://doi.org/10.15454/ZJPT9Q	Growth	3011water_regimerainfed	virtual_trial		rainfed
+F912_H	NCBITAXON:4577	Zea	mays	var. F912	F912_H	https://doi.org/10.15454/ZJPT9Q	Growth	238	replicate>block>plot	X:14;Y:8;plot:238	rainfed
+F912_H	NCBITAXON:4577	Zea	mays	var. F912	F912_H	https://doi.org/10.15454/ZJPT9Q	Growth	171	replicate>block>plot	X:8;Y:15;plot:171	rainfed
+F912_H	NCBITAXON:4577	Zea	mays	var. F912	F912_H	https://doi.org/10.15454/ZJPT9Q	Growth	3011water_regimewatered	virtual_trial		watered
+F912_H	NCBITAXON:4577	Zea	mays	var. F912	F912_H	https://doi.org/10.15454/ZJPT9Q	Growth	46	replicate>block>plot	X:10;Y:5;plot:46	watered
+F912_H	NCBITAXON:4577	Zea	mays	var. F912	F912_H	https://doi.org/10.15454/ZJPT9Q	Growth	112	replicate>block>plot	X:2;Y:14;plot:112	rainfed
+F924_H	NCBITAXON:4577	Zea	mays	var. F924	F924_H	https://doi.org/10.15454/RPM9FH	Growth	43	replicate>block>plot	X:9;Y:3;plot:43	watered
+F924_H	NCBITAXON:4577	Zea	mays	var. F924	F924_H	https://doi.org/10.15454/RPM9FH	Growth	98	replicate>block>plot	X:20;Y:3;plot:98	watered
+F924_H	NCBITAXON:4577	Zea	mays	var. F924	F924_H	https://doi.org/10.15454/RPM9FH	Growth	149	replicate>block>plot	X:5;Y:14;plot:149	rainfed
+F924_H	NCBITAXON:4577	Zea	mays	var. F924	F924_H	https://doi.org/10.15454/RPM9FH	Growth	244	replicate>block>plot	X:15;Y:9;plot:244	rainfed
+F924_H	NCBITAXON:4577	Zea	mays	var. F924	F924_H	https://doi.org/10.15454/RPM9FH	Growth	157	replicate>block>plot	X:6;Y:9;plot:157	rainfed
+FR19_H	NCBITAXON:4577	Zea	mays	var. FR19	FR19_H	https://doi.org/10.15454/TPZTSA	Growth	87	replicate>block>plot	X:18;Y:4;plot:87	watered
+FR19_H	NCBITAXON:4577	Zea	mays	var. FR19	FR19_H	https://doi.org/10.15454/TPZTSA	Growth	250	replicate>block>plot	X:15;Y:15;plot:250	rainfed
+FR19_H	NCBITAXON:4577	Zea	mays	var. FR19	FR19_H	https://doi.org/10.15454/TPZTSA	Growth	3018water_regimewatered	virtual_trial		watered
+FR19_H	NCBITAXON:4577	Zea	mays	var. FR19	FR19_H	https://doi.org/10.15454/TPZTSA	Growth	6	replicate>block>plot	X:2;Y:5;plot:6	watered
+FR19_H	NCBITAXON:4577	Zea	mays	var. FR19	FR19_H	https://doi.org/10.15454/TPZTSA	Growth	3018water_regimerainfed	virtual_trial		rainfed
+FR19_H	NCBITAXON:4577	Zea	mays	var. FR19	FR19_H	https://doi.org/10.15454/TPZTSA	Growth	124	replicate>block>plot	X:3;Y:9;plot:124	rainfed
+FR19_H	NCBITAXON:4577	Zea	mays	var. FR19	FR19_H	https://doi.org/10.15454/TPZTSA	Growth	197	replicate>block>plot	X:10;Y:9;plot:197	rainfed
+HMV5405_H	NCBITAXON:4577	Zea	mays	var. HMV5405	HMV5405_H	https://doi.org/10.15454/DB5QJS	Growth	78	replicate>block>plot	X:16;Y:3;plot:78	watered
+HMV5405_H	NCBITAXON:4577	Zea	mays	var. HMV5405	HMV5405_H	https://doi.org/10.15454/DB5QJS	Growth	240	replicate>block>plot	X:14;Y:6;plot:240	rainfed
+HMV5405_H	NCBITAXON:4577	Zea	mays	var. HMV5405	HMV5405_H	https://doi.org/10.15454/DB5QJS	Growth	134	replicate>block>plot	X:4;Y:12;plot:134	rainfed
+HMV5405_H	NCBITAXON:4577	Zea	mays	var. HMV5405	HMV5405_H	https://doi.org/10.15454/DB5QJS	Growth	2	replicate>block>plot	X:1;Y:2;plot:2	watered
+HMV5405_H	NCBITAXON:4577	Zea	mays	var. HMV5405	HMV5405_H	https://doi.org/10.15454/DB5QJS	Growth	162	replicate>block>plot	X:7;Y:7;plot:162	rainfed
+HMV5422_H	NCBITAXON:4577	Zea	mays	var. HMV5422	HMV5422_H	https://doi.org/10.15454/MNJOZY	Growth	55	replicate>block>plot	X:11;Y:5;plot:55	watered
+HMV5422_H	NCBITAXON:4577	Zea	mays	var. HMV5422	HMV5422_H	https://doi.org/10.15454/MNJOZY	Growth	11	replicate>block>plot	X:3;Y:1;plot:11	watered
+HMV5422_H	NCBITAXON:4577	Zea	mays	var. HMV5422	HMV5422_H	https://doi.org/10.15454/MNJOZY	Growth	159	replicate>block>plot	X:6;Y:7;plot:159	rainfed
+HMV5422_H	NCBITAXON:4577	Zea	mays	var. HMV5422	HMV5422_H	https://doi.org/10.15454/MNJOZY	Growth	208	replicate>block>plot	X:11;Y:13;plot:208	rainfed
+HMV5422_H	NCBITAXON:4577	Zea	mays	var. HMV5422	HMV5422_H	https://doi.org/10.15454/MNJOZY	Growth	141	replicate>block>plot	X:5;Y:6;plot:141	rainfed
+LAN496_H	NCBITAXON:4577	Zea	mays	var. LAN496	LAN496_H	https://doi.org/10.15454/CAPEG4	Growth	236	replicate>block>plot	X:14;Y:10;plot:236	rainfed
+LAN496_H	NCBITAXON:4577	Zea	mays	var. LAN496	LAN496_H	https://doi.org/10.15454/CAPEG4	Growth	186	replicate>block>plot	X:9;Y:11;plot:186	rainfed
+LAN496_H	NCBITAXON:4577	Zea	mays	var. LAN496	LAN496_H	https://doi.org/10.15454/CAPEG4	Growth	116	replicate>block>plot	X:2;Y:10;plot:116	rainfed
+LAN496_H	NCBITAXON:4577	Zea	mays	var. LAN496	LAN496_H	https://doi.org/10.15454/CAPEG4	Growth	23	replicate>block>plot	X:5;Y:3;plot:23	watered
+LAN496_H	NCBITAXON:4577	Zea	mays	var. LAN496	LAN496_H	https://doi.org/10.15454/CAPEG4	Growth	86	replicate>block>plot	X:18;Y:5;plot:86	watered
+LH38_H	NCBITAXON:4577	Zea	mays	var. LH38	LH38_H	https://doi.org/10.15454/M33T8W	Growth	246	replicate>block>plot	X:15;Y:11;plot:246	rainfed
+LH38_H	NCBITAXON:4577	Zea	mays	var. LH38	LH38_H	https://doi.org/10.15454/M33T8W	Growth	120	replicate>block>plot	X:2;Y:6;plot:120	rainfed
+LH38_H	NCBITAXON:4577	Zea	mays	var. LH38	LH38_H	https://doi.org/10.15454/M33T8W	Growth	25	replicate>block>plot	X:5;Y:5;plot:25	watered
+LH38_H	NCBITAXON:4577	Zea	mays	var. LH38	LH38_H	https://doi.org/10.15454/M33T8W	Growth	100	replicate>block>plot	X:20;Y:1;plot:100	watered
+LH38_H	NCBITAXON:4577	Zea	mays	var. LH38	LH38_H	https://doi.org/10.15454/M33T8W	Growth	3024water_regimewatered	virtual_trial		watered
+LH38_H	NCBITAXON:4577	Zea	mays	var. LH38	LH38_H	https://doi.org/10.15454/M33T8W	Growth	156	replicate>block>plot	X:6;Y:10;plot:156	rainfed
+LH38_H	NCBITAXON:4577	Zea	mays	var. LH38	LH38_H	https://doi.org/10.15454/M33T8W	Growth	3024water_regimerainfed	virtual_trial		rainfed
+LH74_H	NCBITAXON:4577	Zea	mays	var. LH74	LH74_H	https://doi.org/10.15454/VUPKKL	Growth	50	replicate>block>plot	X:10;Y:1;plot:50	watered
+LH74_H	NCBITAXON:4577	Zea	mays	var. LH74	LH74_H	https://doi.org/10.15454/VUPKKL	Growth	193	replicate>block>plot	X:10;Y:13;plot:193	rainfed
+LH74_H	NCBITAXON:4577	Zea	mays	var. LH74	LH74_H	https://doi.org/10.15454/VUPKKL	Growth	88	replicate>block>plot	X:18;Y:3;plot:88	watered
+LH74_H	NCBITAXON:4577	Zea	mays	var. LH74	LH74_H	https://doi.org/10.15454/VUPKKL	Growth	202	replicate>block>plot	X:11;Y:7;plot:202	rainfed
+LH74_H	NCBITAXON:4577	Zea	mays	var. LH74	LH74_H	https://doi.org/10.15454/VUPKKL	Growth	114	replicate>block>plot	X:2;Y:12;plot:114	rainfed
+MS153_H	NCBITAXON:4577	Zea	mays	var. MS153	MS153_H	https://doi.org/10.15454/NPJBWJ	Growth	3007water_regimerainfed	virtual_trial		rainfed
+MS153_H	NCBITAXON:4577	Zea	mays	var. MS153	MS153_H	https://doi.org/10.15454/NPJBWJ	Growth	170	replicate>block>plot	X:7;Y:15;plot:170	rainfed
+MS153_H	NCBITAXON:4577	Zea	mays	var. MS153	MS153_H	https://doi.org/10.15454/NPJBWJ	Growth	65	replicate>block>plot	X:13;Y:5;plot:65	watered
+MS153_H	NCBITAXON:4577	Zea	mays	var. MS153	MS153_H	https://doi.org/10.15454/NPJBWJ	Growth	13	replicate>block>plot	X:3;Y:3;plot:13	watered
+MS153_H	NCBITAXON:4577	Zea	mays	var. MS153	MS153_H	https://doi.org/10.15454/NPJBWJ	Growth	143	replicate>block>plot	X:5;Y:8;plot:143	rainfed
+MS153_H	NCBITAXON:4577	Zea	mays	var. MS153	MS153_H	https://doi.org/10.15454/NPJBWJ	Growth	3007water_regimewatered	virtual_trial		watered
+MS153_H	NCBITAXON:4577	Zea	mays	var. MS153	MS153_H	https://doi.org/10.15454/NPJBWJ	Growth	142	replicate>block>plot	X:5;Y:7;plot:142	rainfed
+MS153_H	NCBITAXON:4577	Zea	mays	var. MS153	MS153_H	https://doi.org/10.15454/NPJBWJ	Growth	82	replicate>block>plot	X:17;Y:2;plot:82	watered
+MS153_H	NCBITAXON:4577	Zea	mays	var. MS153	MS153_H	https://doi.org/10.15454/NPJBWJ	Growth	12	replicate>block>plot	X:3;Y:2;plot:12	watered
+MS153_H	NCBITAXON:4577	Zea	mays	var. MS153	MS153_H	https://doi.org/10.15454/NPJBWJ	Growth	175	replicate>block>plot	X:8;Y:11;plot:175	rainfed
+MS153_H	NCBITAXON:4577	Zea	mays	var. MS153	MS153_H	https://doi.org/10.15454/NPJBWJ	Growth	232	replicate>block>plot	X:14;Y:14;plot:232	rainfed
+MS153_H	NCBITAXON:4577	Zea	mays	var. MS153	MS153_H	https://doi.org/10.15454/NPJBWJ	Growth	230	replicate>block>plot	X:13;Y:15;plot:230	rainfed
+Mo17_H	NCBITAXON:4577	Zea	mays	var. Mo17	Mo17_H	https://doi.org/10.15454/HWCPGC	Growth	228	replicate>block>plot	X:13;Y:13;plot:228	rainfed
+Mo17_H	NCBITAXON:4577	Zea	mays	var. Mo17	Mo17_H	https://doi.org/10.15454/HWCPGC	Growth	140	replicate>block>plot	X:4;Y:6;plot:140	rainfed
+Mo17_H	NCBITAXON:4577	Zea	mays	var. Mo17	Mo17_H	https://doi.org/10.15454/HWCPGC	Growth	72	replicate>block>plot	X:15;Y:2;plot:72	watered
+Mo17_H	NCBITAXON:4577	Zea	mays	var. Mo17	Mo17_H	https://doi.org/10.15454/HWCPGC	Growth	179	replicate>block>plot	X:8;Y:7;plot:179	rainfed
+Mo17_H	NCBITAXON:4577	Zea	mays	var. Mo17	Mo17_H	https://doi.org/10.15454/HWCPGC	Growth	18	replicate>block>plot	X:4;Y:3;plot:18	watered
+NC290_H	NCBITAXON:4577	Zea	mays	var. NC290	NC290_H	https://doi.org/10.15454/TX6MDP	Growth	115	replicate>block>plot	X:2;Y:11;plot:115	rainfed
+NC290_H	NCBITAXON:4577	Zea	mays	var. NC290	NC290_H	https://doi.org/10.15454/TX6MDP	Growth	3031water_regimerainfed	virtual_trial		rainfed
+NC290_H	NCBITAXON:4577	Zea	mays	var. NC290	NC290_H	https://doi.org/10.15454/TX6MDP	Growth	66	replicate>block>plot	X:14;Y:5;plot:66	watered
+NC290_H	NCBITAXON:4577	Zea	mays	var. NC290	NC290_H	https://doi.org/10.15454/TX6MDP	Growth	49	replicate>block>plot	X:10;Y:2;plot:49	watered
+NC290_H	NCBITAXON:4577	Zea	mays	var. NC290	NC290_H	https://doi.org/10.15454/TX6MDP	Growth	247	replicate>block>plot	X:15;Y:12;plot:247	rainfed
+NC290_H	NCBITAXON:4577	Zea	mays	var. NC290	NC290_H	https://doi.org/10.15454/TX6MDP	Growth	153	replicate>block>plot	X:6;Y:13;plot:153	rainfed
+NC290_H	NCBITAXON:4577	Zea	mays	var. NC290	NC290_H	https://doi.org/10.15454/TX6MDP	Growth	3031water_regimewatered	virtual_trial		watered
+Oh02_H	NCBITAXON:4577	Zea	mays	var. Oh02	Oh02_H	https://doi.org/10.15454/EYCTRV	Growth	3025water_regimerainfed	virtual_trial		rainfed
+Oh02_H	NCBITAXON:4577	Zea	mays	var. Oh02	Oh02_H	https://doi.org/10.15454/EYCTRV	Growth	54	replicate>block>plot	X:11;Y:4;plot:54	watered
+Oh02_H	NCBITAXON:4577	Zea	mays	var. Oh02	Oh02_H	https://doi.org/10.15454/EYCTRV	Growth	104	replicate>block>plot	X:1;Y:9;plot:104	rainfed
+Oh02_H	NCBITAXON:4577	Zea	mays	var. Oh02	Oh02_H	https://doi.org/10.15454/EYCTRV	Growth	3025water_regimewatered	virtual_trial		watered
+Oh02_H	NCBITAXON:4577	Zea	mays	var. Oh02	Oh02_H	https://doi.org/10.15454/EYCTRV	Growth	216	replicate>block>plot	X:12;Y:10;plot:216	rainfed
+Oh02_H	NCBITAXON:4577	Zea	mays	var. Oh02	Oh02_H	https://doi.org/10.15454/EYCTRV	Growth	185	replicate>block>plot	X:9;Y:10;plot:185	rainfed
+Oh02_H	NCBITAXON:4577	Zea	mays	var. Oh02	Oh02_H	https://doi.org/10.15454/EYCTRV	Growth	31	replicate>block>plot	X:7;Y:1;plot:31	watered
+Oh33_H	NCBITAXON:4577	Zea	mays	var. Oh33	Oh33_H	https://doi.org/10.15454/YLEAQG	Growth	152	replicate>block>plot	X:6;Y:14;plot:152	rainfed
+Oh33_H	NCBITAXON:4577	Zea	mays	var. Oh33	Oh33_H	https://doi.org/10.15454/YLEAQG	Growth	35	replicate>block>plot	X:7;Y:5;plot:35	watered
+Oh33_H	NCBITAXON:4577	Zea	mays	var. Oh33	Oh33_H	https://doi.org/10.15454/YLEAQG	Growth	3005water_regimewatered	virtual_trial		watered
+Oh33_H	NCBITAXON:4577	Zea	mays	var. Oh33	Oh33_H	https://doi.org/10.15454/YLEAQG	Growth	3005water_regimerainfed	virtual_trial		rainfed
+Oh33_H	NCBITAXON:4577	Zea	mays	var. Oh33	Oh33_H	https://doi.org/10.15454/YLEAQG	Growth	222	replicate>block>plot	X:13;Y:7;plot:222	rainfed
+Oh33_H	NCBITAXON:4577	Zea	mays	var. Oh33	Oh33_H	https://doi.org/10.15454/YLEAQG	Growth	83	replicate>block>plot	X:17;Y:3;plot:83	watered
+Oh33_H	NCBITAXON:4577	Zea	mays	var. Oh33	Oh33_H	https://doi.org/10.15454/YLEAQG	Growth	103	replicate>block>plot	X:1;Y:8;plot:103	rainfed
+Oh43_H	NCBITAXON:4577	Zea	mays	var. Oh43	Oh43_H	https://doi.org/10.15454/5GN11W	Growth	44	replicate>block>plot	X:9;Y:4;plot:44	watered
+Oh43_H	NCBITAXON:4577	Zea	mays	var. Oh43	Oh43_H	https://doi.org/10.15454/5GN11W	Growth	239	replicate>block>plot	X:14;Y:7;plot:239	rainfed
+Oh43_H	NCBITAXON:4577	Zea	mays	var. Oh43	Oh43_H	https://doi.org/10.15454/5GN11W	Growth	3003water_regimewatered	virtual_trial		watered
+Oh43_H	NCBITAXON:4577	Zea	mays	var. Oh43	Oh43_H	https://doi.org/10.15454/5GN11W	Growth	148	replicate>block>plot	X:5;Y:13;plot:148	rainfed
+Oh43_H	NCBITAXON:4577	Zea	mays	var. Oh43	Oh43_H	https://doi.org/10.15454/5GN11W	Growth	3003water_regimerainfed	virtual_trial		rainfed
+Oh43_H	NCBITAXON:4577	Zea	mays	var. Oh43	Oh43_H	https://doi.org/10.15454/5GN11W	Growth	95	replicate>block>plot	X:19;Y:5;plot:95	watered
+Oh43_H	NCBITAXON:4577	Zea	mays	var. Oh43	Oh43_H	https://doi.org/10.15454/5GN11W	Growth	198	replicate>block>plot	X:10;Y:8;plot:198	rainfed
+Os426_H	NCBITAXON:4577	Zea	mays	var. Os426	Os426_H	https://doi.org/10.15454/GYTVRS	Growth	227	replicate>block>plot	X:13;Y:12;plot:227	rainfed
+Os426_H	NCBITAXON:4577	Zea	mays	var. Os426	Os426_H	https://doi.org/10.15454/GYTVRS	Growth	125	replicate>block>plot	X:3;Y:10;plot:125	rainfed
+Os426_H	NCBITAXON:4577	Zea	mays	var. Os426	Os426_H	https://doi.org/10.15454/GYTVRS	Growth	182	replicate>block>plot	X:9;Y:7;plot:182	rainfed
+Os426_H	NCBITAXON:4577	Zea	mays	var. Os426	Os426_H	https://doi.org/10.15454/GYTVRS	Growth	91	replicate>block>plot	X:19;Y:1;plot:91	watered
+Os426_H	NCBITAXON:4577	Zea	mays	var. Os426	Os426_H	https://doi.org/10.15454/GYTVRS	Growth	9	replicate>block>plot	X:2;Y:2;plot:9	watered
+PH207_H	NCBITAXON:4577	Zea	mays	var. PH207	PH207_H	https://doi.org/10.15454/AQWE02	Growth	109	replicate>block>plot	X:1;Y:14;plot:109	rainfed
+PH207_H	NCBITAXON:4577	Zea	mays	var. PH207	PH207_H	https://doi.org/10.15454/AQWE02	Growth	53	replicate>block>plot	X:11;Y:3;plot:53	watered
+PH207_H	NCBITAXON:4577	Zea	mays	var. PH207	PH207_H	https://doi.org/10.15454/AQWE02	Growth	4	replicate>block>plot	X:1;Y:4;plot:4	watered
+PH207_H	NCBITAXON:4577	Zea	mays	var. PH207	PH207_H	https://doi.org/10.15454/AQWE02	Growth	184	replicate>block>plot	X:9;Y:9;plot:184	rainfed
+PH207_H	NCBITAXON:4577	Zea	mays	var. PH207	PH207_H	https://doi.org/10.15454/AQWE02	Growth	168	replicate>block>plot	X:7;Y:13;plot:168	rainfed
+PH207_H	NCBITAXON:4577	Zea	mays	var. PH207	PH207_H	https://doi.org/10.15454/AQWE02	Growth	59	replicate>block>plot	X:12;Y:2;plot:59	watered
+PH207_H	NCBITAXON:4577	Zea	mays	var. PH207	PH207_H	https://doi.org/10.15454/AQWE02	Growth	3002water_regimerainfed	virtual_trial		rainfed
+PH207_H	NCBITAXON:4577	Zea	mays	var. PH207	PH207_H	https://doi.org/10.15454/AQWE02	Growth	204	replicate>block>plot	X:11;Y:9;plot:204	rainfed
+PH207_H	NCBITAXON:4577	Zea	mays	var. PH207	PH207_H	https://doi.org/10.15454/AQWE02	Growth	3002water_regimewatered	virtual_trial		watered
+PH207_H	NCBITAXON:4577	Zea	mays	var. PH207	PH207_H	https://doi.org/10.15454/AQWE02	Growth	220	replicate>block>plot	X:12;Y:6;plot:220	rainfed
+PH207_H	NCBITAXON:4577	Zea	mays	var. PH207	PH207_H	https://doi.org/10.15454/AQWE02	Growth	27	replicate>block>plot	X:6;Y:4;plot:27	watered
+PH207_H	NCBITAXON:4577	Zea	mays	var. PH207	PH207_H	https://doi.org/10.15454/AQWE02	Growth	131	replicate>block>plot	X:4;Y:15;plot:131	rainfed
+PHG39_H	NCBITAXON:4577	Zea	mays	var. PHG39	PHG39_H	https://doi.org/10.15454/CCDUCG	Growth	214	replicate>block>plot	X:12;Y:12;plot:214	rainfed
+PHG39_H	NCBITAXON:4577	Zea	mays	var. PHG39	PHG39_H	https://doi.org/10.15454/CCDUCG	Growth	196	replicate>block>plot	X:10;Y:10;plot:196	rainfed
+PHG39_H	NCBITAXON:4577	Zea	mays	var. PHG39	PHG39_H	https://doi.org/10.15454/CCDUCG	Growth	75	replicate>block>plot	X:15;Y:5;plot:75	watered
+PHG39_H	NCBITAXON:4577	Zea	mays	var. PHG39	PHG39_H	https://doi.org/10.15454/CCDUCG	Growth	108	replicate>block>plot	X:1;Y:13;plot:108	rainfed
+PHG39_H	NCBITAXON:4577	Zea	mays	var. PHG39	PHG39_H	https://doi.org/10.15454/CCDUCG	Growth	39	replicate>block>plot	X:8;Y:2;plot:39	watered
+PHH93_H	NCBITAXON:4577	Zea	mays	var. PHH93	PHH93_H	https://doi.org/10.15454/WZXITF	Growth	248	replicate>block>plot	X:15;Y:13;plot:248	rainfed
+PHH93_H	NCBITAXON:4577	Zea	mays	var. PHH93	PHH93_H	https://doi.org/10.15454/WZXITF	Growth	126	replicate>block>plot	X:3;Y:11;plot:126	rainfed
+PHH93_H	NCBITAXON:4577	Zea	mays	var. PHH93	PHH93_H	https://doi.org/10.15454/WZXITF	Growth	62	replicate>block>plot	X:13;Y:2;plot:62	watered
+PHH93_H	NCBITAXON:4577	Zea	mays	var. PHH93	PHH93_H	https://doi.org/10.15454/WZXITF	Growth	187	replicate>block>plot	X:9;Y:12;plot:187	rainfed
+PHH93_H	NCBITAXON:4577	Zea	mays	var. PHH93	PHH93_H	https://doi.org/10.15454/WZXITF	Growth	37	replicate>block>plot	X:8;Y:4;plot:37	watered
+Pa405_H	NCBITAXON:4577	Zea	mays	var. Pa405	Pa405_H	https://doi.org/10.15454/KUZQQB	Growth	231	replicate>block>plot	X:14;Y:15;plot:231	rainfed
+Pa405_H	NCBITAXON:4577	Zea	mays	var. Pa405	Pa405_H	https://doi.org/10.15454/KUZQQB	Growth	3023water_regimerainfed	virtual_trial		rainfed
+Pa405_H	NCBITAXON:4577	Zea	mays	var. Pa405	Pa405_H	https://doi.org/10.15454/KUZQQB	Growth	3023water_regimewatered	virtual_trial		watered
+Pa405_H	NCBITAXON:4577	Zea	mays	var. Pa405	Pa405_H	https://doi.org/10.15454/KUZQQB	Growth	41	replicate>block>plot	X:9;Y:1;plot:41	watered
+Pa405_H	NCBITAXON:4577	Zea	mays	var. Pa405	Pa405_H	https://doi.org/10.15454/KUZQQB	Growth	147	replicate>block>plot	X:5;Y:12;plot:147	rainfed
+Pa405_H	NCBITAXON:4577	Zea	mays	var. Pa405	Pa405_H	https://doi.org/10.15454/KUZQQB	Growth	80	replicate>block>plot	X:16;Y:1;plot:80	watered
+Pa405_H	NCBITAXON:4577	Zea	mays	var. Pa405	Pa405_H	https://doi.org/10.15454/KUZQQB	Growth	161	replicate>block>plot	X:7;Y:6;plot:161	rainfed
+UH250_H	NCBITAXON:4577	Zea	mays	var. UH250	UH250_H	https://doi.org/10.15454/ZEQFBU	Growth	17	replicate>block>plot	X:4;Y:4;plot:17	watered
+UH250_H	NCBITAXON:4577	Zea	mays	var. UH250	UH250_H	https://doi.org/10.15454/ZEQFBU	Growth	3026water_regimewatered	virtual_trial		watered
+UH250_H	NCBITAXON:4577	Zea	mays	var. UH250	UH250_H	https://doi.org/10.15454/ZEQFBU	Growth	205	replicate>block>plot	X:11;Y:10;plot:205	rainfed
+UH250_H	NCBITAXON:4577	Zea	mays	var. UH250	UH250_H	https://doi.org/10.15454/ZEQFBU	Growth	3026water_regimerainfed	virtual_trial		rainfed
+UH250_H	NCBITAXON:4577	Zea	mays	var. UH250	UH250_H	https://doi.org/10.15454/ZEQFBU	Growth	136	replicate>block>plot	X:4;Y:10;plot:136	rainfed
+UH250_H	NCBITAXON:4577	Zea	mays	var. UH250	UH250_H	https://doi.org/10.15454/ZEQFBU	Growth	94	replicate>block>plot	X:19;Y:4;plot:94	watered
+UH250_H	NCBITAXON:4577	Zea	mays	var. UH250	UH250_H	https://doi.org/10.15454/ZEQFBU	Growth	199	replicate>block>plot	X:10;Y:7;plot:199	rainfed
+UH_P089_H	NCBITAXON:4577	Zea	mays	var. UH_P089	UH_P089_H	https://doi.org/10.15454/YK08AN	Growth	3032water_regimerainfed	virtual_trial		rainfed
+UH_P089_H	NCBITAXON:4577	Zea	mays	var. UH_P089	UH_P089_H	https://doi.org/10.15454/YK08AN	Growth	5	replicate>block>plot	X:1;Y:5;plot:5	watered
+UH_P089_H	NCBITAXON:4577	Zea	mays	var. UH_P089	UH_P089_H	https://doi.org/10.15454/YK08AN	Growth	133	replicate>block>plot	X:4;Y:13;plot:133	rainfed
+UH_P089_H	NCBITAXON:4577	Zea	mays	var. UH_P089	UH_P089_H	https://doi.org/10.15454/YK08AN	Growth	61	replicate>block>plot	X:13;Y:1;plot:61	watered
+UH_P089_H	NCBITAXON:4577	Zea	mays	var. UH_P089	UH_P089_H	https://doi.org/10.15454/YK08AN	Growth	219	replicate>block>plot	X:12;Y:7;plot:219	rainfed
+UH_P089_H	NCBITAXON:4577	Zea	mays	var. UH_P089	UH_P089_H	https://doi.org/10.15454/YK08AN	Growth	173	replicate>block>plot	X:8;Y:13;plot:173	rainfed
+UH_P089_H	NCBITAXON:4577	Zea	mays	var. UH_P089	UH_P089_H	https://doi.org/10.15454/YK08AN	Growth	3032water_regimewatered	virtual_trial		watered
+W23_H	NCBITAXON:4577	Zea	mays	var. W23	W23_H	https://doi.org/10.15454/UX5L2C	Growth	209	replicate>block>plot	X:11;Y:14;plot:209	rainfed
+W23_H	NCBITAXON:4577	Zea	mays	var. W23	W23_H	https://doi.org/10.15454/UX5L2C	Growth	200	replicate>block>plot	X:10;Y:6;plot:200	rainfed
+W23_H	NCBITAXON:4577	Zea	mays	var. W23	W23_H	https://doi.org/10.15454/UX5L2C	Growth	101	replicate>block>plot	X:1;Y:6;plot:101	rainfed
+W23_H	NCBITAXON:4577	Zea	mays	var. W23	W23_H	https://doi.org/10.15454/UX5L2C	Growth	92	replicate>block>plot	X:19;Y:2;plot:92	watered
+W23_H	NCBITAXON:4577	Zea	mays	var. W23	W23_H	https://doi.org/10.15454/UX5L2C	Growth	32	replicate>block>plot	X:7;Y:2;plot:32	watered
+W64A_H	NCBITAXON:4577	Zea	mays	var. W64A	W64A_H	https://doi.org/10.15454/EW2AP2	Growth	117	replicate>block>plot	X:2;Y:9;plot:117	rainfed
+W64A_H	NCBITAXON:4577	Zea	mays	var. W64A	W64A_H	https://doi.org/10.15454/EW2AP2	Growth	74	replicate>block>plot	X:15;Y:4;plot:74	watered
+W64A_H	NCBITAXON:4577	Zea	mays	var. W64A	W64A_H	https://doi.org/10.15454/EW2AP2	Growth	3004water_regimerainfed	virtual_trial		rainfed
+W64A_H	NCBITAXON:4577	Zea	mays	var. W64A	W64A_H	https://doi.org/10.15454/EW2AP2	Growth	3004water_regimewatered	virtual_trial		watered
+W64A_H	NCBITAXON:4577	Zea	mays	var. W64A	W64A_H	https://doi.org/10.15454/EW2AP2	Growth	22	replicate>block>plot	X:5;Y:2;plot:22	watered
+W64A_H	NCBITAXON:4577	Zea	mays	var. W64A	W64A_H	https://doi.org/10.15454/EW2AP2	Growth	176	replicate>block>plot	X:8;Y:10;plot:176	rainfed
