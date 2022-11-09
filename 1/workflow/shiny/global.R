@@ -70,9 +70,12 @@ results <- search_table %>%
 
 
 results <- results %>% 
-  unnest(result) %>% 
-  select(user_query, search_query, type, semanticTags, confidence, annotatedProperty.propertyValue,derivedFrom.provenance.source.type)
+               unnest(result) 
 
+if(nrow(results)>0){
+results <- results %>% 
+             select(user_query, search_query, type, semanticTags, confidence, annotatedProperty.propertyValue,derivedFrom.provenance.source.type)
+}
   
   return(results)
   

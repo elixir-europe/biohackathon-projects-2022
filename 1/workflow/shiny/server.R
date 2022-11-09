@@ -19,6 +19,9 @@ server <- function(input, output, session) {
                           df <- df %>% mutate(returns = map(Query_cleaned, lookup_term))
                           
                           
+                          if(nrow(unnest(df, returns))==0) showNotification("No results returned", type = "error")
+                          
+                          
                           for (i in 1:nrow(df)) {
                             
                             if(df$Query_cleaned[i]!=""){
@@ -48,7 +51,8 @@ server <- function(input, output, session) {
     server = FALSE,
     options = list(dom = 't', 
                    paging = FALSE, 
-                   ordering = FALSE
+                   ordering = FALSE#,
+                   #language = list(emptyTable = 'My Custom No Data Message')
                    ),
     callback = JS(read_table_back_callback)
   )
