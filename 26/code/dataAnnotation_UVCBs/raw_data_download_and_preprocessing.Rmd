@@ -15,6 +15,11 @@ if(!"rmarkdown" %in% installed.packages()){
 }
 library(rmarkdown)
 
+if(!"dplyr" %in% installed.packages()){
+  install.packages("dplyr")
+}
+library(dplyr)
+
 # set your working environment to the location where your current source file is saved into.
 setwd(dirname(rstudioapi::getSourceEditorContext()$path))
 ```
@@ -34,17 +39,21 @@ if(!"metabolighteR" %in% installed.packages()){
 }
 library(metabolighteR)
 
-#counter = 1
 for (i in 1:length(metabolights_study_IDs)){
     get_study_files(metabolights_study_IDs[i], raw_data = FALSE)
-    #counter <- counter + 1
+    ##Add name to each file (study_ID)?
+    ##For each dataset, download the metadata_maf, and give it the study_ID_data name. 
    }
-#remove(i,counter)  
+remove(i)
 
 metabolights_dataframe <- get_study_files(metabolights_study_IDs[1], raw_data = FALSE)
-if(metabolights_dataframe[3,6] == 'metadata_maf' ){
-  metabolights_dataframe[3,3]
+for (i in 1:nrow(metabolights_dataframe)) {
+  if(metabolights_dataframe[i,6] == 'metadata_maf' ){
+  #metabolights_dataframe[3,3]
+  fileContents_A <- download_study_file(metabolights_study_IDs[1], metabolights_dataframe[i,3])
+  }
 }
+
 ##Annotated files are available as 'type' : 'metadata_maf'
 ##Raw data can be available in multiple file formats (also depending on the analysis method NMR vs MS)
 
