@@ -86,3 +86,20 @@ Participants from related projects (incl. EOSC-Life, SYNTHESYS+, BY-COVID, RELIA
 
 **Number of expected hacking days**: 4 Days – due to virtual participation, hacking can extend into pre/post Biohackathon hacking days as we did in 2021.
 
+## Related projects
+
+* #5 [Bioschemas - Enabling profile updates through the Data Discovery Engine (DE)](https://github.com/elixir-europe/biohackathon-projects-2022/tree/main/5)
+* #8 [Developing a lesson for the ELIXIR Software Management Plan](https://github.com/elixir-europe/biohackathon-projects-2022/tree/main/8)
+* #17 [Metadata schemas supporting Linked Open Science (with a focus on reproducibility)](https://github.com/elixir-europe/biohackathon-projects-2022/tree/main/17)
+* #22 [Plant data exchange and standard interoperability](https://github.com/elixir-europe/biohackathon-projects-2022/tree/main/22)
+* #23 [Publishing and Consuming Schema.org DataFeeds](https://github.com/elixir-europe/biohackathon-projects-2022/tree/main/23)
+* #28 [Support for the Common Workflow Language standard version 1.2 in Galaxy](https://github.com/elixir-europe/biohackathon-projects-2022/tree/main/28)
+* #29 [Supporting federated secure workflows and analysis using WfExS-backend](https://github.com/elixir-europe/biohackathon-projects-2022/tree/main/29)
+* #30 [The ELIXIR::GA4GH Cloud - Admin and User Engagement](https://github.com/elixir-europe/biohackathon-projects-2022/tree/main/30)
+* #31 [The What & How in data management: Improving connectivity between RDMkit and FAIR Cookbook](https://github.com/elixir-europe/biohackathon-projects-2022/tree/main/31)
+* #35 [Workflow Execution Service to help the quality improvement of published workflows](https://github.com/elixir-europe/biohackathon-projects-2022/tree/main/35)
+
+
+## Collaborative Notes
+
+See <https://docs.google.com/document/d/1iDT4U7Kg8xcXKw4noW3-2b3-An2VXm0sKm1jBT0cwCI/edit#> for collaborative notes during hackathon. 

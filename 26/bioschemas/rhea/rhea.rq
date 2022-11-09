@@ -1,0 +1,13 @@
+PREFIX chebislash: <http://purl.obolibrary.org/obo/chebi/>
+PREFIX rh: <http://rdf.rhea-db.org/>
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?compound ?chebi ?name ?formula ?smiles ?inchikey
+WHERE {
+  ?compound rh:chebi ?chebi .
+  ?chebi up:name ?name .
+  OPTIONAL {?chebi chebislash:formula  ?formula .}
+  OPTIONAL {?chebi chebislash:smiles  ?smiles .}
+  OPTIONAL {?chebi chebislash:inchikey  ?inchikey .}
+}

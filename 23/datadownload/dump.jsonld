@@ -1,0 +1,94 @@
+[
+  {
+    "@context": "https://schema.org",
+    "includedInDataset": "https://mobidb.org/#2021-11",
+    "@type": "Protein",
+    "@id": "https://mobidb.org/P0DTC9",
+    "http://purl.org/dc/terms/conformsTo": {
+      "@id": "https://bioschemas.org/profiles/Protein/0.11-RELEASE",
+      "@type": "CreativeWork"
+    },
+    "identifier": "https://identifiers.org/mobidb:P0DTC9",
+    "sameAs": "http://purl.uniprot.org/uniprot/P0DTC9",
+    "name": "Nucleoprotein",
+    "hasBioPolymerSequence": "MSDNGPQNQRNAPRITFGGPSDSTGSNQNGERSGARSKQRR...",
+    "hasSequenceAnnotation": [
+      {
+        "@type": "SequenceAnnotation",
+        "@id": "https://mobidb.org/P0DTC9#prediction-disorder-mobidb_lite.1_51",
+        "sequenceLocation": {
+          "@type": "SequenceRange",
+          "@id": "https://mobidb.org/P0DTC9#sequence-location.1_51",
+          "http://purl.org/dc/terms/conformsTo": {
+            "@id": "https://bioschemas.org/profiles/SequenceRange/0.1-DRAFT",
+            "@type": "CreativeWork"
+          },
+          "rangeStart": 1,
+          "rangeEnd": 51
+        },
+        "additionalProperty": {
+          "@type": "PropertyValue",
+          "name": "Term",
+          "value": {
+            "@type": "DefinedTerm",
+            "@id": "https://disprot.org/assets/data/IDPO_v0.2.owl#IDPO:00076",
+            "inDefinedTermSet": {
+              "@type": "DefinedTermSet",
+              "@id": "https://disprot.org/assets/data/IDPO_v0.2.owl",
+              "name": "IDP ontology"
+            },
+            "termCode": "IDPO:00076",
+            "name": "Disorder"
+          }
+        },
+        "description": "Protein disordered region predicted by MobiDB-lite"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "includedInDataset": "https://mobidb.org/#2021-11",
+    "@type": "Protein",
+    "@id": "https://mobidb.org/P04637",
+    "http://purl.org/dc/terms/conformsTo": {
+      "@id": "https://bioschemas.org/profiles/Protein/0.11-RELEASE",
+      "@type": "CreativeWork"
+    },
+    "identifier": "https://identifiers.org/mobidb:P04637",
+    "sameAs": "http://purl.uniprot.org/uniprot/P04637",
+    "name": "Cellular tumor antigen p53",
+    "hasBioPolymerSequence": "MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQ...",
+    "hasSequenceAnnotation": [
+      {
+        "@type": "SequenceAnnotation",
+        "@id": "https://mobidb.org/P04637#prediction-disorder-mobidb_lite.50_96",
+        "sequenceLocation": {
+          "@type": "SequenceRange",
+          "@id": "https://mobidb.org/P04637#sequence-location.50_96",
+          "http://purl.org/dc/terms/conformsTo": {
+            "@id": "https://bioschemas.org/profiles/SequenceRange/0.1-DRAFT",
+            "@type": "CreativeWork"
+          },
+          "rangeStart": 50,
+          "rangeEnd": 96
+        },
+        "additionalProperty": {
+          "@type": "PropertyValue",
+          "name": "Term",
+          "value": {
+            "@type": "DefinedTerm",
+            "@id": "https://disprot.org/assets/data/IDPO_v0.2.owl#IDPO:00076",
+            "inDefinedTermSet": {
+              "@type": "DefinedTermSet",
+              "@id": "https://disprot.org/assets/data/IDPO_v0.2.owl",
+              "name": "IDP ontology"
+            },
+            "termCode": "IDPO:00076",
+            "name": "Disorder"
+          }
+        },
+        "description": "Protein disordered region predicted by MobiDB-lite"
+      }
+    ]
+  }
+]
