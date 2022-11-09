@@ -43,3 +43,13 @@ Long-term expected outcomes:
 
 **Number of expected hacking days**: 4
 
+-----
+
+Some outcomes:
+
+* The mgnify Jupyter Notebooks are now also available from the [European Galaxy server](https://live.usegalaxy.eu/?tool_id=interactive_tool_mgnify_notebook)
+
+![grafik](https://user-images.githubusercontent.com/469983/200634077-41e47f0c-bc63-435d-99bb-244537e8d8b9.png)
+
+
+
