@@ -15,14 +15,6 @@ library(tidyr)
                               "
 
 
-onto_names <- zooma_sources %>% filter(type == "ONTOLOGY") %>% pull(name)
-onto_titles <- zooma_sources %>% filter(type == "ONTOLOGY") %>% pull(title)
-onto_choices <- onto_names %>% as.list() %>% setNames(onto_titles)
-
-db_names <- zooma_sources %>% filter(type == "DATABASE") %>% pull(name)
-db_choices <- db_names %>% as.list() %>% setNames(db_names)
-
-
 
  
  
@@ -114,6 +106,10 @@ clean_user_input <- function(x){
 
 
 get_zooma_sources <- function(){
+  require('jsonlite')
+  require('httr')
+  require(dplyr)
+  
   base <- "www.ebi.ac.uk/spot/zooma/v2/api"
   endpoint <- "/services/annotate"
   
@@ -133,11 +129,13 @@ zooma_sources <- get_zooma_sources()
   
 
   
+ontology_link_to_name <- function(x)  gsub(".*/(.*)/.*$","\\1",x)
+
 
 
 ontology_to_link_html <- function(link){
  
-  name <- gsub(".*/(.*)/.*$","\\1",link)
+  name <- ontology_link_to_name(link)
        
   glue('<a href="{link}" target="_blank" rel="noopener noreferrer">{name}</a>')
 }
@@ -149,4 +147,14 @@ ontologies_to_links_html <- function(links){
   map_chr(links, ontology_to_link_html) %>% paste0(collapse = ", ")
 
 }
+
+
+
+
+onto_names <- zooma_sources %>% filter(type == "ONTOLOGY") %>% pull(name)
+onto_titles <- zooma_sources %>% filter(type == "ONTOLOGY") %>% pull(title)
+onto_choices <- onto_names %>% as.list() %>% setNames(onto_titles)
+
+db_names <- zooma_sources %>% filter(type == "DATABASE") %>% pull(name)
+db_choices <- db_names %>% as.list() %>% setNames(db_names)
 

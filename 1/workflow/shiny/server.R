@@ -116,4 +116,32 @@ radio_id_prefix <- eventReactive(input$button,{
   }, escape = FALSE, rownames = FALSE)
 
 
+  
+  
+ 
+      
+output$downloadData <- downloadHandler(
+  filename = function() {
+    paste('data-', Sys.Date(), '.tsv', sep='')
+  },
+  content = function(con) {
+    
+     selections_tab <- tibble(selection = selections()) %>% mutate(id = 1:n())
+    
+     data() %>% 
+      mutate(id = 1:n()) %>% 
+      unnest(returns) %>% 
+      left_join(selections_tab,., by = c(selection = "annotatedProperty.propertyValue", "id")) %>%
+      mutate(link = map_chr(semanticTags, ~ paste(..1, collapse=", "))) %>% 
+      mutate(Ontology = map_chr(semanticTags, ~ paste(ontology_link_to_name(..1), collapse=", "))) %>% 
+      as.data.frame() %>% 
+      readr::write_delim(con,delim = "\t")
+    
+  }
+)
+  
+  
+  
+  
+  
 }

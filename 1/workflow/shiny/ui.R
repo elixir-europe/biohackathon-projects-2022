@@ -55,7 +55,12 @@ ui <- fluidPage(
                                                
                                        
                                        ),
-                              tabPanel("Output", DT::dataTableOutput('sel'))
+                              tabPanel("Output", 
+                                       br(),
+                                       downloadButton('downloadData', 'Download'),
+                                       DT::dataTableOutput('sel'),
+                                       br()
+                                       )
                             
           )
   
