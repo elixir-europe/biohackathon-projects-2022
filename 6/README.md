@@ -27,9 +27,9 @@ Tools Platform
   - [VGP short tutorial (workflow-focused)](https://training.galaxyproject.org/training-material/topics/assembly/tutorials/vgp_workflow_training/tutorial.html)
   - in-development workflows housed on [Delphine's github](https://github.com/Delphine-L/iwc/tree/VGP/workflows/VGP-assembly-v2)
 - Wrapping tools relevant for genome assembly/annotation for the Galaxy platform
-  - ~~[BandageNG](https://github.com/asl/BandageNG): no conda package~~ ✔️ in bioconda!
+  - ~~[BandageNG](https://github.com/asl/BandageNG): no conda package~~ ✔️ in Bioconda!
   - ~~[InstaGRAAL](https://github.com/koszullab/instaGRAAL): no conda package~~ ✔️ in Galaxy!
-  - ~~[FASTK](https://github.com/thegenemyers/FASTK/issues/10): not sure if conda package is up-to-date?~~ ✔️ in bioconda!
+  - ~~[FASTK](https://github.com/thegenemyers/FASTK/issues/10): not sure if conda package is up-to-date?~~ ✔️ in Bioconda!
   - [MultiQC](https://github.com/ewels/MultiQC) integrations: PRs open for [gfastats](https://github.com/ewels/MultiQC/pull/1699) and other [pipeline QC](https://github.com/ewels/MultiQC/pull/1641)
   - ~~[NextDenovo](https://github.com/Nextomics/NextDenovo): no conda package~~ ✔️ in Bioconda!
   - [FCS](https://github.com/ncbi/fcs): Docker/Singularity
