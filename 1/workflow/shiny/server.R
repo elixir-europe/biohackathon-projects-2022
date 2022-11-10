@@ -1,6 +1,29 @@
 
 server <- function(input, output, session) {
 
+  
+onto_names <- zooma_sources %>% filter(type == "ONTOLOGY") %>% pull(name)
+onto_titles <- zooma_sources %>% filter(type == "ONTOLOGY") %>% pull(title)
+onto_choices <- onto_names %>% as.list() %>% setNames(onto_titles)
+
+db_names <- zooma_sources %>% filter(type == "DATABASE") %>% pull(name)
+db_choices <- db_names %>% as.list() %>% setNames(db_names)
+
+
+  updateSelectInput(session,"select_ontologies",
+                    choices=onto_choices,
+                    selected=onto_choices
+                    )
+  
+  updateSelectInput(session,"select_databases",
+                    choices=db_choices,
+                    selected=db_choices
+                    )
+  
+
+  
+  
+observe(print(input$select_ontologies))
 
 
 # we need this because a new search would fail when same id was used
@@ -15,7 +38,7 @@ radio_id_prefix <- eventReactive(input$button,{
                         {
                           df <- input$userinput %>% clean_user_input() %>% distinct()
 
-                          df <- df %>% mutate(returns = map(Query_cleaned, lookup_term))
+                          df <- df %>% mutate(returns = map(Query_cleaned, lookup_term, input$select_ontologies, input$select_databases))
                           
                           df
                         }

@@ -19,7 +19,7 @@ library(tidyr)
 
  
  
-lookup_term <- function(x){
+lookup_term <- function(x, required_ontologies, required_sources){
   
   require('httr')
   require('jsonlite')
@@ -29,8 +29,6 @@ lookup_term <- function(x){
   base <- "www.ebi.ac.uk/spot/zooma/v2/api"
   endpoint <- "/services/annotate"
   
-  required_sources <- c('ebisc', 'uniprot') # this could be set by the user
-  required_ontologies <- c('foodon')
   
   
   format_sources    <- paste0('[', paste(required_sources,    collapse = ','), ']')
@@ -103,3 +101,20 @@ clean_user_input <- function(x){
 }
 
 
+
+get_zooma_sources <- function(){
+  base <- "www.ebi.ac.uk/spot/zooma/v2/api"
+  endpoint <- "/services/annotate"
+  
+  zooma_sources <- GET(url = paste0(base, "/sources")) %>% 
+                    content('text') %>% 
+                    fromJSON(flatten = TRUE) %>% 
+                    as.data.frame() %>% 
+                    as_tibble
+                    
+   zooma_sources
+
+}
+
+
+  zooma_sources <- get_zooma_sources()
