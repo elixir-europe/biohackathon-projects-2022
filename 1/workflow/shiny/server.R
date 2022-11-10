@@ -2,12 +2,12 @@
 server <- function(input, output, session) {
 
   
-onto_names <- zooma_sources %>% filter(type == "ONTOLOGY") %>% pull(name)
-onto_titles <- zooma_sources %>% filter(type == "ONTOLOGY") %>% pull(title)
-onto_choices <- onto_names %>% as.list() %>% setNames(onto_titles)
+  # we need this because a new search would fail when same id was used
+radio_id_prefix <- eventReactive(input$button,{
+                                                c(65:90,97:122) %>% sample(5, replace=TRUE) %>% as.raw() %>% rawToChar() %>% tolower()
+                                              }
+                                 )
 
-db_names <- zooma_sources %>% filter(type == "DATABASE") %>% pull(name)
-db_choices <- db_names %>% as.list() %>% setNames(db_names)
 
 
   updateSelectInput(session,"select_ontologies",
@@ -21,18 +21,7 @@ db_choices <- db_names %>% as.list() %>% setNames(db_names)
                     )
   
 
-  
-  
-observe(print(input$select_ontologies))
 
-
-# we need this because a new search would fail when same id was used
-radio_id_prefix <- eventReactive(input$button,{
-                                                c(65:90,97:122) %>% sample(5, replace=TRUE) %>% as.raw() %>% rawToChar() %>% tolower()
-                                              }
-                                 )
-  
-  
 
   data <- eventReactive(input$button,
                         {
@@ -69,8 +58,10 @@ radio_id_prefix <- eventReactive(input$button,{
                               for(j in 1:nrow(df$returns[[i]])){
 
                                 choices[[j]] <- df$returns[[i]]$annotatedProperty.propertyValue[[j]]
-                                choiceNames[j] <- df$returns[[i]]$semanticTags[[j]] %>% { paste0('<div style="display:flex;flex-flow:row;width:800px"><div style="width:50%">', choices[[j]], '</div><div style="width:50%"><a href="', ., gsub("http://.*/.*/(.*)_.*", '" target="_blank" rel="noopener noreferrer">\\1</a></div></div>', .)) }
-
+                                choiceNames[j] <- glue('<div style="display:flex;flex-flow:row;width:800px"><div style="width:50%">{choices[[j]]}</div><div style="width:50%">{ontologies_to_links_html(df$returns[[i]]$semanticTags[[j]])}</div></div>')
+                                
+                                
+                                
                               }
                               selected <- df$returns[[i]]$annotatedProperty.propertyValue[[1]]
 
@@ -111,16 +102,14 @@ radio_id_prefix <- eventReactive(input$button,{
 
   # write to the text box
   output$sel <- DT::renderDataTable({
-    str(selections())
     
     selections_tab <- tibble(selection = selections()) %>% mutate(id = 1:n())
     
     data() %>% 
       mutate(id = 1:n()) %>% 
       unnest(returns) %>% 
-      left_join(selections_tab,., by = c(selection = "annotatedProperty.propertyValue", "id")) %>% 
-      mutate(ontoname = {gsub("http://.*/.*/(.*)_.*","\\1", semanticTags)}) %>% 
-      mutate( Ontology = glue('<a href="{semanticTags}" target="_blank" rel="noopener noreferrer">{ontoname}</a>')) %>% 
+      left_join(selections_tab,., by = c(selection = "annotatedProperty.propertyValue", "id")) %>%
+      mutate(Ontology = map_chr(semanticTags, ontologies_to_links_html)) %>% 
       select(Query_no = id, `Ontology term` = selection, Ontology)
     
     

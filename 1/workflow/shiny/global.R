@@ -15,6 +15,13 @@ library(tidyr)
                               "
 
 
+onto_names <- zooma_sources %>% filter(type == "ONTOLOGY") %>% pull(name)
+onto_titles <- zooma_sources %>% filter(type == "ONTOLOGY") %>% pull(title)
+onto_choices <- onto_names %>% as.list() %>% setNames(onto_titles)
+
+db_names <- zooma_sources %>% filter(type == "DATABASE") %>% pull(name)
+db_choices <- db_names %>% as.list() %>% setNames(db_names)
+
 
 
  
@@ -71,12 +78,16 @@ results <- search_table %>%
 
 results <- results %>% 
                unnest(result) %>%
-               filter(!duplicated(semanticTags))
+               mutate(result_id = 1:n()) %>% 
+               unnest(semanticTags) %>% 
+               filter(!duplicated(semanticTags)) %>% 
+               nest(semanticTags = semanticTags) %>% 
+               mutate(semanticTags = map(semanticTags, ~unname(unlist(..1))))
   
 
 if(nrow(results)>0){
 results <- results %>% 
-             select(user_query, search_query, type, semanticTags, confidence, annotatedProperty.propertyValue,derivedFrom.provenance.source.type)
+             select(result_id, user_query, search_query, type, semanticTags, confidence, annotatedProperty.propertyValue,derivedFrom.provenance.source.type)
 }
   
   return(results)
@@ -117,4 +128,25 @@ get_zooma_sources <- function(){
 }
 
 
-  zooma_sources <- get_zooma_sources()
+  
+zooma_sources <- get_zooma_sources()  
+  
+
+  
+
+
+ontology_to_link_html <- function(link){
+ 
+  name <- gsub(".*/(.*)/.*$","\\1",link)
+       
+  glue('<a href="{link}" target="_blank" rel="noopener noreferrer">{name}</a>')
+}
+
+
+
+ontologies_to_links_html <- function(links){
+ 
+  map_chr(links, ontology_to_link_html) %>% paste0(collapse = ", ")
+
+}
+
