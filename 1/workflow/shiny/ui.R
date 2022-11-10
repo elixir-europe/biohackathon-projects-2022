@@ -1,11 +1,8 @@
 
 ui <- fluidPage(
   title = 'Lookup ontologies',
-  # h3("Source:", tags$a("Yihui Xie", href = "https://yihui.shinyapps.io/DT-radio/")),
  
-
-
-  
+ 
   tabsetPanel(type = "tabs",
                               tabPanel("Input",
                                                 
@@ -27,7 +24,7 @@ ui <- fluidPage(
                                                
                                        
                                        ),
-                              tabPanel("Output", verbatimTextOutput('sel')) #tableOutput("tableout")
+                              tabPanel("Output", DT::dataTableOutput('sel'))
                             
           )
   

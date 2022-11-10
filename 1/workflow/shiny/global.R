@@ -2,6 +2,7 @@ library(shiny)
 library(DT)
 library(dplyr)
 library(purrr)
+library(glue)
 
  read_table_back_callback <- " table.rows().every(function(i, tab, row) {
                                 var $this = $(this.node());
@@ -70,7 +71,9 @@ results <- search_table %>%
 
 
 results <- results %>% 
-               unnest(result) 
+               unnest(result) %>%
+               filter(!duplicated(semanticTags))
+  
 
 if(nrow(results)>0){
 results <- results %>% 
