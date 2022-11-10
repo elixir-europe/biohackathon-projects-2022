@@ -3,6 +3,7 @@ library(DT)
 library(dplyr)
 library(purrr)
 library(glue)
+library(tidyr)
 
  read_table_back_callback <- " table.rows().every(function(i, tab, row) {
                                 var $this = $(this.node());

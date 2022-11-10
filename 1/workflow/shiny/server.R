@@ -29,10 +29,10 @@ radio_id_prefix <- eventReactive(input$button,{
   data_selector_table <- eventReactive(input$button,
                         {
 
-
+                          df <- data()
                           if(nrow(unnest(df, returns))==0) showNotification("No results returned", type = "error")
 
-                          df <- data()
+                          
 
                           checked <- ""
                             # i <- 1
