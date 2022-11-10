@@ -27,14 +27,16 @@ Tools Platform
   - [VGP short tutorial (workflow-focused)](https://training.galaxyproject.org/training-material/topics/assembly/tutorials/vgp_workflow_training/tutorial.html)
   - in-development workflows housed on [Delphine's github](https://github.com/Delphine-L/iwc/tree/VGP/workflows/VGP-assembly-v2)
 - Wrapping tools relevant for genome assembly/annotation for the Galaxy platform
-  - [BandageNG](https://github.com/asl/BandageNG): no conda package
-  - [InstaGRAAL](https://github.com/koszullab/instaGRAAL): no conda package
-  - [FASTK](https://github.com/thegenemyers/FASTK/issues/10): not sure if conda package is up-to-date?
+  - ~~[BandageNG](https://github.com/asl/BandageNG): no conda package~~ ✔️ in Bioconda, thank you [Cameron](https://github.com/neoformit) & [Anthony](https://github.com/abretaud)! 
+  - ~~[InstaGRAAL](https://github.com/koszullab/instaGRAAL): no conda package~~ ✔️ in Galaxy, thank you [Björn](https://github.com/bgruening/)!
+  - ~~[FASTK](https://github.com/thegenemyers/FASTK/issues/10): not sure if conda package is up-to-date?~~ ✔️ in Bioconda, thank you Anthony!
   - [MultiQC](https://github.com/ewels/MultiQC) integrations: PRs open for [gfastats](https://github.com/ewels/MultiQC/pull/1699) and other [pipeline QC](https://github.com/ewels/MultiQC/pull/1641)
-  - [NextDenovo](https://github.com/Nextomics/NextDenovo): no conda package
+  - ~~[NextDenovo](https://github.com/Nextomics/NextDenovo): no conda package~~ ✔️ in Bioconda, thank you [Loraine](https://github.com/loraine-gueguen)!
   - [FCS](https://github.com/ncbi/fcs): Docker/Singularity
-  - [Ratatosk](https://github.com/DecodeGenetics/Ratatosk): no conda package
+  - ~~[Ratatosk](https://github.com/DecodeGenetics/Ratatosk): no conda package~~ ✔️ in Bioconda, thank you Loraine!
+  - [hicstuff](https://github.com/koszullab/hicstuff): no tool wrapper
   - open to ideas for other tools for assembly, assembly QC, and annotation! (e.g., https://github.com/nadegeguiglielmoni/genome_assembly_tools)
+- get ONT pipelines on IWC
 
 ## Expected audience
 

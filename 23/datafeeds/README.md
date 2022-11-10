@@ -1,5 +1,5 @@
 # Implementing [Schema.org feed](https://schema.org/docs/feeds.html) proposal
-One of the topics of this project is to test and implement the Schema.org feed mechanism to get site-level feeds of structured data (https://schema.org/docs/feeds.html).
+One of the topics of this project is to test and implement the Schema.org feed mechanism to get site-level dumps of structured data (https://schema.org/docs/feeds.html).
 
 ## Discovery specifications
 Two Well Known URLs can be used for site-wide discovery of feed URLs, at the domain name level:

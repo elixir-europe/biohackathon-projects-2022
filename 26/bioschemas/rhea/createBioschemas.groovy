@@ -11,7 +11,7 @@ bioclipse = new net.bioclipse.managers.BioclipseManager(workspaceRoot);
 rdf = new net.bioclipse.managers.RDFManager(workspaceRoot);
 
 // query Rhea for chemical compounds
-sparql = ui.readFile("/rhea.rq") // SELECT DISTINCT ?chebi ?name ?formula ?smiles ?inchikey
+sparql = ui.readFile("/rhea.rq") // SELECT DISTINCT ?chebi ?name ?synonym ?formula ?smiles ?inchikey
 results = rdf.sparqlRemote("https://sparql.rhea-db.org/sparql/", sparql  )
 
 // convert to Bioschemas
@@ -23,6 +23,11 @@ for (i=1;i<=results.rowCount;i++) {
   chebi = results.get(i, "chebi")
   name = results.get(i, "name").replace("\"", "''")
   println "$compound a schema:MolecularEntity ; schema:name \"$name\" ;"
+  synonym = results.get(i, "synonym")
+  if (synonym != null) {
+    synonym = synonym.replace("\"", "''")
+    println "  schema:alternateName \"${synonym}\" ;"
+  }
   formula = results.get(i, "formula"); if (formula != null) println "  schema:molecularFormula \"$formula\" ;"
   smiles = results.get(i, "smiles"); if (smiles != null) {
     smiles = smiles.replace("\\", "\\\\")

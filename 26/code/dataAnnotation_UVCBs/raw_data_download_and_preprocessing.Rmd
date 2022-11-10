@@ -1,0 +1,67 @@
+---
+title: "raw_data_download_and_preprocessing"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*.
+
+## Setup
+
+```{r setup, include=FALSE}
+if(!"rmarkdown" %in% installed.packages()){
+  install.packages("rmarkdown")
+}
+library(rmarkdown)
+
+if(!"dplyr" %in% installed.packages()){
+  install.packages("dplyr")
+}
+library(dplyr)
+
+# set your working environment to the location where your current source file is saved into.
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))
+```
+
+
+## Dataset selection
+
+Based on the keyword 'toxic' (which might contain UVCBs), several datasets have been selected from the Metabolights repository and the Metabolomics Workbench.
+The IDs of these datasets are used for te data download step
+
+### Metabolights
+```{r metabolights, include=FALSE}
+metabolights_study_IDs <- c("MTBLS275", "MTBLS48", "MTBLS532", "MTBLS602", "MTBLS596", "MTBLS360", "MTBLS1196", "MTBLS2878", "MTBLS2166", "MTBLS5772")
+
+if(!"metabolighteR" %in% installed.packages()){
+  install.packages("metabolighteR")
+}
+library(metabolighteR)
+
+for (i in 1:length(metabolights_study_IDs)){
+    get_study_files(metabolights_study_IDs[i], raw_data = FALSE)
+    ##Add name to each file (study_ID)?
+    ##For each dataset, download the metadata_maf, and give it the study_ID_data name. 
+   }
+remove(i)
+
+metabolights_dataframe <- get_study_files(metabolights_study_IDs[1], raw_data = FALSE)
+for (i in 1:nrow(metabolights_dataframe)) {
+  if(metabolights_dataframe[i,6] == 'metadata_maf' ){
+  #metabolights_dataframe[3,3]
+  fileContents_A <- download_study_file(metabolights_study_IDs[1], metabolights_dataframe[i,3])
+  }
+}
+
+##Annotated files are available as 'type' : 'metadata_maf'
+##Raw data can be available in multiple file formats (also depending on the analysis method NMR vs MS)
+
+```
+
+### Metabolomics Workbench
+
+```{r}
+metabolomics_workbench_study_IDs <- c("ST001428", "ST000446", "ST000415")
+```
+

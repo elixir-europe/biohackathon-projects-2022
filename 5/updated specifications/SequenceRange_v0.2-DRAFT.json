@@ -10,7 +10,7 @@
     {
       "@id": "bioschemastypesdrafts:SequenceRange",
       "@type": "rdfs:Class",
-      "rdfs:comment": "Used to define the range of a subsequence, typically used in conjunction with SequenceAnnotation to define the range of the annotation on the protein or gene sequence. Version: 0.1-DRAFT-2019_06_21.",
+      "rdfs:comment": "Used to define the range of a subsequence, typically used in conjunction with SequenceAnnotation to define the range of the annotation on the protein or gene sequence. Changes since 0.1-DRAFT-2019_06_21 <ul><li>added sameAs property as recommended</li></ul>.Version: 0.2-DRAFT",
       "rdfs:label": "SequenceRange",
       "rdfs:subClassOf": {
         "@id": "bioschemastypes:BioChemEntity"
