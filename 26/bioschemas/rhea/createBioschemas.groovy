@@ -40,7 +40,7 @@ for (i=1;i<=results.rowCount;i++) {
     println "    \"smiles\": \"$smiles\","
   }
   inchikey = results.get(i, "inchikey"); if (inchikey != null) println "    \"inChIKey\": \"$inchikey\","
-  println "  \"sameAs\": \"$chebi\""
+  println "    \"sameAs\": \"$chebi\""
   if (i=results.rowCount) {
     println "  }"
   } else {
