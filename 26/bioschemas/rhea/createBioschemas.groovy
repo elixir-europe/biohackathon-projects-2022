@@ -41,7 +41,7 @@ for (i=1;i<=results.rowCount;i++) {
   }
   inchikey = results.get(i, "inchikey"); if (inchikey != null) println "    \"inChIKey\": \"$inchikey\","
   println "    \"sameAs\": \"$chebi\""
-  if (i=results.rowCount) {
+  if (i==results.rowCount) {
     println "  }"
   } else {
     println "  },"
