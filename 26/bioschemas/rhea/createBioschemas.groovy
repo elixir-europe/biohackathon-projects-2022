@@ -14,25 +14,37 @@ rdf = new net.bioclipse.managers.RDFManager(workspaceRoot);
 sparql = ui.readFile("/rhea.rq") // SELECT DISTINCT ?chebi ?name ?synonym ?formula ?smiles ?inchikey
 results = rdf.sparqlRemote("https://sparql.rhea-db.org/sparql/", sparql  )
 
+// println "PREFIX schema: <https://schema.org/>"
+// println "PREFIX rh: <http://rdf.rhea-db.org/>"
+
 // convert to Bioschemas
-println "PREFIX schema: <https://schema.org/>"
-println "PREFIX rh: <http://rdf.rhea-db.org/>"
-println()
+println "["
 for (i=1;i<=results.rowCount;i++) {
-  compound = results.get(i, "compound")
+  println "  {"
+  println "    \"@context\": \"https://schema.org/\","
+  println "    \"type\": \"MolecularEntity\","
+  println "    \"http://purl.org/dc/terms/conformsTo\": {\n        \"@id\": \"https://bioschemas.org/profiles/MolecularEntity/0.5-RELEASE\",        \"@type\": \"CreativeWork\"\n    },"
+  compound = results.get(i, "compound").replace("rh:", "http://rdf.rhea-db.org/")
   chebi = results.get(i, "chebi")
   name = results.get(i, "name").replace("\"", "''")
-  println "$compound a schema:MolecularEntity ; schema:name \"$name\" ;"
+  println "   \"@id\": \"$compound\","
+  println "   \"name\": \"$name\","
   synonym = results.get(i, "synonym")
   if (synonym != null) {
     synonym = synonym.replace("\"", "''")
-    println "  schema:alternateName \"${synonym}\" ;"
+    println "    \"alternateName\": \"${synonym}\","
   }
-  formula = results.get(i, "formula"); if (formula != null) println "  schema:molecularFormula \"$formula\" ;"
+  formula = results.get(i, "formula"); if (formula != null) println "    \"molecularFormula\": \"$formula\","
   smiles = results.get(i, "smiles"); if (smiles != null) {
     smiles = smiles.replace("\\", "\\\\")
-    println "  schema:smiles \"$smiles\" ;"
+    println "    \"smiles\": \"$smiles\","
   }
-  inchikey = results.get(i, "inchikey"); if (inchikey != null) println "  schema:inChIKey \"$inchikey\" ;"
-  println "  schema:sameAs <$chebi> ."
+  inchikey = results.get(i, "inchikey"); if (inchikey != null) println "    \"inChIKey\": \"$inchikey\","
+  println "  \"sameAs\": \"$chebi\""
+  if (i=results.rowCount) {
+    println "  }"
+  } else {
+    println "  },"
+  }
 }
+println "]"
