@@ -10,14 +10,14 @@ authors:
   - name: Danielle Welter
     orcid: 0000-0003-1058-2668
     affiliation: 1
-  - name:  
-    orcid:
-    affiliation: 
+  - name: Nazeefa Fatima 
+    orcid: 0000-0001-7791-4984 
+    affiliation: 2
 affiliations:
   - name: Luxembourg Center for Systems Biomedicine (LCSB), University of Luxembourg, Esch-sur-Alzette, Luxembourg
     index: 1
-  - name: 
-    index: 
+  - name: Centre for Bioinformatics, University of Oslo, ELIXIR Norway
+    index: 2
 date: 11 November 2022
 cito-bibliography: paper.bib
 event: BH22EU
