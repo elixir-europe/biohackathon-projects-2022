@@ -1,0 +1,77 @@
+plugins {
+    id 'org.springframework.boot' version '2.6.13'
+    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+    id "com.diffplug.spotless" version "5.12.5"
+    id 'java'
+}
+
+group = 'com.elixir.biohackaton'
+version = '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenLocal()
+
+    maven {
+        url "https://gitlab.ebi.ac.uk/api/v4/groups/enasequence/-/packages/maven"
+
+        credentials(HttpHeaderCredentials) {
+            name = "Private-Token"
+            value = gitlab_private_token
+        }
+        authentication {
+            header(HttpHeaderAuthentication)
+        }
+    }
+
+    mavenCentral()
+
+    // For BioSamples client
+    maven {
+        url 'https://gitlab.ebi.ac.uk/api/v4/projects/2669/packages/maven'
+
+        credentials(HttpHeaderCredentials) {
+            name = "Private-Token"
+            value = gitlab_private_token
+        }
+        authentication {
+            header(HttpHeaderAuthentication)
+        }
+    }
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.14.0'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.14.0'
+    implementation(group: 'uk.ac.ebi.ena', name: 'webin-auth-sdk', version: '1.0.0')
+    implementation group: 'com.google.errorprone', name: 'error_prone_annotations', version: '2.16'
+    implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5'
+    implementation group: 'dom4j', name: 'dom4j', version: '1.6.1'
+
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+    // for biosamples client
+    implementation('uk.ac.ebi.biosamples:client:5.2.13-RC1') {
+        exclude group: 'org.bouncycastle'
+        exclude group: 'asm'
+        exclude group: 'org.ow2.asm', module: 'asm'
+        exclude group: 'net.minidev', module: 'asm'
+        exclude group: 'ch.qos.logback', module: 'logback-classic'
+    }
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+spotless {
+    java {
+        importOrder('java', 'javax', 'org', 'com', '', 'uk')
+        removeUnusedImports()
+        googleJavaFormat()
+        licenseHeader '''/** Elixir BioHackathon 2022 */'''
+    }
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
