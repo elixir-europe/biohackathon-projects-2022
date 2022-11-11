@@ -23,7 +23,7 @@ for (i=1;i<=results.rowCount;i++) {
   println "  {"
   println "    \"@context\": \"https://schema.org/\","
   println "    \"type\": \"MolecularEntity\","
-  println "    \"http://purl.org/dc/terms/conformsTo\": {\n        \"@id\": \"https://bioschemas.org/profiles/MolecularEntity/0.5-RELEASE\",        \"@type\": \"CreativeWork\"\n    },"
+  println "    \"http://purl.org/dc/terms/conformsTo\": {\n        \"@id\": \"https://bioschemas.org/profiles/MolecularEntity/0.5-RELEASE\",\n        \"@type\": \"CreativeWork\"\n    },"
   compound = results.get(i, "compound").replace("rh:", "http://rdf.rhea-db.org/")
   chebi = results.get(i, "chebi")
   name = results.get(i, "name").replace("\"", "''")
