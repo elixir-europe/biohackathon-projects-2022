@@ -40,19 +40,22 @@ if(!"metabolighteR" %in% installed.packages()){
 library(metabolighteR)
 
 for (i in 1:length(metabolights_study_IDs)){
-    get_study_files(metabolights_study_IDs[i], raw_data = FALSE)
-    ##Add name to each file (study_ID)?
+    metabolights_dataframe <- get_study_files(metabolights_study_IDs[i], raw_data = FALSE)
+    nameDataFile <- paste0("processed_", metabolights_study_IDs[i] ,".tsv")
+    write.table(mSet_AnalysisFinal, nameDataFile, sep =",", row.names = FALSE)
     ##For each dataset, download the metadata_maf, and give it the study_ID_data name. 
-   }
-remove(i)
-
-metabolights_dataframe <- get_study_files(metabolights_study_IDs[1], raw_data = FALSE)
-for (i in 1:nrow(metabolights_dataframe)) {
-  if(metabolights_dataframe[i,6] == 'metadata_maf' ){
-  #metabolights_dataframe[3,3]
-  fileContents_A <- download_study_file(metabolights_study_IDs[1], metabolights_dataframe[i,3])
+    
+    for (j in 1:nrow(metabolights_dataframe)) {
+      if(metabolights_dataframe[j,6] == 'metadata_maf' ){
+      fileContents <- download_study_file(metabolights_study_IDs[1], metabolights_dataframe[j,3])
   }
 }
+    
+   }
+remove(i,j)
+
+#metabolights_dataframe <- get_study_files(metabolights_study_IDs[1], raw_data = FALSE)
+
 
 ##Annotated files are available as 'type' : 'metadata_maf'
 ##Raw data can be available in multiple file formats (also depending on the analysis method NMR vs MS)
