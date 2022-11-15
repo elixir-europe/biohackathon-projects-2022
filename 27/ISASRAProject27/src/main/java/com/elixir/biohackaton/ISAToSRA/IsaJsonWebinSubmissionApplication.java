@@ -18,6 +18,6 @@ public class IsaJsonWebinSubmissionApplication implements ApplicationRunner {
 
   @Override
   public void run(final ApplicationArguments args) throws Exception {
-    this.SRAWebinSubmissionXmlCreator.create();
+    this.SRAWebinSubmissionXmlCreator.performSubmissionToBioSamplesAndEna(args);
   }
 }

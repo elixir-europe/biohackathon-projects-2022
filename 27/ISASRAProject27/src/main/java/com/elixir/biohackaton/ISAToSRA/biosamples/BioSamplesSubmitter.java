@@ -1,13 +1,17 @@
 /** Elixir BioHackathon 2022 */
 package com.elixir.biohackaton.ISAToSRA.biosamples;
 
-import com.elixir.biohackaton.ISAToSRA.model.IsaJson;
+import com.elixir.biohackaton.ISAToSRA.biosamples.model.Attribute;
+import com.elixir.biohackaton.ISAToSRA.biosamples.model.Relationship;
+import com.elixir.biohackaton.ISAToSRA.biosamples.model.Sample;
 import com.elixir.biohackaton.ISAToSRA.model.Study;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 import java.util.concurrent.atomic.AtomicReference;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.http.HttpEntity;
@@ -16,103 +20,108 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-import uk.ac.ebi.biosamples.client.BioSamplesClient;
-import uk.ac.ebi.biosamples.model.Attribute;
-import uk.ac.ebi.biosamples.model.Relationship;
-import uk.ac.ebi.biosamples.model.Sample;
 
 @Service
+@Slf4j
 public class BioSamplesSubmitter {
-  public static final String WEBIN_AUTH_TOKEN_PLACEHOLDER = "_JWT_HERE";
-
-  public List<String> parseIsaJsonAndCreateBioSamples(final IsaJson isaJson) {
-    final AtomicReference<String> parentBioSampleAccession = new AtomicReference<>();
-    final AtomicReference<String> parentSampleOrganism = new AtomicReference<>();
+  public List<String> createBioSamples(final List<Study> studies, final String webinToken) {
     final List<String> bioSampleAccessions = new ArrayList<>();
 
-    try (final BioSamplesClient bioSamplesClient =
-        BiosamplesClientInstance.buildBioSamplesClient(BioSampleClientEnvironment.dev)) {
-      final ArrayList<Study> studies = isaJson.getInvestigation().getStudies();
+    try {
+      final Sample sourceBioSample = this.createSourceBioSample(studies, webinToken);
+      final Optional<Attribute> sourceBioSampleOrganism =
+          sourceBioSample.getAttributes().stream()
+              .map(
+                  attribute -> {
+                    if (attribute.getType().equalsIgnoreCase("organism")) {
+                      return attribute;
+                    }
 
-      this.createParentSample(
-          parentBioSampleAccession,
-          parentSampleOrganism,
-          bioSampleAccessions,
-          bioSamplesClient,
-          studies);
+                    return null;
+                  })
+              .findFirst();
 
-      this.createAndUpdateChildSamplesWithRelationships(
-          parentBioSampleAccession,
-          parentSampleOrganism,
-          bioSampleAccessions,
-          bioSamplesClient,
-          studies);
+      bioSampleAccessions.add(sourceBioSample.getAccession());
 
-      return bioSampleAccessions;
-    } catch (final Exception e) {
-      e.printStackTrace();
-    }
-
-    return null;
-  }
-
-  private void createAndUpdateChildSamplesWithRelationships(
-      final AtomicReference<String> parentBioSampleAccession,
-      final AtomicReference<String> parentSampleOrganism,
-      final List<String> bioSampleAccessions,
-      final BioSamplesClient bioSamplesClient,
-      final ArrayList<Study> studies) {
-    studies.forEach(
-        study ->
-            study
-                .getAssays()
-                .forEach(
-                    assay ->
+      if (sourceBioSampleOrganism.isPresent()) {
+        studies.forEach(
+            study -> {
+              study
+                  .getAssays()
+                  .forEach(
+                      assay -> {
                         assay
                             .getMaterials()
                             .getSamples()
                             .forEach(
                                 sample -> {
-                                  final Sample bioSample =
-                                      new Sample.Builder("leaf 1")
-                                          .withRelease(Instant.now())
-                                          .withAttributes(
-                                              Collections.singletonList(
-                                                  Attribute.build(
-                                                      "organism", parentSampleOrganism.get())))
-                                          .build();
-                                  final EntityModel<Sample> persistedSampleEntity =
-                                      bioSamplesClient.persistSampleResource(
-                                          bioSample, WEBIN_AUTH_TOKEN_PLACEHOLDER);
-                                  final Sample persistedBioSample =
-                                      persistedSampleEntity.getContent();
+                                  final Sample persistedChildSample =
+                                      this.createAndUpdateChildSampleWithRelationship(
+                                          sample,
+                                          sourceBioSample.getAccession(),
+                                          sourceBioSampleOrganism.get().getValue(),
+                                          webinToken);
 
-                                  System.out.println(
-                                      "New sample accession is "
-                                          + persistedBioSample.getAccession());
+                                  if (persistedChildSample != null) {
+                                    bioSampleAccessions.add(persistedChildSample.getAccession());
+                                  }
+                                });
+                      });
+            });
+      }
+    } catch (final Exception e) {
+      throw new RuntimeException("Failed to parse ISA Json and create samples in BioSamples", e);
+    }
 
-                                  bioSampleAccessions.add(persistedBioSample.getAccession());
-
-                                  final Sample sampleWithRelationship =
-                                      Sample.Builder.fromSample(persistedBioSample)
-                                          .withRelationships(
-                                              Collections.singletonList(
-                                                  Relationship.build(
-                                                      persistedBioSample.getAccession(),
-                                                      "derived from",
-                                                      parentBioSampleAccession.get())))
-                                          .build();
-
-                                  this.updateSampleWithRelsToBioSamples(sampleWithRelationship);
-                                })));
+    return bioSampleAccessions;
   }
 
-  private void createParentSample(
-      final AtomicReference<String> parentBioSampleAccession,
-      final AtomicReference<String> parentSampleOrganism,
-      final List<String> bioSampleAccessions,
-      final BioSamplesClient bioSamplesClient,
-      final ArrayList<Study> studies) {
+  private Sample createAndUpdateChildSampleWithRelationship(
+      final com.elixir.biohackaton.ISAToSRA.model.Sample sample,
+      final String sourceBioSampleAccession,
+      final String parentSampleOrganism,
+      final String webinToken) {
+    final Sample bioSample =
+        new Sample.Builder(sample.getName() != null ? sample.getName() : "testSample")
+            .withRelease(Instant.now())
+            .withAttributes(
+                Collections.singletonList(Attribute.build("organism", parentSampleOrganism)))
+            .build();
+    try {
+      final EntityModel<Sample> persistedSampleEntity =
+          this.createSampleInBioSamples(bioSample, webinToken);
+
+      if (persistedSampleEntity != null) {
+        final Sample persistedBioSample = persistedSampleEntity.getContent();
+
+        if (persistedBioSample != null) {
+          final Sample sampleWithRelationship =
+              Sample.Builder.fromSample(persistedBioSample)
+                  .withRelationships(
+                      Collections.singletonList(
+                          Relationship.build(
+                              persistedBioSample.getAccession(),
+                              "derived from",
+                              sourceBioSampleAccession)))
+                  .build();
+
+          return this.updateSampleWithRelationshipsToBioSamples(sampleWithRelationship, webinToken);
+        } else {
+          return null;
+        }
+      } else {
+        return null;
+      }
+    } catch (final Exception e) {
+      throw new RuntimeException("Failed to handle child samples", e);
+    }
+  }
+
+  private Sample createSourceBioSample(final List<Study> studies, final String webinToken) {
+    final AtomicReference<Attribute> organismAttribute =
+        new AtomicReference<>(Attribute.build("", ""));
+    final AtomicReference<Sample> sourceBioSample = new AtomicReference<>(null);
+
     studies.forEach(
         study ->
             study
@@ -124,49 +133,39 @@ public class BioSamplesSubmitter {
                           .getCharacteristics()
                           .forEach(
                               characteristic -> {
-                                if (characteristic.getCategory().getId().contains("organism_320")) {
-                                  parentSampleOrganism.set(
-                                      characteristic.getValue().getAnnotationValue());
+                                if (characteristic.getCategory().getId().contains("organism")) {
+                                  organismAttribute.set(
+                                      Attribute.build(
+                                          "organism",
+                                          characteristic.getValue().getAnnotationValue()));
                                 }
                               });
 
-                      final Sample parentBioSample =
+                      final Sample sourceSample =
                           new Sample.Builder(source.getName())
                               .withRelease(Instant.now())
-                              .withAttributes(
-                                  Collections.singletonList(
-                                      Attribute.build("organism", parentSampleOrganism.get())))
+                              .withAttributes(Collections.singleton(organismAttribute.get()))
                               .build();
                       final EntityModel<Sample> persistedParentSampleEntity =
-                          bioSamplesClient.persistSampleResource(
-                              parentBioSample, WEBIN_AUTH_TOKEN_PLACEHOLDER);
-                      final Sample persistedParentBioSample =
-                          persistedParentSampleEntity.getContent();
+                          this.createSampleInBioSamples(sourceSample, webinToken);
 
-                      parentBioSampleAccession.set(
-                          persistedParentSampleEntity.getContent().getAccession());
-
-                      System.out.println(
-                          "Parent sample accession is " + persistedParentBioSample.getAccession());
-
-                      bioSampleAccessions.add(persistedParentBioSample.getAccession());
+                      if (persistedParentSampleEntity != null) {
+                        sourceBioSample.set(persistedParentSampleEntity.getContent());
+                      } else {
+                        throw new RuntimeException("Failed to store source sample to BioSamples");
+                      }
                     }));
+
+    return sourceBioSample.get();
   }
 
-  private void updateSampleWithRelsToBioSamples(final Sample sampleWithRelationship) {
+  private Sample updateSampleWithRelationshipsToBioSamples(
+      final Sample sampleWithRelationship, final String webinToken) {
     final RestTemplate restTemplate = new RestTemplate();
-    final ResponseEntity<Sample> biosamplesResponse;
+    final ResponseEntity<EntityModel<Sample>> biosamplesResponse;
 
     try {
-      final HttpHeaders headers =
-          new HttpHeaders() {
-            {
-              final String authHeader = "Bearer " + WEBIN_AUTH_TOKEN_PLACEHOLDER;
-              this.set("Authorization", authHeader);
-            }
-          };
-      headers.add("Content-Type", "application/json;charset=UTF-8");
-      headers.add("Accept", "application/json");
+      final HttpHeaders headers = getHttpHeaders(webinToken);
 
       final HttpEntity<?> entity = new HttpEntity<>(sampleWithRelationship, headers);
 
@@ -176,9 +175,44 @@ public class BioSamplesSubmitter {
               HttpMethod.PUT,
               entity,
               new ParameterizedTypeReference<>() {});
-      System.out.println(biosamplesResponse.getBody());
+      return biosamplesResponse.getBody().getContent();
     } catch (final Exception ex) {
-      ex.printStackTrace();
+      throw new RuntimeException("Failed to add relationships to child samples", ex);
     }
+  }
+
+  private EntityModel<Sample> createSampleInBioSamples(
+      final Sample sample, final String webinToken) {
+    final RestTemplate restTemplate = new RestTemplate();
+    final ResponseEntity<EntityModel<Sample>> biosamplesResponse;
+
+    try {
+      final HttpHeaders headers = getHttpHeaders(webinToken);
+      final HttpEntity<?> entity = new HttpEntity<>(sample, headers);
+
+      biosamplesResponse =
+          restTemplate.exchange(
+              "http://wwwdev.ebi.ac.uk/biosamples/samples/",
+              HttpMethod.POST,
+              entity,
+              new ParameterizedTypeReference<>() {});
+
+      return biosamplesResponse.getBody();
+    } catch (final Exception ex) {
+      throw new RuntimeException("Failed to create samples in BioSamples", ex);
+    }
+  }
+
+  private static HttpHeaders getHttpHeaders(String webinToken) {
+    final HttpHeaders headers =
+        new HttpHeaders() {
+          {
+            final String authHeader = "Bearer " + webinToken;
+            this.set("Authorization", authHeader);
+          }
+        };
+    headers.add("Content-Type", "application/json;charset=UTF-8");
+    headers.add("Accept", "application/json");
+    return headers;
   }
 }
