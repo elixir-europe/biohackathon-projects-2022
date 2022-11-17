@@ -1,7 +1,7 @@
 /** Elixir BioHackathon 2022 */
-package com.elixir.biohackaton.ISAToSRA.sra;
+package com.elixir.biohackaton.ISAToSRA.sra.service;
 
-import com.elixir.biohackaton.ISAToSRA.biosamples.BioSamplesSubmitter;
+import com.elixir.biohackaton.ISAToSRA.biosamples.service.BioSamplesSubmitter;
 import com.elixir.biohackaton.ISAToSRA.model.Investigation;
 import com.elixir.biohackaton.ISAToSRA.model.IsaJson;
 import com.elixir.biohackaton.ISAToSRA.model.Study;
@@ -10,6 +10,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.Map;
 import lombok.extern.slf4j.Slf4j;
 import org.dom4j.Document;
 import org.dom4j.DocumentHelper;
@@ -31,13 +32,19 @@ public class SRAWebinSubmissionXmlCreator {
 
   @Autowired private SRAProjectXmlCreator sraProjectXmlCreator;
 
+  @Autowired private SRARunXmlCreator sraRunXmlCreator;
+
+  @Autowired private WebinSubmitter webinSubmitter;
+
   @Autowired private ObjectMapper objectMapper;
 
   public void performSubmissionToBioSamplesAndEna(ApplicationArguments args) throws Exception {
     String webinToken;
     String webinUserName;
     String webinPassword;
+    String isaJsonFilePath;
 
+    // Mandatory command line arguments
     if (args.getOptionNames().contains("webinJwt")) {
       webinToken = args.getOptionValues("webinJwt").iterator().next();
     } else {
@@ -56,26 +63,38 @@ public class SRAWebinSubmissionXmlCreator {
       throw new RuntimeException("Webin password is not provided");
     }
 
-    final Path path = Paths.get("C:\\Users\\dgupta\\Test_BioHackathon_Investigation.json");
+    if (args.getOptionNames().contains("isaJsonFilePath")) {
+      isaJsonFilePath = args.getOptionValues("isaJsonFilePath").iterator().next();
+    } else {
+      throw new RuntimeException("ISA-Json file is not provided");
+    }
+
+    final Path path = Paths.get(isaJsonFilePath);
     final List<String> lines = Files.readAllLines(path);
     final String isaJsonString = String.join("\n", lines);
     final IsaJson isaJson = this.objectMapper.readValue(isaJsonString, IsaJson.class);
     final List<Study> studies = getStudies(isaJson);
-    final List<String> bioSampleAccessions =
+    final Map<String, String> typeToBioSamplesAccessionMap =
         this.bioSamplesSubmitter.createBioSamples(studies, webinToken);
 
     final Document document = DocumentHelper.createDocument();
     final Element webinElement = startPreparingWebinV2SubmissionXml(document);
 
     this.sraStudyXmlCreator.createENAStudySetElement(webinElement, studies);
-    this.sraExperimentXmlCreator.createENAExperimentSetElement(
-        bioSampleAccessions, webinElement, studies);
+
+    final Map<Integer, String> experimentSequenceMap =
+        this.sraExperimentXmlCreator.createENAExperimentSetElement(
+            typeToBioSamplesAccessionMap, webinElement, studies);
+
+    this.sraRunXmlCreator.createENARunSetElement(webinElement, studies, experimentSequenceMap);
     this.sraProjectXmlCreator.createENAProjectSetElement(webinElement, getInvestigation(isaJson));
 
     final OutputFormat format = OutputFormat.createPrettyPrint();
     final XMLWriter writer = new XMLWriter(System.out, format);
 
     writer.write(document);
+
+    log.info(webinSubmitter.performWebinSubmission(webinUserName, document.asXML(), webinPassword));
   }
 
   public List<Study> getStudies(final IsaJson isaJson) {

@@ -10,7 +10,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class IsaJsonWebinSubmissionApplication implements ApplicationRunner {
   @Autowired
-  com.elixir.biohackaton.ISAToSRA.sra.SRAWebinSubmissionXmlCreator SRAWebinSubmissionXmlCreator;
+  com.elixir.biohackaton.ISAToSRA.sra.service.SRAWebinSubmissionXmlCreator
+      SRAWebinSubmissionXmlCreator;
 
   public static void main(final String[] args) {
     SpringApplication.run(IsaJsonWebinSubmissionApplication.class, args);

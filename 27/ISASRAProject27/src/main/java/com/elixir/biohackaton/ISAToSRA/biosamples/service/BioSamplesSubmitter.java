@@ -1,15 +1,13 @@
 /** Elixir BioHackathon 2022 */
-package com.elixir.biohackaton.ISAToSRA.biosamples;
+package com.elixir.biohackaton.ISAToSRA.biosamples.service;
 
 import com.elixir.biohackaton.ISAToSRA.biosamples.model.Attribute;
 import com.elixir.biohackaton.ISAToSRA.biosamples.model.Relationship;
 import com.elixir.biohackaton.ISAToSRA.biosamples.model.Sample;
 import com.elixir.biohackaton.ISAToSRA.model.Study;
 import java.time.Instant;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.ParameterizedTypeReference;
@@ -24,8 +22,8 @@ import org.springframework.web.client.RestTemplate;
 @Service
 @Slf4j
 public class BioSamplesSubmitter {
-  public List<String> createBioSamples(final List<Study> studies, final String webinToken) {
-    final List<String> bioSampleAccessions = new ArrayList<>();
+  public Map<String, String> createBioSamples(final List<Study> studies, final String webinToken) {
+    final Map<String, String> typeToBioSamplesAccessionMap = new HashMap<>();
 
     try {
       final Sample sourceBioSample = this.createSourceBioSample(studies, webinToken);
@@ -41,9 +39,11 @@ public class BioSamplesSubmitter {
                   })
               .findFirst();
 
-      bioSampleAccessions.add(sourceBioSample.getAccession());
+      typeToBioSamplesAccessionMap.put("SOURCE", sourceBioSample.getAccession());
 
       if (sourceBioSampleOrganism.isPresent()) {
+        final AtomicInteger counter = new AtomicInteger(0);
+
         studies.forEach(
             study -> {
               study
@@ -63,7 +63,9 @@ public class BioSamplesSubmitter {
                                           webinToken);
 
                                   if (persistedChildSample != null) {
-                                    bioSampleAccessions.add(persistedChildSample.getAccession());
+                                    typeToBioSamplesAccessionMap.put(
+                                        "CHILD_" + counter.getAndIncrement(),
+                                        persistedChildSample.getAccession());
                                   }
                                 });
                       });
@@ -73,7 +75,7 @@ public class BioSamplesSubmitter {
       throw new RuntimeException("Failed to parse ISA Json and create samples in BioSamples", e);
     }
 
-    return bioSampleAccessions;
+    return typeToBioSamplesAccessionMap;
   }
 
   private Sample createAndUpdateChildSampleWithRelationship(
@@ -166,7 +168,6 @@ public class BioSamplesSubmitter {
 
     try {
       final HttpHeaders headers = getHttpHeaders(webinToken);
-
       final HttpEntity<?> entity = new HttpEntity<>(sampleWithRelationship, headers);
 
       biosamplesResponse =
