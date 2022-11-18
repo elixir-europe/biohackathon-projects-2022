@@ -94,7 +94,10 @@ public class SRAWebinSubmissionXmlCreator {
 
     writer.write(document);
 
-    log.info(webinSubmitter.performWebinSubmission(webinUserName, document.asXML(), webinPassword));
+    final String receiptXml =
+        webinSubmitter.performWebinSubmission(webinUserName, document.asXML(), webinPassword);
+
+    log.info(receiptXml);
   }
 
   public List<Study> getStudies(final IsaJson isaJson) {
