@@ -1,8 +1,8 @@
 # Project 32: Training booster: developing FAIR training materials and Learning Paths
 
-## Master document  
+## Main document  
 
-Link to the live document which contains any information needed during the week of the BH2022 - [Master doc](https://docs.google.com/document/d/1Ct3mb8au_tQ0rhsc7fe06zJgfY904dmX/edit).
+Link to the live document which contains any information needed during the week of the BH2022 - [Main doc](https://docs.google.com/document/d/1Ct3mb8au_tQ0rhsc7fe06zJgfY904dmX/edit).
 
 ## Abstract
 
