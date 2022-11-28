@@ -28,7 +28,7 @@ Tools Platform
 
 ### Lead(s)
 
-Flora D'Anna = flora.danna90@gmail.com, flora.danna@psb.vib-ugent.be
+Flora D'Anna = flora.danna@psb.vib-ugent.be
 Zahra Waheed = zahra@ebi.ac.uk
 
 ## Expected outcomes
