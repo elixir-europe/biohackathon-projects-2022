@@ -175,6 +175,8 @@ WHERE {
 
 # Data Analysis
 
+***This section needs to be redone with the new data***
+
 We reused the notebook originally developed at BioHackathon 2020 [@gray_bioschemas-idpcntral_2021] and since evolved for the Intrinsically Disordered Protein Knowledge Graph (IDP-KG) [@gray_idp-kg_2022]. We include the HCLS Dataset Description profile statistics queries[^footnote] [@Dumontier_HCLS-datadesc_PeerJ2016], read in from an existing [repository](https://github.com/AlasdairGray/HCLS-Stats-Queries). We also include [queries](https://github.com/BioSchemas/bioschemas-data-harvesting/tree/main/queries) developed specifically for the analysis of the Bioschemas harvested data.
 
 To use the [notebook (MyBinder launcher)](https://mybinder.org/v2/gh/BioSchemas/bioschemas-data-harvesting/HEAD?labpath=AnalysisQueries.ipynb), you simply need to run all cells and then select the query you would like to execute from the resulting dropdown menu.
@@ -544,19 +546,18 @@ We then investigated the number of outgoing links per class. We report here the 
 
 # Discussion
 
-Through this Hackathon project we have demonstrated that it is possible to harvest Bioschemas markup from a number of sites and load them into a triplestore. However, this has revealed a number of challenges that need to be resolved.
-
-Harvesting content from a whole site is very time consuming, particularly for dynamic sites. Harvesting requires visiting each page with markup in turn and extracting the markup. In the case of dynamic sites the content needs to be rendered before it can be extracted. Most of the sites that could be completed harvested did not contain data content beyond Dataset and DataCatalog.
-
-The quality of deployed markup is very problematic. As reported above, a number of sites could not be harvested due to issues with their sitemap. Of those that could be harvested, a number of pages were not harvested due to issues with the markup contained within them, e.g. inclusion of non-escaped characters within strings was a common error. Even the markup that could be extracted contained errors, e.g. the use of different namespaces for the declaration of the Gene type as identified in the Instances per Bioschemas Class query. This highlights the need for a Bioschemas validator capable of both syntactic and semantic checking (see the data validation outputs of [Project 29](https://github.com/elixir-europe/biohackathon-projects-2021/tree/main/projects/29/data-validation)).
+*Still to be written*
 
 # Future work
 
-The next steps for this work would be to improve the robustness of the data harvesting pipeline, including automating the manual steps of iterating over an index of sitemap files; merging individual files for each harvested page into a single file per subsitemap; and loading the harvested data into the triplestore.
+*Needs to be written properly*
 
-The use of data dumps for sites should be considered to eliminate the need for data harvesting, which is a costly process for both data producers -- who have to have sufficient bandwidth and compute resources to serve the content -- and data consumers -- who have to have sufficient compute resources to retrieve, render, and extract the content from each page.
+- Investigate use of LinkedPipes to automate the process (link to Ammar's paper: https://doi.org/10.37044/osf.io/7f95d)
+- Discuss use of dumps with OpenAIRE
 
 # Jupyter notebooks, GitHub repositories and data repositories
+
+***Links below need to be checked and updated***
 
 * GitHub repository: https://github.com/BioSchemas/bioschemas-data-harvesting
 * Jupyter Notebook: https://github.com/BioSchemas/bioschemas-data-harvesting/blob/main/AnalysisQueries.ipynb
