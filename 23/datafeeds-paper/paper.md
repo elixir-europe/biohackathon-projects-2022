@@ -37,7 +37,104 @@ git_url: https://github.com/elixir-europe/biohackathon-projects-2022/tree/main/p
 
 Bioschemas provides a lightweight vocabulary for making the content of Web pages machine processable. However, as shown in Project 29 at BioHackathon 2021 [@gray_papadopoulos_gaignard_rosnet_mičetić_moretti_2022], harvesting markup by visiting each page of a site is not feasible for large sites due to the time required to process each page. This approach imposes processing demands on the publisher and consumer. In February 2022, the Schema.org community proposed a mechanism for sharing markup from multiple pages as a DataFeed published at an established location [@sdo_datafeed]. The feed could be a single file with the whole content or split into multiple files based on some aspect of the dataset, e.g. ChEMBL could have a file for proteins and another one for molecular entities. This would reduce processing demands for publishers and consumers and speed up data harvesting.
 
-The aim of this hackathon project is to explore the implementation of the Schema.org proposal from both a producer and consumer perspective, for a variety of resources implementing different Bioschemas profiles. On the consumer side, we will prototype a consumption pipeline that enables these feeds to be ingested into knowledge graphs including IDP Knowledge Graph [@gray_papadopoulos_mičetić_hatos_2021,@GrayEtal:bioschemas-idpkg:swat4hcls2022] and the Open AIRE Research Graph. To enable the latter, we will also develop additional mappings between Bioschemas profiles and OpenAIRE’s data model. We will need to understand how to mix schema feeds from different sources, possibly exploiting background knowledge from Wikidata to reconcile concepts.
+The aim of this hackathon project is to explore the implementation of the Schema.org proposal from both a producer and consumer perspective, for a variety of resources implementing different Bioschemas profiles. On the consumer side, we will prototype a consumption pipeline that enables these feeds to be ingested into knowledge graphs including IDP Knowledge Graph [@gray_papadopoulos_mičetić_hatos_2021,@GrayEtal:bioschemas-idpkg:swat4hcls2022] and the Open AIRE Research Graph [@doucet_openaire_2019]. To enable the latter, we will also develop additional mappings between Bioschemas profiles and OpenAIRE’s data model. We will need to understand how to mix schema feeds from different sources, possibly exploiting background knowledge from Wikidata to reconcile concepts.
+
+# Publishing Data Dumps
+
+During the BioHackathon, we reviewed the Schema.org proposal for publishing the markup found within a site as a single, or small number of files, at a well known location [@sdo_datafeed]. We also attempted to publish data dumps for several sites.
+
+We found the term DataFeed did not match our understanding of what was being published[^1]. The idea is to publish a dump of the data that would be found by harvesting every page of the site. We provided this as feedback to the Schema.org community in their GitHub Issue Tracker ([#2891](https://github.com/schemaorg/schemaorg/issues/2891#issuecomment-1308587831)) and in a future revision they are likely to change to referring to these as Datasets.
+
+[^1]: Prototypes modelling the MobiDB data dump and associated metadata as a DataFeed can be found on [GitHub](https://github.com/elixir-europe/biohackathon-projects-2022/tree/datafeedv1/23/datafeeds).
+
+### Data Dump Files
+
+To allow for the creation of data dumps, we needed to provide guidelines on the structure of the data file. The expectation is that the `jsonld` files will contain all markup that would be extracted by visiting each page of the site without duplication of markup. There can be multiple `jsonld` files for the site, e.g. you could decide to have one file per major data type of the site.
+
+Each `jsonld` file should contain a single array of `json` objects, see example below which is a snippet of the [prototype MobiDB file](https://github.com/elixir-europe/biohackathon-projects-2022/blob/datafeedv1/23/datadownload/dump.jsonld) (also available on JSON-LD Playground [full](https://json-ld.org/playground/#startTab=tab-expanded&json-ld=%5B%7B%22%40context%22%3A%22https%3A%2F%2Fschema.org%22%2C%22includedInDataset%22%3A%22https%3A%2F%2Fmobidb.org%2F%232021-11%22%2C%22%40type%22%3A%22Protein%22%2C%22%40id%22%3A%22https%3A%2F%2Fmobidb.org%2FP0DTC9%22%2C%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2FconformsTo%22%3A%7B%22%40id%22%3A%22https%3A%2F%2Fbioschemas.org%2Fprofiles%2FProtein%2F0.11-RELEASE%22%2C%22%40type%22%3A%22CreativeWork%22%7D%2C%22identifier%22%3A%22https%3A%2F%2Fidentifiers.org%2Fmobidb%3AP0DTC9%22%2C%22sameAs%22%3A%22http%3A%2F%2Fpurl.uniprot.org%2Funiprot%2FP0DTC9%22%2C%22name%22%3A%22Nucleoprotein%22%2C%22hasBioPolymerSequence%22%3A%22MSDNGPQNQRNAPRITFGGPSDSTGSNQNGERSGARSKQRR...%22%2C%22hasSequenceAnnotation%22%3A%5B%7B%22%40type%22%3A%22SequenceAnnotation%22%2C%22%40id%22%3A%22https%3A%2F%2Fmobidb.org%2FP0DTC9%23prediction-disorder-mobidb_lite.1_51%22%2C%22sequenceLocation%22%3A%7B%22%40type%22%3A%22SequenceRange%22%2C%22%40id%22%3A%22https%3A%2F%2Fmobidb.org%2FP0DTC9%23sequence-location.1_51%22%2C%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2FconformsTo%22%3A%7B%22%40id%22%3A%22https%3A%2F%2Fbioschemas.org%2Fprofiles%2FSequenceRange%2F0.1-DRAFT%22%2C%22%40type%22%3A%22CreativeWork%22%7D%2C%22rangeStart%22%3A1%2C%22rangeEnd%22%3A51%7D%2C%22additionalProperty%22%3A%7B%22%40type%22%3A%22PropertyValue%22%2C%22name%22%3A%22Term%22%2C%22value%22%3A%7B%22%40type%22%3A%22DefinedTerm%22%2C%22%40id%22%3A%22https%3A%2F%2Fdisprot.org%2Fassets%2Fdata%2FIDPO_v0.2.owl%23IDPO%3A00076%22%2C%22inDefinedTermSet%22%3A%7B%22%40type%22%3A%22DefinedTermSet%22%2C%22%40id%22%3A%22https%3A%2F%2Fdisprot.org%2Fassets%2Fdata%2FIDPO_v0.2.owl%22%2C%22name%22%3A%22IDP%20ontology%22%7D%2C%22termCode%22%3A%22IDPO%3A00076%22%2C%22name%22%3A%22Disorder%22%7D%7D%2C%22description%22%3A%22Protein%20disordered%20region%20predicted%20by%20MobiDB-lite%22%7D%5D%7D%2C%7B%22%40context%22%3A%22https%3A%2F%2Fschema.org%22%2C%22includedInDataset%22%3A%22https%3A%2F%2Fmobidb.org%2F%232021-11%22%2C%22%40type%22%3A%22Protein%22%2C%22%40id%22%3A%22https%3A%2F%2Fmobidb.org%2FP04637%22%2C%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2FconformsTo%22%3A%7B%22%40id%22%3A%22https%3A%2F%2Fbioschemas.org%2Fprofiles%2FProtein%2F0.11-RELEASE%22%2C%22%40type%22%3A%22CreativeWork%22%7D%2C%22identifier%22%3A%22https%3A%2F%2Fidentifiers.org%2Fmobidb%3AP04637%22%2C%22sameAs%22%3A%22http%3A%2F%2Fpurl.uniprot.org%2Funiprot%2FP04637%22%2C%22name%22%3A%22Cellular%20tumor%20antigen%20p53%22%2C%22hasBioPolymerSequence%22%3A%22MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQ...%22%2C%22hasSequenceAnnotation%22%3A%5B%7B%22%40type%22%3A%22SequenceAnnotation%22%2C%22%40id%22%3A%22https%3A%2F%2Fmobidb.org%2FP04637%23prediction-disorder-mobidb_lite.50_96%22%2C%22sequenceLocation%22%3A%7B%22%40type%22%3A%22SequenceRange%22%2C%22%40id%22%3A%22https%3A%2F%2Fmobidb.org%2FP04637%23sequence-location.50_96%22%2C%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2FconformsTo%22%3A%7B%22%40id%22%3A%22https%3A%2F%2Fbioschemas.org%2Fprofiles%2FSequenceRange%2F0.1-DRAFT%22%2C%22%40type%22%3A%22CreativeWork%22%7D%2C%22rangeStart%22%3A50%2C%22rangeEnd%22%3A96%7D%2C%22additionalProperty%22%3A%7B%22%40type%22%3A%22PropertyValue%22%2C%22name%22%3A%22Term%22%2C%22value%22%3A%7B%22%40type%22%3A%22DefinedTerm%22%2C%22%40id%22%3A%22https%3A%2F%2Fdisprot.org%2Fassets%2Fdata%2FIDPO_v0.2.owl%23IDPO%3A00076%22%2C%22inDefinedTermSet%22%3A%7B%22%40type%22%3A%22DefinedTermSet%22%2C%22%40id%22%3A%22https%3A%2F%2Fdisprot.org%2Fassets%2Fdata%2FIDPO_v0.2.owl%22%2C%22name%22%3A%22IDP%20ontology%22%7D%2C%22termCode%22%3A%22IDPO%3A00076%22%2C%22name%22%3A%22Disorder%22%7D%7D%2C%22description%22%3A%22Protein%20disordered%20region%20predicted%20by%20MobiDB-lite%22%7D%5D%7D%5D)/[short](https://json-ld.org/playground/#startTab=tab-expanded&json-ld=%5B%7B%22%40context%22%3A%22https%3A%2F%2Fschema.org%22%2C%22includedInDataset%22%3A%22https%3A%2F%2Fmobidb.org%2F%232021-11%22%2C%22%40type%22%3A%22Protein%22%2C%22%40id%22%3A%22https%3A%2F%2Fmobidb.org%2FP0DTC9%22%2C%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2FconformsTo%22%3A%7B%22%40id%22%3A%22https%3A%2F%2Fbioschemas.org%2Fprofiles%2FProtein%2F0.11-RELEASE%22%2C%22%40type%22%3A%22CreativeWork%22%7D%2C%22identifier%22%3A%22https%3A%2F%2Fidentifiers.org%2Fmobidb%3AP0DTC9%22%2C%22sameAs%22%3A%22http%3A%2F%2Fpurl.uniprot.org%2Funiprot%2FP0DTC9%22%2C%22name%22%3A%22Nucleoprotein%22%7D%2C%7B%22%40context%22%3A%22https%3A%2F%2Fschema.org%22%2C%22includedInDataset%22%3A%22https%3A%2F%2Fmobidb.org%2F%232021-11%22%2C%22%40type%22%3A%22Protein%22%2C%22%40id%22%3A%22https%3A%2F%2Fmobidb.org%2FP04637%22%2C%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2FconformsTo%22%3A%7B%22%40id%22%3A%22https%3A%2F%2Fbioschemas.org%2Fprofiles%2FProtein%2F0.11-RELEASE%22%2C%22%40type%22%3A%22CreativeWork%22%7D%2C%22identifier%22%3A%22https%3A%2F%2Fidentifiers.org%2Fmobidb%3AP04637%22%2C%22sameAs%22%3A%22http%3A%2F%2Fpurl.uniprot.org%2Funiprot%2FP04637%22%2C%22name%22%3A%22Cellular%20tumor%20antigen%20p53%22%7D%5D) where it can also be visualised as shown in the screenshot). 
+
+```json
+[
+  {
+    "@context": "https://schema.org",
+    "includedInDataset": "https://mobidb.org/#2021-11",
+    "@type": "Protein",
+    "@id": "https://mobidb.org/P0DTC9",
+    "http://purl.org/dc/terms/conformsTo": {
+      "@id": "https://bioschemas.org/profiles/Protein/0.11-RELEASE",
+      "@type": "CreativeWork"
+    },
+    "identifier": "https://identifiers.org/mobidb:P0DTC9",
+    "sameAs": "http://purl.uniprot.org/uniprot/P0DTC9",
+    "name": "Nucleoprotein"
+  },
+  {
+    "@context": "https://schema.org",
+    "includedInDataset": "https://mobidb.org/#2021-11",
+    "@type": "Protein",
+    "@id": "https://mobidb.org/P04637",
+    "http://purl.org/dc/terms/conformsTo": {
+      "@id": "https://bioschemas.org/profiles/Protein/0.11-RELEASE",
+      "@type": "CreativeWork"
+    },
+    "identifier": "https://identifiers.org/mobidb:P04637",
+    "sameAs": "http://purl.uniprot.org/uniprot/P04637",
+    "name": "Cellular tumor antigen p53"
+  }
+]
+```
+
+![mobidb-datadump](mobidb-datadump.png)
+
+The data dumps should follow the associated profiles and include details of their `@type`, a link to the Schema.org context using the `https` protocol, and a statement of conformance with the `dcterms:conformsTo` property. We have also used a newly proposed property `includedInDataset` to provide a link from the protein description to the dataset in which it can be found.
+
+## Data Dump Metadata
+
+To ensure that the data dumps are FAIR, they should contain a dataset description describing them conforming to the [Bioschemas Dataset Profile](https://bioschemas.org/profiles/Dataset). Note that each dump file is a `schema:DatasetDownload`. Below we include the [MobiDB prototype metadata](https://github.com/elixir-europe/biohackathon-projects-2022/blob/datafeedv1/23/datadownload/DataDownload.jsonld).
+
+```json
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "@id": "https://mobidb.org/#2021-11",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@id": "https://bioschemas.org/profiles/Dataset/0.3-RELEASE-2019_06_14",
+    "@type": "CreativeWork"
+  },
+  "includedInDataCatalog": {
+    "@id": "https://mobidb.org/#DataCatalog"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/ld+json",
+      "contentUrl": "https://mobidb.org/.well-known/protein",
+      "dateModified": "2021-11"
+    }
+  ],
+  "url": "https://mobidb.org/",
+  "dateModified": "2021-11",
+  "version": "4.1",
+  "name": "MobiDB (November 2021)",
+  "description": "MobiDB is a database of protein disorder and mobility annotations",
+  "identifier": "https://mobidb.org/#2021-11",
+  "keywords": [
+    "IDP"
+  ],
+  "creator": {
+    "@id": "https://biocomputingup.it/#Organization"
+  },
+  "license": {
+    "@type": "CreativeWork",
+    "@id": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "Creative Commons CC4 Attribution",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  }
+}
+```
+
+
+
 
 
 # Data Harvesting
