@@ -47,7 +47,7 @@ We found the term DataFeed did not match our understanding of what was being pub
 
 [^1]: Prototypes modelling the MobiDB data dump and associated metadata as a DataFeed can be found on [GitHub](https://github.com/elixir-europe/biohackathon-projects-2022/tree/datafeedv1/23/datafeeds).
 
-### Data Dump Files
+## Data Dump Files
 
 To allow for the creation of data dumps, we needed to provide guidelines on the structure of the data file. The expectation is that the `jsonld` files will contain all markup that would be extracted by visiting each page of the site without duplication of markup. There can be multiple `jsonld` files for the site, e.g. you could decide to have one file per major data type of the site.
 
@@ -133,9 +133,11 @@ To ensure that the data dumps are FAIR, they should contain a dataset descriptio
 }
 ```
 
+## Live Deploys
 
+Bioschemas maintains a list of [live deployments](https://bioschemas.org/developer/liveDeploys), i.e. sites that are known to contain markup conforming to a Bioschemas profile. We extended the functionality of the live deploys page to include a section on available data dumps. Data dumps can either be associated with an existing known deployment or a completely new deployment. The screenshot below shows the seven sites that are known to have a data dump, with the MetaNetX entry expanded to show its full details.
 
-
+![live-deploys](live-deploys.png)
 
 # Data Harvesting
 
