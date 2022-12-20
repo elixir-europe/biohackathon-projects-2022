@@ -141,31 +141,37 @@ Bioschemas maintains a list of [live deployments](https://bioschemas.org/develop
 
 # Data Harvesting
 
-Prior to the BioHackathon, we set about harvesting data from as many of the Bioschemas [live deploy sites](https://bioschemas.org/liveDeploys) as possible. At the time of the BioHackathon, there were 70 sites listed, and 137 profile deployments (a site can deploy multiple profiles, e.g. Dataset and DataCatalog). Not all deployments could be harvested since they do not provide sitemaps listing the pages within the site. At the time of the BioHackathon there were 25 sites with sitemaps. Several of these do not list the pages containing data, limiting the amount that could be harvested. 
+During the BioHackathon, we started harvesting the data dumps listed on the [live deploy page](https://bioschemas.org/developer/liveDeploys#nav-datadump) and loading them into a [GraphDB](https://graphdb.ontotext.com/) triplestore using a [script](https://github.com/BioSchemas/bioschemas-data-harvesting/blob/8c36d72082c23df52d60ef9d45bc2b2f3f7718df/datadump-loading/datadump-load-script.sh) to fetch, load, and capture provenance about the process. This process was completed after the BioHackathon once the sources had published complete and correct dump files.
 
-The list of sites to be harvested were gathered in a GitHub [project board](https://github.com/BioSchemas/bioschemas-data-harvesting/projects/1) so that progress could be tracked. The cards in this board were annotated to state whether the source was known to use a static site deployment (i.e. the markup is embedded in the page source by the server) or dynamic single page application (i.e. the page content is generated client side using Javascript), and also whether they were known to have data content or limited content of Dataset and DataCatalog.
+Each dataset is loaded into its own named graph. Provance triples are added to the default graph to describe the named graph. The provenance captures where the dump file was acquired from (`pav:retrievedFrom`) and when (`pav:retrievedOn`).
 
-The Bioschemas Markup Scraper and Extractor ([BMUSE](https://github.com/HW-SWeL/BMUSE)) was used for the harvesting of the data. During the harvesting we found a two key issues with BMUSE which arose due to the scale of the data harvest. The first was that errors in the JSON-LD were not correctly identified and logged. The second was a memory limit relating to JSoup which meant that only about 24,104 pages were scraped out of the 50,000 in the sitemap file ([BMUSE #82](https://github.com/HW-SWeL/BMUSE/issues/82)). Fixes to these issues were applied resulting in BMUSE v0.5.2 being used for most of the harvesting.
+In total, six data dumps were loaded into the triplestore resulting in 47,956,784 triples being loaded. Details of the data loading can be found in the following table.
 
-The data harvesting workflow consisted of the following steps:
+| Resource                                                     | Format    | Load time                                                    | Notes                                                        |
+| ------------------------------------------------------------ | --------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [bio.tools](https://raw.githubusercontent.com/bio-tools/content/master/datasets/bioschemas-dump.ttl) | turtle    | 8s                                                           |                                                              |
+| [ChEMBL (Mirror)](https://github.com/ammar257ammar/SWAT4HCLS2022-ChEMBL-bioschemas-mapping/releases/download/v1.0.0/json-ld-output.zip) | zip       | 5h2m10s  <br />32s<br />54s<br />40s<br />38s<br />38s<br />46s<br />46s<br />44s<br />43s<br />47s<br />9s<br />1m10s<br />1m7s<br />1m1s<br />50s<br />49s<br />49s<br />46s<br />50s | Each file downloaded and loaded separately                   |
+| [MassBank Europe](https://msbi.ipb-halle.de/~sneumann/MassBank-2006.06.jsonld) | jsonld    | 19m42s                                                       |                                                              |
+| [MetaNetX](https://www.metanetx.org/ftp/latest/metanetx.schema_org.jsonld.gz) | jsonld.gz | 5h26m33s                                                     | Only 1 million molecular entities due to hard limit set in generation script |
+| [MobiDB](https://mobidb.org/.well-known/protein)             | jsonld    | <1s                                                          | Only 1 thousand proteins due to a hard limit in the API      |
+| [Rhea (Unofficial)](https://swel.macs.hw.ac.uk/bioschemas-data/BH2022/rhea.jsonld) | jsonld    | 1m24s                                                        |                                                              |
 
-1. Pick one of the sites to be harvested: priority was given to static sites with data content since these could be harvested more quickly and went beyond Dataset/DataCatalog markup.
-1. For each sitemap in the sitemap index, harvest the content from the source pages.
-1. Merge the individual nquad files for each page in the (sub)sitemap into a single nquad file.
-1. Load the merged nquad file into the triplestore.
-1. Make the merged nquad file available on the web.
-1. Update the project [README](https://github.com/BioSchemas/bioschemas-data-harvesting) with details of what had been harvested.
+### Post Processing
 
-Where issues were found with the source site, these were fedback to the data provider to allow them to revise their markup. For example, it was found that MassBank were including characters in their string values such as `"` that need to be escaped to generate valid JSON-LD ([MassBank-Web #316](https://github.com/MassBank/MassBank-web/issues/316)). 
+After loading, it was found that one resource had used the `https` namespace for Schema.org rather than `http`, and one source had used undefined prefixes. A series of update queries of the form shown below were issued to fix these issues.
 
-In total, six sites were found to be unscrapable. These were 
-
-- InterPro: a dynamic site providing a sitemap. However, the sitemap did not conform with the sitemap standard.
-- Scholia COVID-19 URL list: a site generated via SPARQL queries over the Wikidata endpoint. Unable to scrape due to timeout being reached before the data being available.
-- SwissModel: the provided sitemap did not conform with the sitemap stanard.
-- WikiPathways: sitemap was empty.
-- IPPIDB: a dynamic site with data content corresponding to MolecularEntities. However, the pages exhibiht inconsistent rendering when tested in the browser and could not be harvested with BMUSE.
-- OrphaNet: a static site with disease markup. The sitemap conforms with the older Google proposal for sitemaps rather than the widely used 0.9 version expected by BMUSE
+```SPARQL
+WITH <http://bio.tools/>
+DELETE {
+    ?s ?p <schema:Organization>
+}
+INSERT {
+    ?s ?p <http://schema.org/Organization>
+}
+WHERE {
+    ?s ?p <schema:Organization>
+}
+```
 
 # Data Analysis
 
