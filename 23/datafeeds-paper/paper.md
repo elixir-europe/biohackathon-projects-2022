@@ -175,13 +175,11 @@ WHERE {
 
 # Data Analysis
 
-***This section needs to be redone with the new data***
-
-We reused the notebook originally developed at BioHackathon 2020 [@gray_bioschemas-idpcntral_2021] and since evolved for the Intrinsically Disordered Protein Knowledge Graph (IDP-KG) [@gray_idp-kg_2022]. We include the HCLS Dataset Description profile statistics queries[^footnote] [@Dumontier_HCLS-datadesc_PeerJ2016], read in from an existing [repository](https://github.com/AlasdairGray/HCLS-Stats-Queries). We also include [queries](https://github.com/BioSchemas/bioschemas-data-harvesting/tree/main/queries) developed specifically for the analysis of the Bioschemas harvested data.
+We were able to directly reuse the analysis notebook BioHackathon 2021 [@gray_papadopoulos_gaignard_rosnet_mičetić_moretti_2022] . The notebook includes the HCLS Dataset Description profile statistics queries[^footnote] [@Dumontier_HCLS-datadesc_PeerJ2016], read in from an existing [repository](https://github.com/AlasdairGray/HCLS-Stats-Queries), and a number of [queries](https://github.com/BioSchemas/bioschemas-data-harvesting/tree/main/queries) developed specifically for the analysis of the Bioschemas harvested data.
 
 To use the [notebook (MyBinder launcher)](https://mybinder.org/v2/gh/BioSchemas/bioschemas-data-harvesting/HEAD?labpath=AnalysisQueries.ipynb), you simply need to run all cells and then select the query you would like to execute from the resulting dropdown menu.
 
-We now present the results of the queries obtained during the hackathon, i.e. the data values are as they were on 11 November 2021. Running the notebook in March 2022 obtains different results due to more harvested data having been added.
+We now present the results of the queries obtained from running the notebook over the contents of the triplestore after the six dumps were loaded, i.e. the data values are as they were on 20 December 2022.
 
 [^footnote]: [Dataset Descriptions: HCLS Community Profile §6](https://www.w3.org/TR/hcls-dataset/#s6_6) accessed March 2022
 
@@ -193,17 +191,17 @@ We include here a selection of results from some of the HCLS statistics queries.
 
 This is the raw count of the number of triples contained in the triplestore repository.
 
-| triples |
-| ---: |
-| 10,610,743 |
+|    triples |
+| ---------: |
+| 47,956,726 |
 
 ### Number of named graphs 
 
 The result presented here is equivalent to number of pages harvested since BMUSE generates a named graph for each page harvested.
 
 | graphs |
-| ---: |
-| 413,748 |
+| -----: |
+|      6 |
 
 ### Number of instance per class
 
@@ -211,67 +209,22 @@ There are many different types included in the markup. BMUSE extracts all markup
 
 The results are ordered by the Class IRI; in the notebook you can edit the query and change the ordering of results.
 
-(57 results)
+(12 results)
 
-| Class | distinctInstances |
-| :--- | ---: |
-| http://rdfs.org/sioc/ns#Item | 57 |
-| http://xmlns.com/foaf/0.1/Document | 89 |
-| http://xmlns.com/foaf/0.1/Image | 219 |
-| https://bioschemas.org/Gene | 238,079 |
-| https://bioschemas.org/Protein | 1,262 |
-| https://bioschemas.org/Taxon | 55,884 |
-| https://schema.org/AboutPage | 1 |
-| https://schema.org/Action | 3 |
-| https://schema.org/Answer | 8 |
-| https://schema.org/BioChemEntity | 49,823 |
-| https://schema.org/BreadcrumbList | 14,037 |
-| https://schema.org/ChemicalSubstance | 29 |
-| https://schema.org/CollectionPage | 187 |
-| https://schema.org/CollegeOrUniversity | 2 |
-| https://schema.org/ContactPoint | 148 |
-| https://schema.org/CreativeWork | 14,299 |
-| https://schema.org/DataCatalog | 7,439 |
-| https://schema.org/DataDownload | 1,497 |
-| https://schema.org/Dataset | 201,302 |
-| https://schema.org/DefinedTerm | 4,261 |
-| https://schema.org/DefinedTermSet | 4,112 |
-| https://schema.org/DigitalDocument | 1 |
-| https://schema.org/EducationalOrganization | 3 |
-| https://schema.org/Event | 12,818 |
-| https://schema.org/FAQPage | 1 |
-| https://schema.org/Gene | 39 |
-| https://schema.org/GeoShape | 19,398 |
-| https://schema.org/GovernmentOrganization | 1 |
-| https://schema.org/ItemList | 187 |
-| https://schema.org/ListItem | 28,137 |
-| https://schema.org/MolecularEntity | 199,350 |
-| https://schema.org/NGO | 11,717 |
-| https://schema.org/Offer | 5 |
-| https://schema.org/Organization | 206,715 |
-| https://schema.org/PeopleAudience | 2,475 |
-| https://schema.org/Person | 326,935 |
-| https://schema.org/Place | 19,438 |
-| https://schema.org/PostalAddress | 307,406 |
-| https://schema.org/PropertyValue | 144,002 |
-| https://schema.org/Protein | 4,462 |
-| https://schema.org/QAPage | 1 |
-| https://schema.org/Question | 8 |
-| https://schema.org/ScholarlyArticle | 9,350 |
-| https://schema.org/SearchAction | 5 |
-| https://schema.org/SequenceAnnotation | 15,786 |
-| https://schema.org/SequenceRange | 15,786 |
-| https://schema.org/SoftwareApplication | 4 |
-| https://schema.org/SoftwareSourceCode | 4 |
-| https://schema.org/Study | 4,328 |
-| https://schema.org/Thing | 27,872 |
-| https://schema.org/URL | 1 |
-| https://schema.org/WebApplication | 3 |
-| https://schema.org/WebPage | 55,114 |
-| https://schema.org/WebSite | 5 |
-| https://schema.org/contact | 40 |
-| https://schema.org/hostInstitution | 40 |
-| https://schema.org/url | 10,360 |
+| Class                                       | distinctInstances |
+| :------------------------------------------ | ----------------: |
+| http://bioschemas.org/types/FormalParameter |             9,863 |
+| http://schema.org/CreativeWork              |            20,023 |
+| http://schema.org/DataCatalog               |                 1 |
+| http://schema.org/Dataset                   |            89,676 |
+| http://schema.org/DefinedTerm               |               101 |
+| http://schema.org/DefinedTermSet            |               100 |
+| http://schema.org/MolecularEntity           |         3,022,349 |
+| http://schema.org/Organization              |                 6 |
+| http://schema.org/Person                    |             1,658 |
+| http://schema.org/Protein                   |             8,625 |
+| http://schema.org/SoftwareApplication       |            26,785 |
+| http://schema.org/Taxon                     |             1,238 |
 
 ## Bioschemas Queries
 
@@ -279,32 +232,22 @@ The following queries focus on features of interest to the Bioschemas community.
 
 ### Instances per Bioschemas Class
 
-Note that due to the data content we need to include some properties with both a Bioschemas namespace and a Schema.org namespace.
+Note that due to the data content we need to include some properties with both a Bioschemas namespace and a Schema.org namespace. The initial run of this query return zero results due to the use of the `https` namespace rather than `http`.
 
 The results are ordered by the count of the number of instances; in the notebook you can edit the query and change the ordering of results.
 
-(18 results)
+(8 results)
 
-| Class | instances |
-| :--- | ---: |
-| https://schema.org/Person | 326,935 |
-| https://bioschemas.org/Gene | 238,079 |
-| https://schema.org/Organization | 206,715 |
-| https://schema.org/Dataset | 201,302 |
-| https://schema.org/MolecularEntity | 199,350 |
-| https://bioschemas.org/Taxon | 55,884 |
-| https://schema.org/BioChemEntity | 49,823 |
-| https://schema.org/SequenceAnnotation | 15,786 |
-| https://schema.org/SequenceRange | 15,786 |
-| https://schema.org/Event | 12,818 |
-| https://schema.org/ScholarlyArticle | 9,350 |
-| https://schema.org/DataCatalog | 7,439 |
-| https://schema.org/Protein | 4,462 |
-| https://schema.org/Study | 4,328 |
-| https://bioschemas.org/Protein | 1,262 |
-| https://schema.org/Gene | 39 |
-| https://schema.org/ChemicalSubstance | 29 |
-| https://schema.org/SoftwareApplication | 4 |
+| Class                                 | instances |
+| :------------------------------------ | --------: |
+| http://schema.org/MolecularEntity     | 3,022,349 |
+| http://schema.org/Dataset             |    89,676 |
+| http://schema.org/SoftwareApplication |    26,785 |
+| http://schema.org/Protein             |     8,625 |
+| http://schema.org/Person              |     1,658 |
+| http://schema.org/Taxon               |     1,238 |
+| http://schema.org/Organization        |         6 |
+| http://schema.org/DataCatalog         |         1 |
 
 ### Number of Domains
 
@@ -312,41 +255,23 @@ This result informs us how many web domains were harvested. This is approximatel
 
 | count |
 | ---: |
-| 25 |
+| 5 |
 
 ### Number of Pages per Domain
 
 We now report the number of pages that have been harvested from each domain. Note that we do not understand the empty domain as all markup was extracted from a web domain.
 
-(25 results)
+(5 results)
 
-| domain | count |
-| :--- | ---: |
-| massbank.eu | 76,253 |
-| scholia.toolforge.org | 74,319 |
-| www.gbif.org | 68,167 |
-| test.intermine.org | 49,959 |
-| bgee.org | 49,022 |
-| www.metanetx.org | 49,012 |
-| tess.elixir-europe.org | 13,939 |
-| ega-archive.org | 11,833 |
-| fairsharing.org | 6,351 |
-| prosite.expasy.org | 5,858 |
-| ippidb.pasteur.fr | 2,433 |
-| mobidb.org | 2,082 |
-| disprot.org | 2,043 |
-| pcddb.cryst.bbk.ac.uk | 1,402 |
-| www.ebi.ac.uk | 672 |
-| proteinensemble.org | 187 |
-| www.france-bioinformatique.fr | 86 |
-| pairedomicsdata.bioinformatics.nl | 78 |
-| www.covid19dataportal.org | 19 |
-|  | 12 |
-| www.alliancegenome.org | 11 |
-| biopragmatics.github.io | 3 |
-| nanocommons.github.io | 3 |
-| bridgedb.github.io | 2 |
-| www.uniprot.org | 2 |
+| domain                    | count |
+| :------------------------ | ----: |
+| swel.macs.hw.ac.uk        |    22 |
+| mobidb.org                |     1 |
+| msbi.ipb-halle.de         |     1 |
+| raw.githubusercontent.com |     1 |
+| www.metanetx.org          |     1 |
+
+Note that the `swel.macs.hw.ac.uk` domain corresponds to the ChEMBL resources which were loaded from a local source. The `raw.githubusercontent.com` content corresponds to the bio.tools dump that is hosted on GitHub.
 
 ### Count of Types per Domain
 
@@ -354,199 +279,54 @@ We now report the number of instances of each type on each domain. What is inter
 
 The results are ordered by the count of the number of instances; in the notebook you can edit the query and change the ordering of results.
 
-(146 results)
+(24 results)
 
-| domain | type | count |
-| :--- | :--- | ---: |
-| www.gbif.org | https://schema.org/PostalAddress | 297,090 |
-| www.gbif.org | https://schema.org/Person | 291,260 |
-| bgee.org | https://bioschemas.org/Gene | 263,793 |
-| www.gbif.org | https://schema.org/Organization | 186,688 |
-| www.gbif.org | https://schema.org/PropertyValue | 126,268 |
-| massbank.eu | https://schema.org/Dataset | 76,249 |
-| massbank.eu | https://schema.org/MolecularEntity | 76,249 |
-| scholia.toolforge.org | https://schema.org/CreativeWork | 74,310 |
-| scholia.toolforge.org | https://schema.org/MolecularEntity | 74,310 |
-| www.gbif.org | https://schema.org/Dataset | 63,134 |
-| test.intermine.org | https://schema.org/Dataset | 49,959 |
-| test.intermine.org | https://schema.org/BioChemEntity | 49,823 |
-| bgee.org | https://bioschemas.org/Taxon | 49,059 |
-| bgee.org | https://schema.org/WebPage | 49,009 |
-| www.metanetx.org | https://schema.org/CreativeWork | 49,002 |
-| www.metanetx.org | https://schema.org/MolecularEntity | 49,001 |
-| prosite.expasy.org | https://schema.org/Person | 31,364 |
-| tess.elixir-europe.org | https://schema.org/ListItem | 27,872 |
-| tess.elixir-europe.org | https://schema.org/Thing | 27,872 |
-| www.gbif.org | https://schema.org/GeoShape | 19,398 |
-| www.gbif.org | https://schema.org/Place | 19,398 |
-| tess.elixir-europe.org | https://schema.org/BreadcrumbList | 13,938 |
-| tess.elixir-europe.org | https://schema.org/Event | 12,778 |
-| prosite.expasy.org | https://schema.org/Organization | 11,715 |
-| prosite.expasy.org | https://schema.org/NGO | 11,714 |
-| disprot.org | https://schema.org/PropertyValue | 11046 |
-| disprot.org | https://schema.org/SequenceAnnotation | 11,046 |
-| disprot.org | https://schema.org/SequenceRange | 11,046 |
-| prosite.expasy.org | https://schema.org/url | 10,360 |
-| tess.elixir-europe.org | https://schema.org/PostalAddress | 10,316 |
-| ega-archive.org | https://schema.org/DataCatalog | 7,431 |
-| ega-archive.org | https://schema.org/Dataset | 7,431 |
-| tess.elixir-europe.org | https://schema.org/Organization | 7,110 |
-| prosite.expasy.org | https://bioschemas.org/Taxon | 6,796 |
-| prosite.expasy.org | https://schema.org/ScholarlyArticle | 6,681 |
-| disprot.org | https://schema.org/DefinedTerm | 6,599 |
-| fairsharing.org | https://schema.org/Dataset | 6,328 |
-| prosite.expasy.org | https://schema.org/WebPage | 6,093 |
-| prosite.expasy.org | https://schema.org/CreativeWork | 5,857 |
-| fairsharing.org | https://schema.org/CreativeWork | 5,542 |
-| mobidb.org | https://schema.org/PropertyValue | 4,486 |
-| mobidb.org | https://schema.org/SequenceAnnotation | 4,486 |
-| mobidb.org | https://schema.org/SequenceRange | 4,486 |
-| ega-archive.org | https://schema.org/Study | 4,328 |
-| disprot.org | https://schema.org/DefinedTermSet | 4,076 |
-| mobidb.org | https://schema.org/DefinedTerm | 3,400 |
-| mobidb.org | https://schema.org/DefinedTermSet | 3,400 |
-| tess.elixir-europe.org | https://schema.org/Person | 3,298 |
-| tess.elixir-europe.org | https://schema.org/CreativeWork | 2,876 |
-| disprot.org | https://schema.org/ScholarlyArticle | 2,857 |
-| tess.elixir-europe.org | https://schema.org/PeopleAudience | 2,475 |
-| proteinensemble.org | https://schema.org/PropertyValue | 2,202 |
-| mobidb.org | https://schema.org/CreativeWork | 2,073 |
-| mobidb.org | https://schema.org/Protein | 2,073 |
-| disprot.org | https://schema.org/CreativeWork | 2,038 |
-| disprot.org | https://schema.org/Protein | 2,038 |
-| proteinensemble.org | https://schema.org/DefinedTerm | 1,626 |
-| pcddb.cryst.bbk.ac.uk | https://schema.org/Organization | 1,402 |
-| pcddb.cryst.bbk.ac.uk | https://schema.org/DataDownload | 1,394 |
-| prosite.expasy.org | https://bioschemas.org/Protein | 1,376 |
-| pcddb.cryst.bbk.ac.uk | https://schema.org/Dataset | 697 |
-| pcddb.cryst.bbk.ac.uk | https://schema.org/Person | 697 |
-| biopragmatics.github.io | https://schema.org/Dataset | 287 |
-| www.france-bioinformatique.fr | https://schema.org/ListItem | 265 |
-| proteinensemble.org | https://schema.org/Protein | 254 |
-| proteinensemble.org | https://schema.org/SequenceAnnotation | 254 |
-| proteinensemble.org | https://schema.org/SequenceRange | 254 |
-| pairedomicsdata.bioinformatics.nl | https://schema.org/Person | 222 |
-| www.ebi.ac.uk | http://xmlns.com/foaf/0.1/Image | 222 |
-| proteinensemble.org | https://schema.org/CollectionPage | 187 |
-| proteinensemble.org | https://schema.org/CreativeWork | 187 |
-| proteinensemble.org | https://schema.org/DefinedTermSet | 187 |
-| proteinensemble.org | https://schema.org/ItemList | 187 |
-| proteinensemble.org | https://schema.org/ScholarlyArticle | 181 |
-| pairedomicsdata.bioinformatics.nl | https://schema.org/ContactPoint | 148 |
-| www.covid19dataportal.org | https://schema.org/Organization | 148 |
-| www.covid19dataportal.org | https://schema.org/Dataset | 110 |
-| www.france-bioinformatique.fr | https://schema.org/BreadcrumbList | 99 |
-|  | https://schema.org/Dataset | 97 |
-| test.intermine.org | https://schema.org/Protein | 97 |
-| www.ebi.ac.uk | http://xmlns.com/foaf/0.1/Document | 91 |
-|  | https://schema.org/Person | 90 |
-| bgee.org | https://schema.org/Dataset | 87 |
-| pairedomicsdata.bioinformatics.nl | https://schema.org/CreativeWork | 74 |
-| pairedomicsdata.bioinformatics.nl | https://schema.org/DataCatalog | 74 |
-| pairedomicsdata.bioinformatics.nl | https://schema.org/DataDownload | 74 |
-| pairedomicsdata.bioinformatics.nl | https://schema.org/Dataset | 74 |
-| pairedomicsdata.bioinformatics.nl | https://schema.org/Organization | 74 |
-| www.ebi.ac.uk | http://rdfs.org/sioc/ns#Item | 59 |
-| www.france-bioinformatique.fr | https://schema.org/Event | 40 |
-| www.france-bioinformatique.fr | https://schema.org/Place | 40 |
-| www.france-bioinformatique.fr | https://schema.org/contact | 40 |
-| www.france-bioinformatique.fr | https://schema.org/hostInstitution | 40 |
-| test.intermine.org | https://schema.org/Gene | 39 |
-|  | https://bioschemas.org/Taxon | 29 |
-| nanocommons.github.io | https://schema.org/ChemicalSubstance | 29 |
-|  | https://schema.org/Organization | 27 |
-| bridgedb.github.io | https://schema.org/DataDownload | 23 |
-| bridgedb.github.io | https://schema.org/Dataset | 23 |
-| www.covid19dataportal.org | https://schema.org/DataCatalog | 19 |
-| www.uniprot.org | https://schema.org/Organization | 14 |
-|  | https://schema.org/CreativeWork | 9 |
-| nanocommons.github.io | https://schema.org/Organization | 9 |
-| bgee.org | https://schema.org/Answer | 8 |
-| bgee.org | https://schema.org/CreativeWork | 8 |
-| bgee.org | https://schema.org/Question | 8 |
-|  | https://schema.org/WebPage | 7 |
-| nanocommons.github.io | https://schema.org/Dataset | 7 |
-| nanocommons.github.io | https://schema.org/DataDownload | 6 |
-|  | https://schema.org/DataCatalog | 5 |
-| bgee.org | https://schema.org/Offer | 5 |
-|  | https://schema.org/SearchAction | 4 |
-| bgee.org | https://schema.org/SoftwareSourceCode | 4 |
-| nanocommons.github.io | https://schema.org/CreativeWork | 4 |
-|  | https://schema.org/EducationalOrganization | 3 |
-|  | https://schema.org/NGO | 3 |
-|  | https://schema.org/ScholarlyArticle | 3 |
-| bgee.org | https://schema.org/WebApplication | 3 |
-| biopragmatics.github.io | https://schema.org/Person | 3 |
-| prosite.expasy.org | https://schema.org/Action | 3 |
-|  | https://schema.org/CollegeOrUniversity | 2 |
-|  | https://schema.org/WebSite | 2 |
-| bgee.org | https://schema.org/SoftwareApplication | 2 |
-| biopragmatics.github.io | https://schema.org/WebPage | 2 |
-| bridgedb.github.io | https://schema.org/CreativeWork | 2 |
-| www.uniprot.org | https://schema.org/GovernmentOrganization | 2 |
-| www.uniprot.org | https://schema.org/NGO | 2 |
-| www.uniprot.org | https://schema.org/WebPage | 2 |
-|  | https://schema.org/GovernmentOrganization | 1 |
-| bgee.org | https://schema.org/AboutPage | 1 |
-| bgee.org | https://schema.org/FAQPage | 1 |
-| biopragmatics.github.io | https://schema.org/WebSite | 1 |
-| bridgedb.github.io | https://schema.org/SoftwareApplication | 1 |
-| bridgedb.github.io | https://schema.org/WebPage | 1 |
-| bridgedb.github.io | https://schema.org/WebSite | 1 |
-| massbank.eu | https://schema.org/DataCatalog | 1 |
-| massbank.eu | https://schema.org/ScholarlyArticle | 1 |
-| nanocommons.github.io | https://schema.org/DataCatalog | 1 |
-| nanocommons.github.io | https://schema.org/Person | 1 |
-| nanocommons.github.io | https://schema.org/URL | 1 |
-| nanocommons.github.io | https://schema.org/WebSite | 1 |
-| prosite.expasy.org | https://schema.org/DigitalDocument | 1 |
-| prosite.expasy.org | https://schema.org/SearchAction | 1 |
-| www.metanetx.org | https://schema.org/SoftwareApplication | 1 |
-| www.uniprot.org | https://schema.org/Dataset | 1 |
-| www.uniprot.org | https://schema.org/QAPage | 1 |
+| domain                    | type                                        |      count |
+| :------------------------ | :------------------------------------------ | ---------: |
+| mobidb.org                | http://schema.org/DefinedTerm               |        100 |
+| mobidb.org                | http://schema.org/DefinedTermSet            |        100 |
+| mobidb.org                | http://schema.org/Protein                   |        100 |
+| mobidb.org                | http://schema.org/CreativeWork              |          1 |
+| msbi.ipb-halle.de         | http://schema.org/Dataset                   |     89,675 |
+| msbi.ipb-halle.de         | http://schema.org/MolecularEntity           |     89,675 |
+| msbi.ipb-halle.de         | http://schema.org/CreativeWork              |          2 |
+| msbi.ipb-halle.de         | http://schema.org/DefinedTerm               |          1 |
+| raw.githubusercontent.com | http://schema.org/SoftwareApplication       |     26,784 |
+| raw.githubusercontent.com | http://schema.org/CreativeWork              |     20,013 |
+| raw.githubusercontent.com | http://bioschemas.org/types/FormalParameter |      9,863 |
+| raw.githubusercontent.com | http://schema.org/Person                    |      1,657 |
+| raw.githubusercontent.com | http://schema.org/Organization              |          4 |
+| swel.macs.hw.ac.uk        | http://schema.org/MolecularEntity           | 40,333,214 |
+| swel.macs.hw.ac.uk        | http://schema.org/Protein                   |    179,025 |
+| swel.macs.hw.ac.uk        | http://schema.org/Taxon                     |     25,998 |
+| swel.macs.hw.ac.uk        | http://schema.org/CreativeWork              |          1 |
+| www.metanetx.org          | http://schema.org/MolecularEntity           |  1,000,000 |
+| www.metanetx.org          | http://schema.org/CreativeWork              |          9 |
+| www.metanetx.org          | http://schema.org/Organization              |          2 |
+| www.metanetx.org          | http://schema.org/DataCatalog               |          1 |
+| www.metanetx.org          | http://schema.org/Dataset                   |          1 |
+| www.metanetx.org          | http://schema.org/Person                    |          1 |
+| www.metanetx.org          | http://schema.org/SoftwareApplication       |          1 |
 
 ## Connectivity of the Data
 
 We were interested to gain some insight as to how connected the data was both internally, and how many points where it would link up with other knowledge graphs. The queries in this section focus on the connectedness of the data.
 
-We first investigated the number of nodes that only contained incoming edges. We report the total number of object nodes there are (excluding literals), and the number of edge IRIs, i.e. those that only have incoming properties. Only 4.65% of the nodes only contain incoming edges.
+We first investigated the number of nodes that only contained incoming edges. We report the total number of object nodes there are (excluding literals), and the number of edge IRIs, i.e. those that only have incoming properties. Only % of the nodes only contain incoming edges.
 
 | Object IRIs | Edge IRIs |
 | ---: | ---: |
-| 2,057,094 | 95,610 |
+|  |  |
 
 We then investigated the number of outgoing links per class. We report here the top 20 results.
 
 
 
-\begin{longtable}{p{.5\textwidth}p{.25\textwidth}r}
-    \hline
-        s & class & nb\_out\_edges \\ \hline
-        \url{https://bioschemas.org/crawl/v1/bgee/?page=gene\&amp;gene\_id=ENSBTAG00000027937/20211110/90020/bgee.org/?page=gene\&amp;gene\_id=ENSBTAG00000027937/1779564251} & \url{https://bioschemas.org/Gene} & 856 \\
-        \url{https://www.metanetx.org/chem\_info/MNXM1944} & \url{https://schema.org/MolecularEntity} & 654 \\
-        \url{https://doi.org/10.15468/hb9rjv} & \url{https://schema.org/Dataset} & 594 \\
-        \url{https://bioschemas.org/crawl/v1/bgee/?page=gene\&amp;gene\_id=ENSBTAG00000043564/20211110/94715/bgee.org/?page=gene\&amp;gene\_id=ENSBTAG00000043564/1772156424} & \url{https://bioschemas.org/Gene} & 519 \\
-        \url{https://bioschemas.org/crawl/v1/bgee/?page=gene\&amp;gene\_id=ENSBTAG00000043584/20211110/94734/bgee.org/?page=gene\&amp;gene\_id=ENSBTAG00000043584/2022662406} & \url{https://bioschemas.org/Gene} & 474 \\
-        \url{https://doi.org/10.15468/m5vrza} & \url{https://schema.org/Dataset} & 406 \\
-        \url{http://www.ebi.ac.uk/pdbe/about/past-events} & \url{http://rdfs.org/sioc/ns\#Item} & 346 \\
-        \url{http://www.ebi.ac.uk/pdbe/about/past-events} & \url{http://xmlns.com/foaf/0.1/Document} & 346 \\
-        \url{https://doi.org/10.15468/vmf5ye} & \url{https://schema.org/Dataset} & 296 \\
-        \url{https://bioschemas.org/crawl/v1/bgee/?page=gene\&amp;gene\_id=ENSBTAG00000043559/20211110/94710/bgee.org/?page=gene\&amp;gene\_id=ENSBTAG00000043559/1377128066} & \url{https://bioschemas.org/Gene} & 292 \\
-        \url{https://doi.org/10.5281/zenodo.291971} & \url{https://schema.org/Dataset} & 289 \\
-        \url{https://bioschemas.org/crawl/v1/bgee/?page=gene\&amp;gene\_id=ENSBTAG00000043546/20211110/94697/bgee.org/?page=gene\&amp;gene\_id=ENSBTAG00000043546/1804549344} & \url{https://bioschemas.org/Gene} & 284 \\
-        \url{https://doi.org/10.15472/hy9nif} & \url{https://schema.org/Dataset} & 282 \\
-        \url{https://bioschemas.org/crawl/v1/bgee/?page=gene\&amp;gene\_id=ENSBTAG00000043550/20211110/94701/bgee.org/?page=gene\&amp;gene\_id=ENSBTAG00000043550/1476242225} & \url{https://bioschemas.org/Gene} & 269 \\
-        \url{https://www.metanetx.org/chem\_info/MNXM383} & \url{https://schema.org/MolecularEntity} & 264 \\
-        \url{https://bioschemas.org/crawl/v1/bgee/?page=gene\&amp;gene\_id=ENSBTAG00000043577/20211110/94727/bgee.org/?page=gene\&amp;gene\_id=ENSBTAG00000043577/1610681495} & \url{https://bioschemas.org/Gene} & 261 \\
-        \url{https://bioschemas.org/crawl/v1/bgee/?page=gene\&amp;gene\_id=ENSBTAG00000043556/20211110/94707/bgee.org/?page=gene\&amp;gene\_id=ENSBTAG00000043556/1277162978} & \url{https://bioschemas.org/Gene} & 240 \\
-        \url{https://bioschemas.org/crawl/v1/bgee/?page=gene\&amp;gene\_id=ENSBTAG00000043568/20211110/94719/bgee.org/?page=gene\&amp;gene\_id=ENSBTAG00000043568/2065005542} & \url{https://bioschemas.org/Gene} & 235 \\
-        \url{https://bioschemas.org/crawl/v1/bgee/?page=gene\&amp;gene\_id=ENSBTAG00000043560/20211110/94711/bgee.org/?page=gene\&amp;gene\_id=ENSBTAG00000043560/1818154049} & \url{https://bioschemas.org/Gene} & 229 \\ \hline
-
-\end{longtable}
-
 # Discussion
 
 *Still to be written*
+
+- Comparison to 2021 [data analysis](https://doi.org/10.37044/osf.io/y6gbq) needs to be done
 
 # Future work
 
@@ -568,6 +348,6 @@ We then investigated the number of outgoing links per class. We report here the 
 
 # Acknowledgements
 
-This work was done during the BioHackathon Europe 2021 organised by ELIXIR and run in November 2021. We wish to thank the organizers and supporters of the Biohackathon Europe 2021 for offering the venue for improving Bioschemas community efforts.
+This work was done during the BioHackathon Europe 2022 organised by ELIXIR and run in November 2022. We wish to thank the organizers and supporters of the Biohackathon Europe 2022 for offering the venue for improving Bioschemas community efforts.
 
 # References
