@@ -1,7 +1,7 @@
 #endpoint: https://query.wikidata.org/
-SELECT ?jrcLabel (GROUP_CONCAT(CONCAT("PMID:",?pubmed);separator="|") AS ?pubmed) WHERE {
-  ?jrc ^wdt:P921 / wdt:P698 ?pubmed .
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+SELECT (SAMPLE(?jrcLabel) AS ?Name) (GROUP_CONCAT(CONCAT("PMID:",?pubmed);separator="|") AS ?Reference_ID) WHERE {
+  ?jrc ^wdt:P921 / wdt:P698 ?pubmed ; rdfs:label ?jrcLabel .
+  FILTER (lang(?jrcLabel) = "en")
   VALUES ?jrc {
 wd:Q27918612 wd:Q47461406 wd:Q47461416 wd:Q47461418 wd:Q47461419 wd:Q47461422
 wd:Q47462004 wd:Q47462008 wd:Q47462022 wd:Q47468470 wd:Q47468473 wd:Q78642247
