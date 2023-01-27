@@ -16,14 +16,16 @@ authors:
   - name: Nazeefa Fatima 
     orcid: 0000-0001-7791-4984 
     affiliation: 2
-  - name:  
-    orcid:
-    affiliation: 
+  - name:  Laura Portell Silva
+    orcid: 0000-0003-0390-3208
+    affiliation: 3
  affiliations:
   - name: Luxembourg Center for Systems Biomedicine (LCSB), University of Luxembourg, Esch-sur-Alzette, Luxembourg
     index: 1
   - name: Centre for Bioinformatics, University of Oslo, ELIXIR Norway
     index: 2
+  - name: Barcelona Supercomputing Center (BSC), ELIXIR Spain
+    index: 3
 date: 11 November 2022
 cito-bibliography: paper.bib
 event: BH22EU
