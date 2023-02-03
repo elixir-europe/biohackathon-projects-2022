@@ -22,7 +22,7 @@ which can easily be run from the command line, as follows:
   the version requirements of `omnipy` will be lowered later.). It is 
   recommended that a separate virtual environment is used, as `omnipy`
   packs a large number of dependencies. E.g:
-  - `conda env create -n omnipy python=3.10`
+  - `conda create -n omnipy python=3.10`
 - Install the `omnipy-examples` package:
   - `pip install omnipy-examples`
 - Run the ISA-JSON example:
