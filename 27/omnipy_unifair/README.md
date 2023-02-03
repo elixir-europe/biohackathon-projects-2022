@@ -23,6 +23,7 @@ which can easily be run from the command line, as follows:
   recommended that a separate virtual environment is used, as `omnipy`
   packs a large number of dependencies. E.g:
   - `conda create -n omnipy python=3.10`
+  - `conda activate omnipy`
 - Install the `omnipy-examples` package:
   - `pip install omnipy-examples`
 - Run the ISA-JSON example:
