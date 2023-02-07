@@ -19,6 +19,9 @@ authors:
   - name:  Laura Portell Silva
     orcid: 0000-0003-0390-3208
     affiliation: 3
+  - name:  Tooba Abbassi-Daloii
+    orcid: 0000-0002-4904-3269
+    affiliation: 4
  affiliations:
   - name: Luxembourg Center for Systems Biomedicine (LCSB), University of Luxembourg, Esch-sur-Alzette, Luxembourg
     index: 1
@@ -26,6 +29,8 @@ authors:
     index: 2
   - name: Barcelona Supercomputing Center (BSC), ELIXIR Spain
     index: 3
+  - name: Department of Bioinformatics (BiGCaT), NUTRIM, FHML, Maastricht University, ELIXIR Netherlands
+    index: 4
 date: 11 November 2022
 cito-bibliography: paper.bib
 event: BH22EU
@@ -105,22 +110,22 @@ Explore how existing training materials address the topic of Data Management Pla
 # Gap analysis
 <!--Tooba, Rafael-->
 
-As well as solving the technical problems around linking the RDMkit and the FAIR Cookbook, we performed a gap analysis of the content of the two resources. For this, we focussed on two aspects:
+As well as solving the technical problems around linking the RDMkit and the FAIR Cookbook, we performed a gap analysis of the content of the two resources. For this, we focused on two aspects:
 
 1. Missing links between existing pages;
-2. Content gaps 
+2. Content gaps.
 
 ## Missing page links
 
-We reviewed all recipes in the FAIR Cookbook and Task pages in the RDMkit to identify any pair of pages that should be cross-linked with each other but currently aren't. We also reviewed the RDMkit Domain pages as part of this exercise, although the decision was made early on that links between Domain pages and Cookbook recipes would only be acceptable if the recipe covers a problem specific to that domain. This was done to avoid linking overload for common tasks. For example, almost all RDMkit Domain pages mention annotation with ontologies and controlled vocabularies but crosslinking all of them with the Cookbook's domain agnostic recipe on best practices for ontology selection would generate a long list of poorly related links to the RDMkit on the Cookbook recipe's page, which would likely be very confusing to users. Links to Domain pages are therefore only included where a Cookbook recipe is entirely specific to the domain in question, such as the [Plant sciences domain page](https://rdmkit.elixir-europe.org/plant_sciences#relevant-tools-and-resources) cross-referencing the Cookbook recipe "[Plant genomic and genetic variation data submission to EMBL-EBI databases](https://w3id.org/faircookbook/FCB061)".
+We conducted a review of all recipes in the FAIR Cookbook and Task pages in the RDMkit to identify any missing cross-links between pages. During the review, we also analyzed the RDMkit Domain pages, although the decision was made early on that links between Domain pages and Cookbook recipes would only be acceptable if the recipe covers a problem specific to that domain. This was done to avoid linking overload for common tasks. For example, almost all RDMkit Domain pages mention annotation with ontologies and controlled vocabularies but crosslinking all of them with the Cookbook's domain agnostic recipe on best practices for ontology selection would generate a long list of poorly related links to the RDMkit on the Cookbook recipe's page, which would likely be very confusing to users. Links to Domain pages are therefore only included where a Cookbook recipe is entirely specific to the domain in question, such as the [Plant sciences domain page](https://rdmkit.elixir-europe.org/plant_sciences#relevant-tools-and-resources) cross-referencing the Cookbook recipe "[Plant genomic and genetic variation data submission to EMBL-EBI databases](https://w3id.org/faircookbook/FCB061)".
 
 In total, we identified around a dozen additional links, which were recorded for addition to the YAML file from the technical implementation track. 
 
-In addition to the review of the two core resources, RDMkit and FAIR Cookbook, we also paid attention to potential missing links between these resources and TeSS or DSW. This generate a further couple of action item, which were returned to the editorial team of the appropriate resource for action at a later time. 
+In addition to the review of the two core resources, RDMkit and FAIR Cookbook, we also paid attention to potential missing links between these resources and TeSS or DSW. This generated a further couple of action item, which were returned to the editorial team of the appropriate resource for action at a later time. 
 
 ## Content gaps
 
-In addition to completing the cross-references between existing pages, we also reviewed the resources for content gaps where no Cookbook recipes exist to address problems highlighted in an RDMkit Task page, or a problem addressed in a Cookbook recipe that does not feature in the RDMkit. In total, we identified 4 potential new recipes for the FAIR Cookbook to address problems described in the RDMkit. Other gaps that were initially identified were deemed to be outside the remit of the FAIR Cookbook, such as problems pertaining to data management planning and project coordination, which are not directly relevant to the FAIR principles. 
+In addition to completing the cross-references between existing pages, we also reviewed the resources for content gaps where no Cookbook recipes exist to address problems highlighted in an RDMkit Task page, or a problem addressed in a Cookbook recipe that is not covered in the RDMkit. In total, we identified four potential new recipes for the FAIR Cookbook to address problems described in the RDMkit. Other gaps that were initially identified were deemed to be outside the remit of the FAIR Cookbook, such as problems pertaining to data management planning and project coordination, which are not directly relevant to the FAIR principles. 
 
 
   
