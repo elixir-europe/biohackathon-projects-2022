@@ -1,4 +1,4 @@
-@article{doi:10.1089/omi.2008.0019,
+@article{10.1089/omi.2008.0019,
 author = {Sansone, Susanna-Assunta and Rocca-Serra, Philippe and Brandizi, Marco and Brazma, Alvis and Field, Dawn and Fostel, Jennifer and Garrow, Andrew G. and Gilbert, Jack and Goodsaid, Federico and Hardy, Nigel and Jones, Phil and Lister, Allyson and Miller, Michael and Morrison, Norman and Rayner, Tim and Sklyar, Nataliya and Taylor, Chris and Tong, Weida and Warner, Guy and Wiemann, Stefan and },
 title = {The First RSBI (ISA-TAB) Workshop: “Can a Simple Format Work for Complex Studies?”},
 journal = {OMICS: A Journal of Integrative Biology},
@@ -45,33 +45,65 @@ eprint = {
 }
 
 
-@misc{team_2021, title={The isa cookbook}, url={https://isa-tools.org/isa-api/content/exportdata.html#}, journal={Exporting data from ISA formats - The ISA cookbook}, year={2021}} 
- 
-@misc{buono_d'anna_2022, title={Biohackathon-projects-2022/27/SEEK_ISAJSON at main · ELIXIR-europe/biohackathon-projects-2022}, url={https://github.com/elixir-europe/biohackathon-projects-2022/tree/main/27/seek_isajson}, journal={GitHub}, author={Buono, Rafael  Andrade and D'Anna, Flora}, year={2022}, month={Nov}} 
-  
-@misc{team_2021, title={The isa cookbook}, url={https://isa-tools.org/isa-api/content/validation.html#}, journal={Validating ISA-Tab and ISA-JSON - The ISA cookbook}, author={Team, The ISA}, year={2021}} 
-
-@misc{team_2021, title={The isa cookbook}, url={https://isa-tools.org/isa-api/content/index.html}, journal={ISA tools API - The ISA cookbook}, author={Team, The ISA}, year={2021}} 
- 
-@article{johnson_batista_cochrane_davey_etuk_gonzalez-beltran_haug_izzo_larralde_lawson_et al._2021, title={ISA API: An open platform for interoperable life science experimental metadata}, volume={10}, DOI={10.1093/gigascience/giab060}, number={9}, journal={GigaScience}, author={Johnson, David and Batista, Dominique and Cochrane, Keeva and Davey, Robert P and Etuk, Anthony and Gonzalez-Beltran, Alejandra and Haug, Kenneth and Izzo, Massimiliano and Larralde, Martin and Lawson, Thomas N and et al.}, year={2021}} 
-
-@misc{team_2018, title={3.2.15. process_schema.json}, url={https://isa-specs.readthedocs.io/en/latest/isajson.html#process-schema-json}, journal={3. ISA-JSON format - ISA Model and Serialization Specifications 1.0 documentation}, author={Team, The ISA}, year={2018}} 
-
-@misc{team_2018, title={3.2.10. material_schema.json}, url={https://isa-specs.readthedocs.io/en/latest/isajson.html#material-schema-json}, journal={3. ISA-JSON format - ISA Model and Serialization Specifications 1.0 documentation}, author={Team, The ISA}, year={2018}} 
-
-@misc{team_2018, title={3.2.5. data_schema.json}, url={https://isa-specs.readthedocs.io/en/latest/isajson.html#data-schema-json}, journal={3. ISA-JSON format - ISA Model and Serialization Specifications 1.0 documentation}, author={Team, The ISA}, year={2018}} 
-
-@misc{cloud_2023, title={What is pub/sub? &nbsp;|&nbsp; cloud pub/sub documentation &nbsp;|&nbsp; google cloud}, url={https://cloud.google.com/pubsub/docs/overview}, journal={Google}, publisher={Google}, author={Cloud, Google}, year={2023}} 
-
-@article{rocca-serra_brandizi_maguire_sklyar_taylor_begley_field_harris_hide_hofmann_et al._2010, title={Isa Software Suite: Supporting Standards-compliant experimental annotation and enabling curation at the community level}, volume={26}, DOI={10.1093/bioinformatics/btq415}, number={18}, journal={Bioinformatics}, author={Rocca-Serra, Philippe and Brandizi, Marco and Maguire, Eamonn and Sklyar, Nataliya and Taylor, Chris and Begley, Kimberly and Field, Dawn and Harris, Stephen and Hide, Winston and Hofmann, Oliver and et al.}, year={2010}, pages={2354–2356}} 
-
-@misc{gundersen_cheneby_baskaran_bianchini_2023, title={Fairtracks/omnipy}, url={https://github.com/fairtracks/omnipy}, journal={GitHub}, author={Gundersen, Sveinung and Cheneby, Jeanne and Baskaran, Joshua and Bianchini, Federico}, year={2023}} 
- 
-@online{pypi,
-  title={Python Package Index - PyPI},
-  url={https://pypi.org/project/omnipy-examples/},
-  urldate = {2023-02-03}, 
-  publisher={Sveinung Gundersen}
+@software{TheISACookbook,
+  title        = {Exporting data from ISA formats},
+  year         = 2021,
+  url          = {https://isa-tools.org/isa-api/content/exportdata.html}
 }
+
+@misc{Project27Github,
+  title = {Biohackathon Project 27},
+  url = {https://github.com/elixir-europe/biohackathon-projects-2022/tree/main/27},
+  year = {2022}
+} 
+
+
+@software{TheISAJSONValidator,
+  title        = {Validating ISA-Tab and ISA-JSON},
+  year         = 2021,
+  url          = {https://isa-tools.org/isa-api/content/validation.html#}
+}
+
+
+@software{Omnipy,
+  title        = {Omnipy Python Library},
+  year         = 2023,
+  url          = {https://github.com/fairtracks/omnipy},
+  author       = {Gundersen, Sveinung and Cheneby, Jeanne and Baskaran, Joshua and Bianchini, Federico}
+}
+  
+
+
+@misc{ISAJSONFormat,
+  title = {The ISA Model and Serialization Specifications},
+  url = {https://isa-specs.readthedocs.io/en/latest/isajson.html#},
+  year = 2018
+} 
+
+
+@misc{Pubsubhub,
+  title = {What is pub/sub? cloud pub/sub documentation google cloud},
+  url = {https://cloud.google.com/pubsub/docs/overview},
+  year = {2023},
+  publisher = {Google}
+} 
+
+
+@article{10.1093/bioinformatics/btq415,
+    author = {Rocca-Serra, Philippe and Brandizi, Marco and Maguire, Eamonn and Sklyar, Nataliya and Taylor, Chris and Begley, Kimberly and Field, Dawn and Harris, Stephen and Hide, Winston and Hofmann, Oliver and Neumann, Steffen and Sterk, Peter and Tong, Weida and Sansone, Susanna-Assunta},
+    title = "{ISA software suite: supporting standards-compliant experimental annotation and enabling curation at the community level}",
+    journal = {Bioinformatics},
+    volume = {26},
+    number = {18},
+    pages = {2354-2356},
+    year = {2010},
+    month = {08},
+    abstract = "{Summary: The first open source software suite for experimentalists and curators that (i) assists in the annotation and local management of experimental metadata from high-throughput studies employing one or a combination of omics and other technologies; (ii) empowers users to uptake community-defined checklists and ontologies; and (iii) facilitates submission to international public repositories.Availability and Implementation: Software, documentation, case studies and implementations at http://www.isa-tools.orgContact:  isatools@googlegroups.com}",
+    issn = {1367-4803},
+    doi = {10.1093/bioinformatics/btq415},
+    url = {https://doi.org/10.1093/bioinformatics/btq415},
+    eprint = {https://academic.oup.com/bioinformatics/article-pdf/26/18/2354/48858571/bioinformatics\_26\_18\_2354.pdf},
+}
+
 
 @misc{prefect, title={The new standard in Dataflow Automation}, url={https://www.prefect.io/}, journal={Prefect}} 
