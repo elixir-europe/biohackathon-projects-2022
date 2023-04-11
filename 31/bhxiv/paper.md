@@ -22,6 +22,9 @@ authors:
   - name:  Tooba Abbassi-Daloii
     orcid: 0000-0002-4904-3269
     affiliation: 4
+  - name:  Bert Droesbeke
+    orcid: 0000-0003-0522-5674
+    affiliation: 5
  affiliations:
   - name: Luxembourg Center for Systems Biomedicine (LCSB), University of Luxembourg, Esch-sur-Alzette, Luxembourg
     index: 1
@@ -31,6 +34,8 @@ authors:
     index: 3
   - name: Department of Bioinformatics (BiGCaT), NUTRIM, FHML, Maastricht University, ELIXIR Netherlands
     index: 4
+  - name: VIB Data core, ELIXIR Belgium
+    index: 5
 date: 11 November 2022
 bibliography: paper.bib
 event: BioHackathon Europe 2022
@@ -53,13 +58,24 @@ Biohackathon project 31 "The What & How in data management: Improving connectivi
 - Perform a gap analysis of the ecosystem for targeted content improvements.
 
 
-# Technical integration
+# Improving the technical interoperability and sustainability
 
-<!--Bert or Philippe-->
+Multiple initiatives have been initiated and finished at the BioHackathon to improve the interoperability between RDMkit & FAIR Cookbook and the sustainability of both resources.
 
-- YAML file
-- potential PIDs for RDMK
-- automatic metadata extraction
+## Automatic showing of links to RDMkit on the FAIR Cookbook
+We created an RDMkit [panel directive](https://github.com/FAIRplus/the-fair-cookbook/blob/main/_ext/rdmkit_panel.py) in the FAIR Cookbook codebase that reads the [mapping file in the joined repo](https://github.com/elixir-europe/faircookbook-rdmkit/blob/main/faircookbook_rdmkit_mapping.yml) and populate a list with RDMkit links in the "What to read next?" section accordingly. Since these links are updated every time the FAIR Cookbook is built, a cron job was put in place to enforce a weekly rebuilt to make sure FAIR Cookbook has the latest links. This is similar to the time interval when the RDMkit gets updated with FAIR Cookbook links.
+
+## Automatic updating of titles in the mapping file
+Over time, page titles can change in both resources. We have thus put in place a system to keep displayed titles of linked pages in sync with the original resource. A [GitHub Action](https://github.com/elixir-europe/faircookbook-rdmkit/blob/main/.github/workflows/new_content_detection.yaml) will weekly check for title changes using information from the sidebars of RDMkit and FAIR Cookbook and create a pull request updating the titles in the main YAML file where needed.
+
+## Automatic issue creation when new content is added to one of the resources
+Due to the changing nature of both resources, we will have to repeat the mapping exercise in the future. To make this job easier, we created a [GitHub Action](https://github.com/elixir-europe/faircookbook-rdmkit/blob/main/.github/workflows/new_content_detection.yaml) to track changes in both resources using GitHub issues which are opened automatically on the [joined repository](https://github.com/elixir-europe/faircookbook-rdmkit). If a new page or recipe gets added, an issue will be created describing this addition. This GitHub Action is run weekly. 
+
+## Exploring sustainability improvements for the RDMkit 
+
+We looked into the potential of persistent identifiers (PIDs) for RDMkit pages. The findings of this discussion are listed here on [GitHub](https://github.com/elixir-europe/rdmkit/discussions/1065). This information was used in the editorial board meetings of the RDMkit to decided whether PIDs will be used or not.
+
+As second possible improvement we explored the idea of parsing metadata information of tools and standards from FAIRsharing and Bio.tools using their respective API's. A [proof of concept](https://github.com/elixir-europe/rdmkit/pull/1050) was setup and the results where used to feed the discussion in the editorial board meetings of RDMkit. The findings of this discussion can be found on [GitHub](https://github.com/elixir-europe/rdmkit/discussions/1204).
 
 
 # ELIXIR Research Data Management Ecosystem
