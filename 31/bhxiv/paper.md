@@ -32,8 +32,8 @@ authors:
   - name: Department of Bioinformatics (BiGCaT), NUTRIM, FHML, Maastricht University, ELIXIR Netherlands
     index: 4
 date: 11 November 2022
-cito-bibliography: paper.bib
-event: BH22EU
+bibliography: paper.bib
+event: BioHackathon Europe 2022
 biohackathon_name: "BioHackathon Europe 2022"
 biohackathon_url:   "https://biohackathon-europe.org/index.html"
 biohackathon_location: "Paris, France, 2022"
@@ -43,22 +43,10 @@ git_url: https://github.com/elixir-europe/biohackathon-projects-2022/tree/main/p
 <!--This is the short authors description that is used at the bottom of the generated paper.-->
 authors_short: Danielle Welter \emph{et al.}
 ---
-<!--
-
-The paper.md, bibtex and figure file can be found in this repo:
-
-  https://github.com/journal-of-research-objects/Example-BioHackrXiv-Paper
-
-To modify, please clone the repo. You can generate PDF of the paper by
-pasting above link (or yours) in
-
-  http://biohackrxiv.genenetwork.org/
-
--->
 
 # Introduction
 
-Biohackathon project 31 "The What & How in data management: Improving connectivity between RDMkit and FAIR Cookbook" was proposed by the joint editorial board of the RDMkit [@elixir_research_2021] and FAIR Cookbook [@philippe_rocca_serra_2022_7156792]. The aims of the project were 3-fold:
+Biohackathon project 31 "The What & How in data management: Improving connectivity between RDMkit and FAIR Cookbook" was proposed by the joint editorial board of the [RDMkit](https://rdmkit.elixir-europe.org) and [FAIR Cookbook](https://faircookbook.elixir-europe.org/content/home.html). The aims of the project were 3-fold:
 
 - Improve the technical interoperability between RDMkit & FAIR Cookbook
 - Clarify and illustrate the ELIXIR research data management ecosystem for users
@@ -79,7 +67,6 @@ Biohackathon project 31 "The What & How in data management: Improving connectivi
 A major focus of this project was to generate an improved illustration of the wider ELIXIR Research Data Management (RDM) Ecosystem, its components and how they fit together. While each of the components of the RDM Ecosystem - the RDMkit, the FAIR Cookbook, FAIRsharing, the Data Stewardship Wizard (DSW), bio.tools and TeSS - are all fairly well-documented in their own right, users from outside of ELIXIR or new to research data management often find it difficult to find all the resources or identify which ones best serve their needs. In order to address this gap, we started the process of creating a single unified presentation page to the ELIXIR RDM Ecosystem, highlighting all its components. In particular, we identified a series of representative journeys that users might take to navigate between the resources in order to address common RDM problems. 
 
 ## User journeys
-<!--Nazeefa, Laura, Marina-->
 
 The following 6 user journeys represent a non-exhaustive list of solutions to common research data management problems, making optimal use of all the ecosystem's resources and links between them. 
 
@@ -120,7 +107,6 @@ Learn how to deposit data to the BioImage Archive by following the steps in the 
 Explore how existing training materials address the topic of Data Management Planning e.g. through hands-on session, in a form of webinar, or a mix of theoretical and practical content. The Training eSupport System (TeSS), a training platform by ELIXIR, provides a collection of past/recent material used for courses, webinars, and so on. RDMkit is also a good starting point to find teaching resources (linked to TeSS) and information on DMP (that can be recommended source for training audience); there, information on current DMP-creating tools such as DSW is mentioned. Equally important aspect of creating a DMP is to be familiar with institutional guidelines, and those can be learned about via national resources available on RDMkit.
 
 # Gap analysis
-<!--Tooba, Rafael-->
 
 As well as solving the technical problems around linking the RDMkit and the FAIR Cookbook, we performed a gap analysis of the content of the two resources. For this, we focused on two aspects:
 
@@ -139,25 +125,19 @@ In addition to the review of the two core resources, RDMkit and FAIR Cookbook, w
 
 In addition to completing the cross-references between existing pages, we also reviewed the resources for content gaps where no Cookbook recipes exist to address problems highlighted in an RDMkit Task page, or a problem addressed in a Cookbook recipe that is not covered in the RDMkit. In total, we identified four potential new recipes for the FAIR Cookbook to address problems described in the RDMkit. Other gaps that were initially identified were deemed to be outside the remit of the FAIR Cookbook, such as problems pertaining to data management planning and project coordination, which are not directly relevant to the FAIR principles. 
 
-
   
   
-# Discussion
+# Discussion & future work
 
-<!--Danielle-->
+The work presented here addressed an important gap in the alignment of the ELIXIR Research Data Management Ecosystem resources. Not only did the project provide great progress in the automation of the interconnection of RDMkit and the FAIR Cookbook, we also laid the foundations for the user journeys that will form a core pillar of the emerging ELIXIR Research Data Management Community. 
 
-We did what we did and it's good/bad because...
+The implemenation of the technical integration started at the Biohackathon 2022 will be completed in the months following the event. An associated editorial process for the appproval of future pull requests will be put in place by the RDMkit-FAIR Cookbook joint editorial board. The joint editorial board will also be responsible for driving forward the filling in of the content gaps identified during the hackathon.
 
-
-# Future work
-
-<!--Rafael-->
-
-Once we've recovered, we're going to do x, y and z.
+The user journeys described here will be extended and reviewed by the ELIXIR RDM community, once it is fully established. The community will take editorial ownership of these journeys and they will be published on the ELIXIR website in due course.
 
 
-## Acknowledgements
+
+# Acknowledgements
 
 We thank the organisers of the BioHackathon Europe 2022 for travel support for some of the authors.
 
-## References
