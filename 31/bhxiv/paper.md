@@ -11,7 +11,7 @@ authors:
     orcid: 0000-0003-1058-2668
     affiliation: 1
   - name: Marina Popleteeva 
-    orcid:
+    orcid: 0000-0002-8409-6147
     affiliation: 1
   - name: Nazeefa Fatima 
     orcid: 0000-0001-7791-4984 
@@ -85,25 +85,37 @@ The following 6 user journeys represent a non-exhaustive list of solutions to co
 
 ### User journey 1: How do I start with data management?
 
+![User journey 1](User_journey1.png "User journey 1")
+
 Find general guidance on RDM topics, including domain specific and task oriented topics at RDMkit. Once the considerations that apply are identified, RDMkit links you to step-by-step instructions in the FAIR Cookbook to help accomplish the tasks needed. Extended information and related resources about the mentioned standards in the FAIR Cookbook can be found in the links to FAIRsharing. In each RDMkit page, there are also links to TeSS with relevant training material about your topic of interest. TeSS also links to the bio.tools entry about bioinformatics tools related to the training material.
 
 ### User journey 2: How do I write a Data Management Plan?
+
+![User journey 2](User_journey2.png "User journey 2")
 
 Get an overview about what entails a Data Management Plan (DMP) in the Data Management Plan page in the RDMkit. In the table at the bottom, choose a tool to create DMPs like the Data Stewardship Wizard (DSW) to create a DMP. The DSW contains links back to the RDMkit to get specific guidelines that are needed to answer some of the questions. Also, the DSW has link to FAIRsharing to help you choose among repositories, standards and policies to adopt for your project. From RDMkit you can also navigate to TeSS to get DMP related training materials.
 
 ### User journey 3: How do I know if my data is sensitive?
 
+![User journey 3](User_journey3.png "User journey 3")
+
 Get an overview of what is sensitive data and get general guidance in the Sensitive data page in the RDMkit. Then, navigate to the Data protection page to find out how to protect sensitive data from an ethical and legal standpoint. From this page, follow the links to the FAIRcookbook to learn about how to represent sensitive data use conditions in machine-readable metadata format. It is also possible to learn about national regulations and policies in the National resources pages in the RDMkit.
 
 ### User journey 4: How do I handle my metadata?
+
+![User journey 4](User_journey4.png "User journey 4")
 
 Understand what to consider when managing the metadata for a project with the Documentation and metadata page in RDMkit. To explore further about the standards used in a specific domain as well as their connections, a link to FAIRsharing is provided. Also, several relevant FAIRcookbook recipes are linked from RDMkit. For example, it is possible to follow instructions on how to create a metadata profile, on how to use ontologies, or on how to create a data dictionary. The FAIRcookbook recipes also link back to RDMkit for broader context.
 
 ### User journey 5: How do I get extra guidance on how to deposit high-throughput data into EBI BioImage Archive?
 
+![User journey 5](User_journey5.png "User journey 5")
+
 Learn how to deposit data to the BioImage Archive by following the steps in the FAIRcookbook recipe. In the recipe general guidelines and tool assembly pages in the RDMkit are linked. There, guidelines in metadata and standards to use and to know how to prepare the data for deposition are described. The RDMkit links to TeSS to get training videos about metadata annotation for biological images.
 
 ### User journey 6: What existing data management resources I can use to create teaching material for making DMPs?
+
+![User journey 6](User_journey6.png "User journey 6")
 
 Explore how existing training materials address the topic of Data Management Planning e.g. through hands-on session, in a form of webinar, or a mix of theoretical and practical content. The Training eSupport System (TeSS), a training platform by ELIXIR, provides a collection of past/recent material used for courses, webinars, and so on. RDMkit is also a good starting point to find teaching resources (linked to TeSS) and information on DMP (that can be recommended source for training audience); there, information on current DMP-creating tools such as DSW is mentioned. Equally important aspect of creating a DMP is to be familiar with institutional guidelines, and those can be learned about via national resources available on RDMkit.
 
