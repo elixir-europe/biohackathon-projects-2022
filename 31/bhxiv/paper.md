@@ -156,15 +156,15 @@ In addition to completing the cross-references between existing pages, we also r
   
 # Discussion & future work
 
-The work presented here addressed an important gap in the alignment of the ELIXIR Research Data Management Ecosystem resources. Not only did the project provide great progress in the automation of the interconnection of RDMkit and the FAIR Cookbook, we also laid the foundations for the user journeys that will form a core pillar of the emerging ELIXIR Research Data Management Community. 
+The work presented here addressed an important gap in the alignment of ELIXIR Research Data Management Ecosystem resources. Not only did the project provide great progress in the automation of the interconnection of RDMkit and the FAIR Cookbook, we also laid the foundations for the user journeys that will form a core pillar of the emerging ELIXIR Research Data Management Community. 
 
 The implemenation of the technical integration started at the Biohackathon 2022 will be completed in the months following the event. An associated editorial process for the appproval of future pull requests will be put in place by the RDMkit-FAIR Cookbook joint editorial board. The joint editorial board will also be responsible for driving forward the filling in of the content gaps identified during the hackathon.
 
-The user journeys described here will be extended and reviewed by the ELIXIR RDM community, once it is fully established. The community will take editorial ownership of these journeys and they will be published on the ELIXIR website in due course.
+The user journeys described here will be extended and reviewed by the emerging ELIXIR RDM community, once it is fully established. The community will take editorial ownership of these journeys and they will be published on the ELIXIR website in due course.
 
 
 
 # Acknowledgements
 
-We thank the organisers of the BioHackathon Europe 2022 for travel support for some of the authors.
+We thank Stian Soiland-Reyes, Vojtěch Knaisl, Jan Slifka, and Marek Suchánek for technical discussions and advice. We thank the organisers of the BioHackathon Europe 2022 for travel support for some of the authors.
 
