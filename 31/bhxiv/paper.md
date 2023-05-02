@@ -24,13 +24,13 @@ authors:
     affiliation: 4
   - name: Philippe Rocca-Serra
     orcid: 0000-0001-9853-5668
-    affiliation: 6
+    affiliation: 5
   - name:  Bert Droesbeke
     orcid: 0000-0003-0522-5674
-    affiliation: 5
+    affiliation: 6
   - name:  Rafael Andrade Buono
     orcid: 0000-0002-6675-3836
-    affiliation: 5
+    affiliation: 6
  affiliations:
   - name: Luxembourg Center for Systems Biomedicine (LCSB), University of Luxembourg, Esch-sur-Alzette, Luxembourg
     index: 1
@@ -40,9 +40,9 @@ authors:
     index: 3
   - name: Department of Bioinformatics (BiGCaT), NUTRIM, FHML, Maastricht University, ELIXIR Netherlands
     index: 4
-  - name: VIB Data core, ELIXIR Belgium
-    index: 5
   - name: University of Oxford e-Research Centre, University of Oxford, ELIXIR UK
+    index: 5
+  - name: VIB Data core, ELIXIR Belgium
     index: 6
 date: 11 November 2022
 event: BioHackathon Europe 2022
