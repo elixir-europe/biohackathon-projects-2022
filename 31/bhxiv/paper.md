@@ -31,7 +31,6 @@ authors:
   - name:  Rafael Andrade Buono
     orcid: 0000-0002-6675-3836
     affiliation: 5
-    
  affiliations:
   - name: Luxembourg Center for Systems Biomedicine (LCSB), University of Luxembourg, Esch-sur-Alzette, Luxembourg
     index: 1
@@ -45,9 +44,7 @@ authors:
     index: 5
   - name: University of Oxford e-Research Centre, University of Oxford, ELIXIR UK
     index: 6
-
 date: 11 November 2022
-bibliography: paper.bib
 event: BioHackathon Europe 2022
 biohackathon_name: 'BioHackathon Europe 2022'
 biohackathon_url:   'https://biohackathon-europe.org/index.html'
@@ -165,7 +162,7 @@ In addition to completing the cross-references between existing pages, we also r
 
 The work presented here addressed an important gap in the alignment of ELIXIR Research Data Management Ecosystem resources. Not only did the project provide great progress in the automation of the interconnection of RDMkit and the FAIR Cookbook, we also laid the foundations for the user journeys that will form a core pillar of the emerging ELIXIR Research Data Management Community. 
 
-The implementation of the technical integration started at the Biohackathon 2022 will be completed in the months following the event. An associated editorial process for the approval of future pull requests will be put in place by the RDMkit-FAIR Cookbook joint editorial board. The joint editorial board will also be responsible for driving forward the filling in of the content gaps identified during the hackathon.
+The implementation of the technical integration started at the Biohackathon 2022 was completed in the months following the event. An associated editorial process for the approval of future pull requests will be put in place by the RDMkit-FAIR Cookbook joint editorial board. The joint editorial board will also be responsible for driving forward the filling in of the content gaps identified during the hackathon.
 
 The user journeys described here will be extended and reviewed by the emerging ELIXIR RDM community, once it is fully established. The community will take editorial ownership of these journeys and, they will be published on the ELIXIR website in due course.
 
