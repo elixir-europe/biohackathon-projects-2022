@@ -22,6 +22,9 @@ authors:
   - name:  Tooba Abbassi-Daloii
     orcid: 0000-0002-4904-3269
     affiliation: 4
+  - name: Philippe Rocca-Serra
+    orcid: 0000-0001-9853-5668
+    affiliation: 6
   - name:  Bert Droesbeke
     orcid: 0000-0003-0522-5674
     affiliation: 5
@@ -40,6 +43,9 @@ authors:
     index: 4
   - name: VIB Data core, ELIXIR Belgium
     index: 5
+  - name: University of Oxford e-Research Centre, University of Oxford, ELIXIR UK
+    index: 6
+
 date: 11 November 2022
 bibliography: paper.bib
 event: BioHackathon Europe 2022
@@ -67,7 +73,8 @@ Biohackathon project 31 "The What & How in data management: Improving connectivi
 Multiple initiatives have been initiated and finished at the BioHackathon to improve the interoperability between RDMkit and FAIR Cookbook, and the sustainability of both resources.
 
 ## Automatic display of links to RDMkit on the FAIR Cookbook
-We created an RDMkit [panel directive](https://github.com/FAIRplus/the-fair-cookbook/blob/main/_ext/rdmkit_panel.py) in the FAIR Cookbook codebase that reads the [mapping file in the joined repository](https://github.com/elixir-europe/faircookbook-rdmkit/blob/main/faircookbook_rdmkit_mapping.yml) and populate a list with RDMkit links in the "What to read next?" section accordingly. Since these links are updated every time the FAIR Cookbook is built, a Cron job was put in place to enforce a weekly rebuilt to make sure FAIR Cookbook has the latest links. This is similar to the time interval when the RDMkit gets updated with FAIR Cookbook links.
+We created an RDMkit [panel directive](https://github.com/FAIRplus/the-fair-cookbook/blob/main/_ext/rdmkit_panel.py) in the FAIR Cookbook codebase that reads the [mapping file in the joined repository](https://github.com/elixir-europe/faircookbook-rdmkit/blob/main/faircookbook_rdmkit_mapping.yml) and populates a list with RDMkit links in the "What to read next?" section accordingly. Since these links are updated every time the FAIR Cookbook is built, a Cron job was put in place to enforce a weekly rebuild to make sure the FAIR Cookbook has the latest links. This is similar to the time interval when the RDMkit gets updated with FAIR Cookbook links.
+
 
 ## Automatic updating of titles in the mapping file
 Over time, page titles can change in both of the resources. We have, thus, put in place a system to keep displayed titles of linked pages in sync with the original resource. A [GitHub Action](https://github.com/elixir-europe/faircookbook-rdmkit/blob/main/.github/workflows/new_content_detection.yaml) will weekly check for title changes using information from the sidebars of RDMkit and FAIR Cookbook and create a pull request updating the titles in the main YAML file where needed.
@@ -79,12 +86,13 @@ Due to the changing nature of both resources, we will have to repeat the mapping
 
 We looked into the potential of using more formal persistent identifiers (PIDs) for RDMkit pages. The findings of this discussion are listed here on [GitHub](https://github.com/elixir-europe/rdmkit/discussions/1065). This information was used in the editorial board meetings of the RDMkit to decide whether PIDs will be used or not.
 
-As second possible improvement, we explored the idea of parsing metadata information of tools and standards from FAIRsharing and bio.tools using their respective APIs. A [proof of concept](https://github.com/elixir-europe/rdmkit/pull/1050) was setup and the results where used to feed the discussion in the editorial board meetings of RDMkit. The findings of this discussion can be found on [GitHub](https://github.com/elixir-europe/rdmkit/discussions/1204).
+As second possible improvement, we explored the idea of parsing metadata information of tools and standards from FAIRsharing and Bio.tools using their respective APIs. A [proof of concept](https://github.com/elixir-europe/rdmkit/pull/1050) was set up and the results where used to feed the discussion in the editorial board meetings of RDMkit. The findings of this discussion can be found on [GitHub](https://github.com/elixir-europe/rdmkit/discussions/1204).
+
 
 
 # ELIXIR Research Data Management Ecosystem
 
-A major focus of this project was to generate an improved illustration of the wider ELIXIR Research Data Management (RDM) Ecosystem, its components and how they fit together. While each of the components of the RDM Ecosystem - the RDMkit, the FAIR Cookbook, FAIRsharing, the Data Stewardship Wizard (DSW), bio.tools and TeSS - are all fairly well-documented in their own right, users from outside of ELIXIR or new to research data management often find it difficult to find all the resources or identify which ones best serve their needs. In order to address this gap, we started the process of creating a single unified presentation page to the ELIXIR RDM Ecosystem, highlighting all its components. In particular, we identified a series of representative journeys that users might take to navigate between the resources in order to address common RDM problems. 
+A major focus of this project was to generate an improved illustration of the wider ELIXIR Research Data Management (RDM) Ecosystem, its components and how they fit together. While each of the components of the RDM Ecosystem - the RDMkit, the FAIR Cookbook, FAIRsharing, the Data Stewardship Wizard (DSW), Bio.tools and TeSS - are all fairly well-documented in their own right, users from outside of ELIXIR or new to research data management often find it difficult to find all the resources or identify which ones best serve their needs. In order to address this gap, we started the process of creating a single unified presentation page to the ELIXIR RDM Ecosystem, highlighting all its components. In particular, we identified a series of representative journeys that users might take to navigate between the resources in order to address common RDM problems. 
 
 ## User journeys
 
@@ -92,16 +100,16 @@ The following six user journeys represent a non-exhaustive list of solutions to 
 
 ### Introduction to the ecosystem
 
-Good management of research data is a cornerstone of Elixir’s mission, with a number of endorsed resources available to help researchers tackle data management challenges. Each of the resources presented here cover slightly different angles of data management, from general topic introductions to step-by-step instructions for solving specific problems.
-Half a dozen user journeys illustrating some common problems show you how to best make use of the resources as you navigate the fascinating world of research data management.
-Please note that the list of challenges is not exhaustive and that in some cases, not all available links are explicitly shown. We encourage you to explore beyond what is suggested here. Also be aware that all of these are dynamic resources that have new content added all the time.
+Good management of research data is a cornerstone of ELIXIR’s mission, with a number of endorsed resources available to help researchers tackle data management challenges. Each of the resources presented here cover slightly different angles of data management, from general topic introductions to step-by-step instructions for solving specific problems.
+Half a dozen user journeys illustrating some common problems show how to best make use of the resources as you navigate the fascinating world of research data management.
+Please note that the list of challenges is not exhaustive and that in some cases, not all available links are explicitly shown. We encourage our readers to explore beyond what is suggested here. Also be aware that all of these are dynamic resources that have new content added all the time.
 
 
 ### User journey 1: How do I start with data management?
 
 ![User journey 1](User_journey1.png "User journey 1")
 
-Find general guidance on RDM topics, including domain specific and task oriented topics at [RDMkit](https://rdmkit.elixir-europe.org/). Once the considerations that apply are identified, RDMkit links you to step-by-step instructions in the [FAIR Cookbook](https://faircookbook.elixir-europe.org/content/home.html) to help accomplish the tasks needed. Extended information and related resources about the mentioned standards in the FAIR Cookbook can be found in the links to [FAIRsharing](https://fairsharing.org/). In each RDMkit page, there are also links to [TeSS](https://tess.elixir-europe.org/) with relevant training material about your topic of interest. TeSS also links to the [bio.tools](https://bio.tools/) entry about bioinformatics tools related to the training material.
+Find general guidance on RDM topics, including domain specific and task oriented topics at [RDMkit](https://rdmkit.elixir-europe.org/). Once the considerations that apply are identified, RDMkit links you to step-by-step instructions in the [FAIR Cookbook](https://faircookbook.elixir-europe.org/content/home.html) to help accomplish the tasks needed. Extended information and related resources about the mentioned standards in the FAIR Cookbook can be found in the links to [FAIRsharing](https://fairsharing.org/). In each RDMkit page, there are also links to [TeSS](https://tess.elixir-europe.org/) with relevant training material about your topic of interest. TeSS also links to the [Bio.tools](https://bio.tools/) entry about bioinformatics tools related to the training material.
 
 ### User journey 2: How do I write a Data Management Plan?
 
@@ -125,7 +133,8 @@ Understand what to consider when managing the metadata for a project with the [D
 
 ![User journey 5](User_journey5.png "User journey 5")
 
-Learn how to deposit data to the BioImage Archive by following the steps in the [FAIR Cookbook recipe](https://w3id.org/faircookbook/FCB067). In the recipe, [general guidelines on bioimaging data](https://rdmkit.elixir-europe.org/bioimaging_data) and [relevant tool assembly page](https://rdmkit.elixir-europe.org/omero_assembly) in the RDMkit are linked. There, guidelines in metadata and standards to use and to know how to prepare the data for deposition are described. The RDMkit links to [TeSS](https://tess.elixir-europe.org/materials/rdmbites-bioimage-metadata-rembi) to get training videos about metadata annotation for biological images.
+Learn how to deposit data to the BioImage Archive by following the steps in the [FAIR Cookbook recipe](https://w3id.org/faircookbook/FCB067). In the recipe, [general guidelines on bioimaging data](https://rdmkit.elixir-europe.org/bioimaging_data) and [tool assembly pages](https://rdmkit.elixir-europe.org/omero_assembly) in the RDMkit are linked. There, guidelines in metadata and standards to use and to know how to prepare the data for deposition are described. The RDMkit links to [TeSS](https://tess.elixir-europe.org/materials/rdmbites-bioimage-metadata-rembi) to get training videos about metadata annotation for biological images.
+
 
 ### User journey 6: What existing data management resources can I use to create teaching material for making DMPs?
 
@@ -139,7 +148,8 @@ In addition to improving technical interoperability around linking the RDMkit an
 
 ## Missing page links
 
-We conducted a review of all recipes in the FAIR Cookbook and Task pages in the RDMkit to identify any missing cross-links between pages. During the review, we also analyzed the RDMkit Domain pages, although the decision was made early on that links between Domain pages and FAIR Cookbook recipes would only be acceptable if the recipe are also specific to that domain. This was done to avoid linking overload for common tasks. For example, almost all RDMkit Domain pages mention annotation with ontologies and controlled vocabularies but crosslinking all of them with the FAIR Cookbook's domain agnostic recipe on best practices for ontology selection would generate a long list of poorly related links to the RDMkit on the FAIR Cookbook recipe's page, likely leading to confusion for users. Links to Domain pages are therefore only included where a FAIR Cookbook recipe is entirely specific to the domain in question, such as the [Plant sciences domain page](https://rdmkit.elixir-europe.org/plant_sciences#relevant-tools-and-resources) cross-referencing the FAIR Cookbook recipe about [Plant genomic and genetic variation data submission to EMBL-EBI databases](https://w3id.org/faircookbook/FCB061).
+We conducted a review of all recipes in the FAIR Cookbook and Task pages in the RDMkit to identify any missing cross-links between pages. During the review, we also analyzed the RDMkit Domain pages, although the decision was made early on that links between Domain pages and FAIR Cookbook recipes would only be acceptable if the recipes are also specific to that domain. This was done to avoid linking overload for common tasks. For example, almost all RDMkit Domain pages mention annotation with ontologies and controlled vocabularies but cross-linking all of them with the FAIR Cookbook's domain agnostic recipe on best practices for ontology selection would generate a long list of poorly related links to the RDMkit on the FAIR Cookbook recipe's page, likely leading to confusion for users. Links to Domain pages are therefore only included where a FAIR Cookbook recipe is entirely specific to the domain in question, such as the [Plant sciences domain page](https://rdmkit.elixir-europe.org/plant_sciences#relevant-tools-and-resources) cross-referencing the FAIR Cookbook recipe "[Plant genomic and genetic variation data submission to EMBL-EBI databases](https://w3id.org/faircookbook/FCB061)".
+
 
 In total, we identified around a dozen additional links, which were recorded for addition to the YAML file from the technical implementation track. 
 
@@ -155,13 +165,13 @@ In addition to completing the cross-references between existing pages, we also r
 
 The work presented here addressed an important gap in the alignment of ELIXIR Research Data Management Ecosystem resources. Not only did the project provide great progress in the automation of the interconnection of RDMkit and the FAIR Cookbook, we also laid the foundations for the user journeys that will form a core pillar of the emerging ELIXIR Research Data Management Community. 
 
-The implemenation of the technical integration started at the Biohackathon 2022 will be completed in the months following the event. An associated editorial process for the appproval of future pull requests will be put in place by the RDMkit-FAIR Cookbook joint editorial board. The joint editorial board will also be responsible for driving forward the filling in of the content gaps identified during the hackathon.
+The implementation of the technical integration started at the Biohackathon 2022 will be completed in the months following the event. An associated editorial process for the approval of future pull requests will be put in place by the RDMkit-FAIR Cookbook joint editorial board. The joint editorial board will also be responsible for driving forward the filling in of the content gaps identified during the hackathon.
 
-The user journeys described here will be extended and reviewed by the emerging ELIXIR RDM community, once it is fully established. The community will take editorial ownership of these journeys and they will be published on the ELIXIR website in due course.
+The user journeys described here will be extended and reviewed by the emerging ELIXIR RDM community, once it is fully established. The community will take editorial ownership of these journeys and, they will be published on the ELIXIR website in due course.
 
 
 
 # Acknowledgements
 
-We thank Stian Soiland-Reyes, Vojtěch Knaisl, Jan Slifka, and Marek Suchánek for technical discussions and advice. We thank the organisers of the BioHackathon Europe 2022 for travel support for some of the authors.
+We thank Stian Soiland-Reyes, Vojtěch Knaisl, Jan Slifka, and Marek Suchánek for technical discussions and advice. We thank the organisers of the BioHackathon Europe 2022 for travel support for several of the authors.
 
