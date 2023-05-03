@@ -45,7 +45,7 @@ authors:
   - name: VIB Data core, ELIXIR Belgium
     index: 6
 date: 11 November 2022
-event: BioHackathon Europe 2022
+event: BH22EU
 biohackathon_name: 'BioHackathon Europe 2022'
 biohackathon_url:   'https://biohackathon-europe.org/index.html'
 biohackathon_location: 'Paris, France, 2022'
