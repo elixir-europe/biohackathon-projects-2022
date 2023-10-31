@@ -27,24 +27,20 @@ public class BioSamplesSubmitter {
 
     try {
       final Sample sourceBioSample = this.createSourceBioSample(studies, webinToken);
-      final Optional<Attribute> sourceBioSampleOrganism =
-          sourceBioSample.getAttributes().stream()
-              .map(
-                  attribute -> {
-                    if (attribute.getType().equalsIgnoreCase("organism")) {
-                      return attribute;
-                    }
+      Attribute sourceBioSampleOrganismAttribute = null;
 
-                    return null;
-                  })
-              .findFirst();
-
+      for (final Attribute attribute : sourceBioSample.getAttributes()) {
+          if (attribute.getType().equalsIgnoreCase("organism")) {
+              sourceBioSampleOrganismAttribute = attribute;
+          }
+      }
       typeToBioSamplesAccessionMap.put("SOURCE", sourceBioSample.getAccession());
 
-      if (sourceBioSampleOrganism.isPresent()) {
+      if (sourceBioSampleOrganismAttribute != null) {
         final AtomicInteger counter = new AtomicInteger(0);
+          final Attribute finalSourceBioSampleOrganismAttribute = sourceBioSampleOrganismAttribute;
 
-        studies.forEach(
+          studies.forEach(
             study -> {
               study
                   .getAssays()
@@ -59,7 +55,7 @@ public class BioSamplesSubmitter {
                                       this.createAndUpdateChildSampleWithRelationship(
                                           sample,
                                           sourceBioSample.getAccession(),
-                                          sourceBioSampleOrganism.get().getValue(),
+                                          finalSourceBioSampleOrganismAttribute.getValue(),
                                           webinToken);
 
                                   if (persistedChildSample != null) {
@@ -172,7 +168,7 @@ public class BioSamplesSubmitter {
 
       biosamplesResponse =
           restTemplate.exchange(
-              "http://wwwdev.ebi.ac.uk/biosamples/samples/" + sampleWithRelationship.getAccession(),
+              "https://wwwdev.ebi.ac.uk/biosamples/samples/" + sampleWithRelationship.getAccession(),
               HttpMethod.PUT,
               entity,
               new ParameterizedTypeReference<>() {});
@@ -193,7 +189,7 @@ public class BioSamplesSubmitter {
 
       biosamplesResponse =
           restTemplate.exchange(
-              "http://wwwdev.ebi.ac.uk/biosamples/samples/",
+              "https://wwwdev.ebi.ac.uk/biosamples/samples/",
               HttpMethod.POST,
               entity,
               new ParameterizedTypeReference<>() {});
